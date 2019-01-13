@@ -1,0 +1,14 @@
+/* Menu Buttons */
+.menuButton {
+    background-color: #979797;
+    border-radius: 8px;
+    width: 182px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}

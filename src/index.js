@@ -1,12 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './normalize.css'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import HomeScreen from './Screens/HomeScreen/HomeScreen'
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+ReactDOM.render(<HomeScreen />, document.getElementById('root'));

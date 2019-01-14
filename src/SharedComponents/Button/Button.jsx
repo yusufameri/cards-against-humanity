@@ -2,8 +2,10 @@ import React from 'react'
 import "./Button.css"
 
 function Button(props) {
+  let extraClasses = `${props.extraClasses} menuButton`;
   return (
-    <div className="menuButton">
+    
+    <div className={extraClasses}>
       {props.text}
     </div>
   );

@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './normalize.css'
 
-import JoinPartyScreen from './Screens/JoinPartyScreen/JoinPartyScreen'
+import StartGameScreen from './Screens/StartGameScreen/StartGameScreen'
 
-ReactDOM.render(<JoinPartyScreen />, document.getElementById('root'));
+ReactDOM.render(<StartGameScreen />, document.getElementById('root'));

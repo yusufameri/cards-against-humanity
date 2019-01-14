@@ -1,9 +1,8 @@
 import React from 'react'
 import "./HomeScreen.css"
 
-// Import Resubale Components
-import Card  from '../../SharedComponents/Card/Card'
 import Button from "../../SharedComponents/Button/Button"
+import { TopHome } from './TopHome';
 
 function Or() {
   return (
@@ -15,14 +14,6 @@ function Or() {
   );
 }
 
-function TopHome() {
-    return (
-      <div className="top">
-        <Card cardType = "Title" text="Cards Against Humanity"/>
-      </div>
-    )
-}
-  
 function BottomHome() {
   return (
     <div className="bottom">

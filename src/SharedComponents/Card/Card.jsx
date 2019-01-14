@@ -33,7 +33,7 @@ function Card(props) {
 
   else {
     return (
-      <div className={"Q"}>
+      <div className={"card A"}>
         <p>{props.text}</p>
       </div>
     );

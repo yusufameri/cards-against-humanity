@@ -3,6 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './normalize.css'
 
-import StartGameScreen from './Screens/StartGameScreen/StartGameScreen'
+import PlayerSelectionScreen from './Screens/PlayerSelectionScreen/PlayerSelectionScreen'
 
-ReactDOM.render(<StartGameScreen />, document.getElementById('root'));
+ReactDOM.render(<PlayerSelectionScreen />, document.getElementById('root'));

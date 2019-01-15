@@ -48,33 +48,33 @@ Take a look at the [Figma](https://www.figma.com/file/0Tg73m0IZNdbAh9hmAk5Sh10/C
 Below are some Screenshots and the story board for user interactions:
 
 #### 1. User enters the site from mobile browser
-![1]("prototype/images/Screen1.png")
+![1](cards-against-humanity/prototype/images/Screen1.png)
 
 #### 2a. User Creates a party
-![1]("prototype/images/Screen2a.png")
+![1](prototype/images/Screen2a.png)
 
 #### 2b. User Joins an existing party
-![1]("prototype/images/Screen2b.png")
+![1](prototype/images/Screen2b.png)
 
 #### 3. Round Starts and User is NOT the Card Czar
 User will select/drag-and-drop their best/funniest white card based on the current black card in play.  
-![1]("prototype/images/Screen3a.png")
+![1](prototype/images/Screen3a.png)
 
 #### 3.a The Card Czar sees a "Waiting Screen"
 Nothing much for them to do but wait...  
-![1]("prototype/images/Screen3b.png")
+![1](prototype/images/Screen3b.png)
 
 #### 4. Round finishes and everyone views the white cards played
-![1]("prototype/images/Screen4a.png")
+![1](prototype/images/Screen4a.png)
 
 #### 4. Judge chooses their favorite card
-![1]("prototype/images/Screen4b.png")
+![1](prototype/images/Screen4b.png)
 
 #### 5. Everyone sees the Scoreboard
-![1]("prototype/images/Screen5.png")
+![1](prototype/images/Screen5.png)
 
 #### 6. Round restarts with new Card Czar
-![1]("prototype/images/Screen6.png")
+![1](prototype/images/Screen6.png)
 
 ___
 

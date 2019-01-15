@@ -11,6 +11,13 @@
     word-wrap: break-word;
 }
 
+.placeholder {
+    background-color: transparent;
+    border: 2px dashed #6F6F6F;
+    text-align: center;
+    position: relative;
+}
+
 .Title {
     width: 60%;
     height: 100%;

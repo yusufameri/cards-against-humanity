@@ -16,6 +16,14 @@ function Card(props) {
     );
   }
 
+  if(props.cardType === "placeholder") {
+    return (
+      <div className={`card placeholder`}>
+        Drop Card Here
+      </div>
+    );
+  }
+
   else if(props.cardType === "Link") {
     return (
       <div className={`card Title Link`}>

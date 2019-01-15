@@ -5,6 +5,22 @@ import Bottom from "../../SharedComponents/Bottom/Bottom"
 import Screen from "../../SharedComponents/Screen/Screen"
 import Top from "../../SharedComponents/Top/Top"
 
+// Black Card
+let QCard = {
+  type: "Q",
+  text: "Some Clever statement/question",
+  id: 0
+}
+
+function DropCardSpace(props) {
+  return (
+    <div className="drop-space">
+      <Card text= "empty"/>
+      <Card cardType= "placeholder"/>
+    </div>
+  );
+}
+
 // Mocking cards data to demo usage in props...
 let cards = [
   {
@@ -15,12 +31,12 @@ let cards = [
   {
     type: "A",
     text: "nasim nadia with a lot of words yaa",
-    id: 1
+    id: 2
   },
   {
     type: "A",
     text: "milad",
-    id: 1
+    id: 3
   }
 ];
 
@@ -38,7 +54,7 @@ function PlayerSelectionScreen() {
   return (
     <Screen>
       <Top>
-        <Card text= "Something really long perhaps"/>
+        <DropCardSpace qcard = {QCard}/>
       </Top>
       <Bottom>
         <CardCarousel cards ={cards}/>

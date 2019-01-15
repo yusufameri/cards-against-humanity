@@ -11,6 +11,32 @@
 .card {
   /* display: inline-block; */
   flex: 0 0 auto;
-  margin-left: 10px;
+  width: 88px;
+  height: 121px;
   margin-right: 5px;
+}
+
+.drop-space {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.top {
+  /* padding: 5% 1% 1% 5%; */
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
+}
+
+.bottom {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 30px;
 }

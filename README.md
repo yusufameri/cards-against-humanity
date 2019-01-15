@@ -71,10 +71,10 @@ Nothing much for them to do but wait...
 ![1](prototype/images/Screen4b.png)
 
 #### 5. Round Winner is Chosen!
-![1](prototype/images/Screen6.png)
+![1](prototype/images/Screen5.png)
 
 #### 6. Round Restarts and Everyone sees the Scoreboard
-![1](prototype/images/Screen5.png)
+![1](prototype/images/Screen6.png)
 
 
 

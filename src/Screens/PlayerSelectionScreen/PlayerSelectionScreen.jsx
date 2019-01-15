@@ -1,37 +1,49 @@
 import React from 'react'
 import "./PlayerSelectionScreen.css"
 import Card from "../../SharedComponents/Card/Card"
+import Bottom from "../../SharedComponents/Bottom/Bottom"
+import Screen from "../../SharedComponents/Screen/Screen"
+import Top from "../../SharedComponents/Top/Top"
 
+// Mocking cards data to demo usage in props...
+let cards = [
+  {
+    type: "A",
+    text: "baba jan",
+    id: 1
+  },
+  {
+    type: "A",
+    text: "nasim nadia with a lot of words yaa",
+    id: 1
+  },
+  {
+    type: "A",
+    text: "milad",
+    id: 1
+  }
+];
 
-
-function GameBoard() {
+function CardCarousel(props) {
   return (
-    <div className="top">
-      <Card text= "Something really long perhaps"/>
-    </div>
-  );
-}
-
-function ChooseCardCarousel() {
-  return (
-      <div className="bottom">
-          <div className="inner">
-            <div className="scrolling-wrapper">
-              <Card text="baba jan"/>
-              <Card text="nasim nadia"/>
-              <Card text="milad"/>
-            </div>
-          </div>
+    <div className="scrolling-wrapper">
+      {
+        props.cards.map((card) => <Card text={card.text}/>)
+      }
     </div>
   );
 }
 
 function PlayerSelectionScreen() {
   return (
-    <div className="screen">
-      <GameBoard />
-      <ChooseCardCarousel/>
-    </div>
+    <Screen>
+      <Top>
+        <Card text= "Something really long perhaps"/>
+      </Top>
+      <Bottom>
+        <CardCarousel cards ={cards}/>
+      </Bottom>
+    </Screen>
   );
 }
 

@@ -1,53 +1,16 @@
-/* Main HomeScreen */
-.screen {
-  height: 100%;
-}
-
-.top {
-  width: 100%;
-  height: 50%;
-  background-color: #979797;
-  z-index: 0;
-}
-
-/* Bottom Half */
-.bottom {
-  width: 100%;
-  z-index: 1;
-  background-color: white;
-  position: relative;
-}
-
-.inner {
-  /* height: inherit; */
-}
-
 .title {
-  text-align: left;
-}
-
-/* Input Form / Party Code */
-.label {
-  margin-bottom: 0;
-}
-
-.input {
-  width: 100%;
-}
-
-.pushDown {
-  margin-top: 15px;
+  text-align: center;
 }
 
 .scrolling-wrapper {
-  margin-top: 40px;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .card {
-  display: inline-block;
+  /* display: inline-block; */
+  flex: 0 0 auto;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 5px;
 }

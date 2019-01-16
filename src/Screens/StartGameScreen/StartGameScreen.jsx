@@ -1,48 +1,62 @@
 import React from 'react'
-import Card from "../../SharedComponents/Card/Card"
-import Button from "../../SharedComponents/Button/Button"
 import "./StartGameScreen.css"
 
+import Screen from "../../SharedComponents/Screen/Screen"
+import Top from "../../SharedComponents/Top/Top"
+import Title from "../../SharedComponents/Title/Title"
+import Bottom from "../../SharedComponents/Bottom/Bottom"
+import Card from "../../SharedComponents/Card/Card"
+import Button from "../../SharedComponents/Button/Button"
 
-function PlayersJoined() {
-	return (
-			<div className="bottom">
-					<div className="inner">
-						<div className="title">
-							<h1>Players Joined</h1>
-						</div>
-						<div className="playersList">
-							<ol>
-								<li>Yusuf</li>
-								<li>Salman</li>
-								<li>Joseph</li>
-								<li>Sal</li>
-								<li><input type="text" className="enterName" placeholder="Enter Name Here"/></li>
-							</ol>
-						</div>
-						<Button text = "Join Party" extraClasses="pushDown" />
-						<div className="title">
-							<h5>Need at least 1 more player to start game</h5>
-						</div>
-					</div>
-		</div>
-	);
+let players = [
+  "Yusuf",
+  "Salman",
+  "Joseph",
+  "Sal",
+  "Albert"
+]
+
+function PlayerList(props) {
+  return (
+    <div className={`playerList ${props.className}`}>
+      <ol>
+        { props.players.map((player => <li>{player}</li>)) }
+        <li><input type="text" className="enterName" placeholder="Enter Name Here"/></li>
+      </ol>
+    </div>
+  );
 }
 
-function InviteWithLink() {
-	return (
-		<div className="top">
-			<Card cardType="Link" link="abc123" />
-		</div>
-	);
+function Footer(props) {
+  let message;
+  if(props.players.length < 3) {
+    message = <h5>Need at least 3 players to Join</h5>
+  } 
+  else {
+    message = <h5>Ready to start Game!</h5>
+  }
+
+  return (
+    <div className="footer">
+      { message }
+    </div>
+  );
+
 }
 
 function StartGameScreen() {
     return (
-        <div className="screen">
-            <InviteWithLink />
-            <PlayersJoined />
-        </div>
+      <Screen>
+        <Top>
+          <Card cardType="Link" link="abc123" />
+        </Top>
+        <Bottom>
+          <Title text="Players Joined"/>
+          <PlayerList players={players} className="center"/>
+          <Button text = "Join Party" className="center" />
+          <Footer players={players}/>
+        </Bottom>
+      </Screen>
     );
 }
 

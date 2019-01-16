@@ -10,23 +10,8 @@
 
 .input {
     width: 100%;
-    margin:auto;
 }
 
 .enterCode {
-    text-align: left;
-}
-
-.pushDown {
-    margin-top: 20%;
-}
-
-/* Display bottom section with center padding */
-.bottom {
-    display: grid;
-    grid-template-columns: 20% auto 20%;
-}
-
-.inner {
-    grid-column: 2/3;
+    text-align: center;
 }

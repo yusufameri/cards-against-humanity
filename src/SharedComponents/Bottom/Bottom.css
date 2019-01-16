@@ -6,3 +6,11 @@
   background-color: white;
   position: relative;
 }
+
+.inner {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}

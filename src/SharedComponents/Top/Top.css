@@ -3,4 +3,5 @@
   height: 50%;
   background-color: #979797;
   z-index: 0;
+  overflow: hidden;
 }

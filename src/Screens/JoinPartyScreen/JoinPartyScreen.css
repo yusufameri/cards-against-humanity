@@ -1,37 +1,6 @@
 /* Main HomeScreen */
-.screen {
-    height: 100%;
-}
-
-.top {
-    width: 100%;
-    height: 50%;
-    background-color: #979797;
-    z-index: 0;
-}
-
-/* Bottom Half */
-.bottom {
-    width: 100%;
-    height: 50%;
-    z-index: 1;
-    background-color: white;
-    display: grid;
-    grid-template-columns: 15% auto 15%;
-    grid-template-rows: 5fr 1fr;
-    position: relative;
-}
-
-.inner {
-    grid-column: 2/3; 
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-row-gap: 15px;
-    height: inherit;
-}
-
 .title {
-    text-align: left;
+    text-align: center;
 }
 
 /* Input Form / Party Code */
@@ -41,8 +10,23 @@
 
 .input {
     width: 100%;
+    margin:auto;
+}
+
+.enterCode {
+    text-align: left;
 }
 
 .pushDown {
-    margin-top: 15px;
+    margin-top: 20%;
+}
+
+/* Display bottom section with center padding */
+.bottom {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+}
+
+.inner {
+    grid-column: 2/3;
 }

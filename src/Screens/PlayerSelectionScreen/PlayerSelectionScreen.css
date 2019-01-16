@@ -1,41 +1,8 @@
-.title {
-  text-align: center;
-}
-
-.scrolling-wrapper {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-}
-
-.card {
-  flex: 0 0 auto;
-  width: 88px;
-  height: 121px;
-  margin-right:11px;
-}
-
-.drop-space {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 20px;
-}
-
-.top {
-  /* padding: 5% 1% 1% 5%; */
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
-}
-
 .bottom {
+  /* Add box-sizing to prevent screen stretching horizontally */
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
   padding-left: 10px;
-  padding-right: 10px;
   padding-top: 30px;
 }

@@ -1,32 +1,37 @@
 import React from 'react'
-import { TopHome } from "../HomeScreen/TopHome"
-import Button from "../../SharedComponents/Button/Button"
 import "./JoinPartyScreen.css"
 
+import Screen from "../../SharedComponents/Screen/Screen"
+import Top from "../../SharedComponents/Top/Top"
+import Bottom from "../../SharedComponents/Bottom/Bottom"
+import Button from "../../SharedComponents/Button/Button"
+import Card from "../../SharedComponents/Card/Card"
 
 function EnterPartyCode() {
 	return (
-			<div className="bottom">
-					<div className="inner">
-						<div className="title">
-							<h1>Join an existing party</h1>
-						</div>
-						<div>
-							<p className="label">Enter the 5 digit Party Code</p>
-							<input className ="input" type="text" name="partyCode" placeholder="cah.co/<enter_party_code>"/>
-						</div>
-						<Button text = "Join Party" extraClasses="pushDown"/>
-					</div>
+		<div>
+			<div className="title">
+				<h1>Join an existing party</h1>
+			</div>
+			<div className="enterCode pushDown">
+				<p className="label">Enter the 5 digit Party Code</p>
+				<input className ="input" type="text" name="partyCode" placeholder="cah.co/<enter_party_code>"/>
+			</div>
+			<Button text = "Join Party" extraClasses="pushDown"/>
 		</div>
 	);
 }
 
 function JoinPartyScreen() {
     return (
-        <div className="screen">
-            <TopHome />
-            <EnterPartyCode />
-        </div>
+      <Screen>
+        <Top>
+          <Card cardType="Link" link="abc123" />
+        </Top>
+        <Bottom>
+          <EnterPartyCode />
+        </Bottom>
+      </Screen>
     );
 }
 

@@ -4,6 +4,11 @@ import "./Card.css"
 function Card(props) {
   if(props.cardType === "Q") {
     props.text.replace("_", "_____________");
+    return (
+      <div className={`card Q`}>
+        <p>{props.text}</p>
+      </div>
+    );
   }
 
   if(props.cardType === "Title") {

@@ -4,19 +4,20 @@ import Card from "../../SharedComponents/Card/Card"
 import Bottom from "../../SharedComponents/Bottom/Bottom"
 import Screen from "../../SharedComponents/Screen/Screen"
 import Top from "../../SharedComponents/Top/Top"
+import HeaderMenu from "../../SharedComponents/HeaderMenu/HeaderMenu"
 
 // Black Card
 let QCard = {
-  type: "Q",
-  text: "Some Clever statement/question",
+  cardType: "Q",
+  text: "Some Clever statement or question",
   id: 0
 }
 
 function DropCardSpace(props) {
   return (
     <div className="drop-space">
-      <Card text= "empty"/>
       <Card cardType= "placeholder"/>
+      <Card {...QCard}/>
     </div>
   );
 }
@@ -54,6 +55,7 @@ function PlayerSelectionScreen() {
   return (
     <Screen>
       <Top>
+        <HeaderMenu text="Yusuf is the Judge" timeLeft={49}/>
         <DropCardSpace qcard = {QCard}/>
       </Top>
       <Bottom>

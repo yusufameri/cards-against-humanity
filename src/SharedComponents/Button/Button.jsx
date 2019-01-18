@@ -2,10 +2,9 @@ import React from 'react'
 import "./Button.css"
 
 function Button(props) {
-  let extraClasses = `${props.extraClasses} menuButton`;
+  // let extraClasses = `${props.extraClasses} menuButton`;
   return (
-    
-    <div className={extraClasses}>
+    <div className={`menuButton ${props.className}`}>
       {props.text}
     </div>
   );

@@ -11,9 +11,18 @@
     word-wrap: break-word;
 }
 
+/* CardType specific styling below */
+
+.placeholder {
+    background-color: transparent;
+    border: 2px dashed #6F6F6F;
+    text-align: center;
+    position: relative;
+}
+
 .Title {
-    width: 60%;
-    height: 100%;
+    width: 240px;
+    height: 330px;
     background-color: black;
     color:  #F7F7F7; 
     line-height: .2;

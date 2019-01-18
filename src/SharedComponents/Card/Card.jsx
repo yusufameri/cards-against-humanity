@@ -4,6 +4,11 @@ import "./Card.css"
 function Card(props) {
   if(props.cardType === "Q") {
     props.text.replace("_", "_____________");
+    return (
+      <div className={`card Q`}>
+        <p>{props.text}</p>
+      </div>
+    );
   }
 
   if(props.cardType === "Title") {
@@ -12,6 +17,14 @@ function Card(props) {
         <h3>Cards</h3>
         <h3>Against</h3>
         <h3>Humanity</h3>
+      </div>
+    );
+  }
+
+  if(props.cardType === "placeholder") {
+    return (
+      <div className={`card placeholder`}>
+        Drop Card Here
       </div>
     );
   }
@@ -33,7 +46,7 @@ function Card(props) {
 
   else {
     return (
-      <div className={"Q"}>
+      <div className={"card A"}>
         <p>{props.text}</p>
       </div>
     );

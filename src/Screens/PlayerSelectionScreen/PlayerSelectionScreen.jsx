@@ -6,8 +6,8 @@ import Top from "../../SharedComponents/Top/Top"
 import HeaderMenu from "../../SharedComponents/HeaderMenu/HeaderMenu"
 import DropCardSpace from "../../SharedComponents/DropCardSpace/DropCardSpace"
 import Bottom from "../../SharedComponents/Bottom/Bottom"
-import Footer from "../../SharedComponents/Footer/Footer"
 import CardCarousel from "../../SharedComponents/CardCarousel/CardCarousel"
+import Footer from "../../SharedComponents/Footer/Footer"
 
 // Black Card
 let QCard = {
@@ -32,10 +32,49 @@ let cards = [
     type: "A",
     text: "Crippling debt.",
     id: 3
+  },
+  {
+    type: "A",
+    text: "Crippling debt.",
+    id: 3
+  },
+  {
+    type: "A",
+    text: "Crippling debt.",
+    id: 3
+  },
+  {
+    type: "A",
+    text: "Crippling debt.",
+    id: 3
+  },
+  {
+    type: "A",
+    text: "Crippling debt.",
+    id: 3
+  },
+  {
+    type: "A",
+    text: "Crippling debt.",
+    id: 3
+  },
+  {
+    type: "A",
+    text: "Crippling debt.",
+    id: 3
+  },
+  {
+    type: "A",
+    text: "Crippling debt.",
+    id: 3
   }
 ];
 
 let playerChoice = cards[2];
+
+function ChooseCard(id) {
+  
+}
 
 function Status(props) {
   return (
@@ -43,6 +82,36 @@ function Status(props) {
       <p>{props.message}</p>
     </div>
   );
+}
+
+let gameData ={
+  judge: "Yusuf",
+  timeRemaining: "49",
+  QCard: {
+    cardType: "Q",
+    text: "TSA guidelines now prohibit _ on airplanes.",
+    id: 0
+  },
+  WCards: [
+    {
+      type: "A",
+      text: "A disappointing birthday party.",
+      id: 1
+    },
+    {
+      type: "A",
+      text: "Steven Hawking talking dirty.",
+      id: 2
+    },
+    {
+      type: "A",
+      text: "Crippling debt.",
+      id: 3
+    }
+  ],
+  totalPlayers: 5,
+  cardsPlayed: 2,
+  partyCode: "abc123",
 }
 
 function PlayerSelectionScreen() {

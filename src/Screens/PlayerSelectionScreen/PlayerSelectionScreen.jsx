@@ -35,6 +35,8 @@ let cards = [
   }
 ];
 
+let playerChoice = cards[2];
+
 function Status(props) {
   return (
     <div className={`statusModal center ${props.className}`}>
@@ -48,7 +50,7 @@ function PlayerSelectionScreen() {
     <Screen>
       <Top>
         <HeaderMenu text="Yusuf is the Judge" timeLeft={49}/>
-        <DropCardSpace QCard = {QCard} playerChoice = {cards[0]} status="Waiting for 2/5 Players"/>
+        <DropCardSpace QCard = {QCard} playerChoice = {playerChoice} status="Waiting for 2/5 Players"/>
       </Top>
       <Bottom>
         <Status message = "Choose 1 Card"/>

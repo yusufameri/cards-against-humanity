@@ -6,7 +6,7 @@ function CardCarousel(props) {
   return (
     <div className="scrolling-wrapper">
       {
-        props.cards.map((card) => <Card text={card.text}/>)
+        props.cards.map((card) => <Card text={card.text} key={card.id}/>)
       }
     </div>
   );

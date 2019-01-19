@@ -16,7 +16,3 @@ import './normalize.css'
 
 import PlayerSelectionScreen from './Screens/PlayerSelectionScreen/PlayerSelectionScreen'
 ReactDOM.render(<PlayerSelectionScreen />, document.getElementById('root'));
-
-// TODO
-// import CzarWaitingScreen from "./Screens/CzarWaitingScreen/CzarWaitingScreen"
-// ReactDOM.render(<CzarWaitingScreen />, document.getElementById('root'));

@@ -37,7 +37,7 @@ let cards = [
 
 function Status(props) {
   return (
-    <div className={`statusModal ${props.className}`}>
+    <div className={`statusModal center ${props.className}`}>
       <p>{props.message}</p>
     </div>
   );
@@ -51,7 +51,7 @@ function PlayerSelectionScreen() {
         <DropCardSpace QCard = {QCard} playerChoice = {cards[0]} status="Waiting for 2/5 Players"/>
       </Top>
       <Bottom>
-        <Status message = "Waiting for other Players" className="center"/>
+        <Status message = "Waiting for other Players"/>
         <CardCarousel cards = {cards}/>
         <Footer>
           Invite your friends with Party Code: abc123

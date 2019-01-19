@@ -12,7 +12,7 @@ import CardCarousel from "../../SharedComponents/CardCarousel/CardCarousel"
 // Black Card
 let QCard = {
   cardType: "Q",
-  text: "Some Funny Statement ____________",
+  text: "TSA guidelines now prohibit _ on airplanes.",
   id: 0
 }
 
@@ -20,17 +20,17 @@ let QCard = {
 let cards = [
   {
     type: "A",
-    text: "baba jan",
+    text: "A disappointing birthday party.",
     id: 1
   },
   {
     type: "A",
-    text: "nasim nadia with a lot of words yaa",
+    text: "Steven Hawking talking dirty.",
     id: 2
   },
   {
     type: "A",
-    text: "milad",
+    text: "Crippling debt.",
     id: 3
   }
 ];
@@ -51,7 +51,7 @@ function PlayerSelectionScreen() {
         <DropCardSpace QCard = {QCard} playerChoice = {cards[0]} status="Waiting for 2/5 Players"/>
       </Top>
       <Bottom>
-        <Status message = "Waiting for other Players"/>
+        <Status message = "Choose 1 Card"/>
         <CardCarousel cards = {cards}/>
         <Footer>
           Invite your friends with Party Code: abc123

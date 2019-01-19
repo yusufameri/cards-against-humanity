@@ -6,7 +6,7 @@ function Card(props) {
     return (
       <div>
         <div className={`card Q ${props.className}`}>
-          <p>{props.text}</p>
+          <p>{props.text.replace("_", "__________")}</p>
         </div>
         {
           props.status && 

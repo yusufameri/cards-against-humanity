@@ -9,17 +9,23 @@
     font-size: 22px;
     cursor: pointer;
     word-wrap: break-word;
+    position: relative;
+    z-index: 1;
 }
 
 /* CardType specific styling below */
 
+/* Placeholder cards */
 .placeholder {
     background-color: transparent;
-    border: 2px dashed #6F6F6F;
+    border: 3px dashed #6F6F6F;
+    color: #6F6F6F;
     text-align: center;
     position: relative;
+    line-height: 220px;
 }
 
+/* Black Title Cards */
 .Title {
     width: 240px;
     height: 330px;
@@ -29,9 +35,7 @@
     margin-left: 15%;
     margin-top: 20%;
     display: inline-block;
-    z-index: -1;
     font-size: 26px;
-    /* offset-x | offset-y | color */
     box-shadow: -20px 8px 2px 0px rgba(0,0,0,.5);
     border: 0px;
     opacity: 50%;
@@ -39,11 +43,19 @@
     padding-top: 15px;
 }
 
+/* Link inside of a Title Card */
+.Title a {
+    font-size: 25px;
+    color: white;
+}
+
+/* Question (Black) Cards */
 .Q {
     background-color: black;
     color:  #F7F7F7;
 }
 
+/* Answer (White) Cards) */
 .A {
     background-color: #F7F7F7;
     color: black;
@@ -51,4 +63,17 @@
 
 .link {
     margin-top: 40%;
+}
+
+/* Styles for adding Status modal to a black card*/
+.status {
+    background: white;
+    border-radius: 0 0 8px 8px;
+    margin-top: -11px;
+    height: 35px;
+    line-height: 45px;
+    text-align: center;
+    border: 1px solid #979797;
+    z-index: 0;
+    position: relative;
 }

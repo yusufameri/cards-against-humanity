@@ -7,6 +7,7 @@ import Title from "../../SharedComponents/Title/Title"
 import Bottom from "../../SharedComponents/Bottom/Bottom"
 import Card from "../../SharedComponents/Card/Card"
 import Button from "../../SharedComponents/Button/Button"
+import Footer from "../../SharedComponents/Footer/Footer"
 
 let players = [
   "Yusuf",
@@ -18,30 +19,13 @@ let players = [
 
 function PlayerList(props) {
   return (
-    <div className={`playerList ${props.className}`}>
+    <div className={`${props.className}`}>
       <ol>
         { props.players.map((player => <li>{player}</li>)) }
         <li><input type="text" className="enterName" placeholder="Enter Name Here"/></li>
       </ol>
     </div>
   );
-}
-
-function Footer(props) {
-  let message;
-  if(props.players.length < 3) {
-    message = <h5>Need at least 3 players to Join</h5>
-  } 
-  else {
-    message = <h5>Ready to start Game!</h5>
-  }
-
-  return (
-    <div className="footer">
-      { message }
-    </div>
-  );
-
 }
 
 function StartGameScreen() {
@@ -54,7 +38,9 @@ function StartGameScreen() {
           <Title text="Players Joined"/>
           <PlayerList players={players} className="center"/>
           <Button text = "Join Party" className="center" />
-          <Footer players={players}/>
+          <Footer> 
+            {players.length < 3 ? "Need at least 3 players to Join" : "Ready to start Game!"}
+          </Footer>
         </Bottom>
       </Screen>
     );

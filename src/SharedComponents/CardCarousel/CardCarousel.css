@@ -4,7 +4,7 @@
     overflow-x: auto;
 }
 
-.card {
+.scrolling-wrapper > .card {
   flex: 0 0 auto;
   margin-right: 11px;
 }

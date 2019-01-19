@@ -1,14 +1,14 @@
 /* Bottom Half */
 .bottom {
   width: 100%;
-  height: 50%;
+  height: 45%;
   z-index: 1;
   background-color: white;
   position: relative;
 }
 
 .inner {
-  padding: 0px 20px;
+  padding: 0px 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

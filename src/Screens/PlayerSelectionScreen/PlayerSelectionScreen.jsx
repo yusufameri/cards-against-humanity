@@ -6,12 +6,13 @@ import Top from "../../SharedComponents/Top/Top"
 import HeaderMenu from "../../SharedComponents/HeaderMenu/HeaderMenu"
 import DropCardSpace from "../../SharedComponents/DropCardSpace/DropCardSpace"
 import Bottom from "../../SharedComponents/Bottom/Bottom"
+import Footer from "../../SharedComponents/Footer/Footer"
 import CardCarousel from "../../SharedComponents/CardCarousel/CardCarousel"
 
 // Black Card
 let QCard = {
   cardType: "Q",
-  text: "Some Clever statement or question",
+  text: "TSA guidelines now prohibit _ on airplanes.",
   id: 0
 }
 
@@ -19,30 +20,42 @@ let QCard = {
 let cards = [
   {
     type: "A",
-    text: "baba jan",
+    text: "A disappointing birthday party.",
     id: 1
   },
   {
     type: "A",
-    text: "nasim nadia with a lot of words yaa",
+    text: "Steven Hawking talking dirty.",
     id: 2
   },
   {
     type: "A",
-    text: "milad",
+    text: "Crippling debt.",
     id: 3
   }
 ];
+
+function Status(props) {
+  return (
+    <div className={`statusModal center ${props.className}`}>
+      <p>{props.message}</p>
+    </div>
+  );
+}
 
 function PlayerSelectionScreen() {
   return (
     <Screen>
       <Top>
         <HeaderMenu text="Yusuf is the Judge" timeLeft={49}/>
-        <DropCardSpace QCard = {QCard}/>
+        <DropCardSpace QCard = {QCard} playerChoice = {cards[0]} status="Waiting for 2/5 Players"/>
       </Top>
       <Bottom>
-        <CardCarousel cards ={cards}/>
+        <Status message = "Choose 1 Card"/>
+        <CardCarousel cards = {cards}/>
+        <Footer>
+          Invite your friends with Party Code: abc123
+        </Footer>
       </Bottom>
     </Screen>
   );

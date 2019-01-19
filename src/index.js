@@ -18,11 +18,5 @@ import PlayerSelectionScreen from './Screens/PlayerSelectionScreen/PlayerSelecti
 ReactDOM.render(<PlayerSelectionScreen />, document.getElementById('root'));
 
 // TODO
-// import PlayerWaitingScreen from "./Screens/PlayerWaitingScreen/PlayerWaitingScreen"
-// ReactDOM.render(<PlayerWaitingScreen />, document.getElementById('root'));
-
 // import CzarWaitingScreen from "./Screens/CzarWaitingScreen/CzarWaitingScreen"
 // ReactDOM.render(<CzarWaitingScreen />, document.getElementById('root'));
-
-
-

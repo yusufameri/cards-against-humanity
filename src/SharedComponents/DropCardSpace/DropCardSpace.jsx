@@ -5,8 +5,8 @@ import Card from "../Card/Card"
 function DropCardSpace(props) {
   return (
     <div className="drop-space">
-      <Card cardType= "placeholder"/>
-      <Card {...props.QCard}/>
+      {props.playerChoice && <Card cardType= "placeholder"/>}
+      <Card {...props.QCard} status={props.status}/>
     </div>
   );
 }

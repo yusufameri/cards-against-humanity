@@ -7,6 +7,7 @@ import Title from "../../SharedComponents/Title/Title"
 import Card from "../../SharedComponents/Card/Card"
 import Screen from "../../SharedComponents/Screen/Screen"
 import Bottom from "../../SharedComponents/Bottom/Bottom"
+import Footer from "../../SharedComponents/Footer/Footer"
 
 function Or() {
   return (
@@ -29,9 +30,9 @@ function HomeScreen() {
           <Button text="Join Party" className="center"/>
           <Or />
           <Button text="Create Game" className="center"/>
-          <div className="footer">
+          <Footer>
             Like us on <a href="http://www.facebook.com/yusufameri"> Facebook!</a>
-          </div>
+          </Footer>
       </Bottom>
     </Screen>
   );

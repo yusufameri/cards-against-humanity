@@ -2,51 +2,54 @@ import React from 'react'
 import "./Card.css"
 
 function Card(props) {
-  if(props.cardType === "Q") {
-    props.text.replace("_", "_____________");
+  if (props.cardType === "Q") {
     return (
-      <div className={`card Q`}>
-        <p>{props.text}</p>
+      <div>
+        <div className={`card Q ${props.className}`}>
+          <p>{props.text}</p>
+        </div>
+        {
+          props.status && 
+          <div className={`status ${props.className}`}>
+            <span>{props.status}</span>
+          </div>
+        }
       </div>
     );
   }
-
-  if(props.cardType === "Title") {
+  else if (props.cardType === "Title") {
     return (
-      <div className={`card Title`}>
+      <div className={`card Title ${props.className}`}>
         <h3>Cards</h3>
         <h3>Against</h3>
         <h3>Humanity</h3>
       </div>
     );
   }
-
-  if(props.cardType === "placeholder") {
+  else if (props.cardType === "placeholder") {
     return (
-      <div className={`card placeholder`}>
+      <div className={`card placeholder ${props.className}`}>
         Drop Card Here
       </div>
     );
   }
-
-  else if(props.cardType === "Link") {
+  else if (props.cardType === "Link") {
     return (
-      <div className={`card Title Link`}>
+      <div className={`card Title Link ${props.className}`}>
         <h3>Invite</h3>
         <h3>Friends</h3>
         <h3>with Link</h3>
         <h6 className="link">
-          <a href={`cardiparty.com/${props.link}`}>
-            {`cardiparty.com/${props.link}`}
+          <a href={`cah.com/${props.link}`}>
+            {`cah.com/${props.link}`}
           </a>
         </h6>
       </div>
     )
   }
-
   else {
     return (
-      <div className={"card A"}>
+      <div className={`card A ${props.className}`}>
         <p>{props.text}</p>
       </div>
     );

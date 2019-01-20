@@ -23,7 +23,7 @@ function JoinPartyScreen() {
 					</div>
 					<Button text = "Join Party" className="center"/>
           <Footer>
-            Like us on Facebook
+            Like us on <a href="http://www.facebook.com/yusufameri"> Facebook!</a>
           </Footer>
         </Bottom>
       </Screen>

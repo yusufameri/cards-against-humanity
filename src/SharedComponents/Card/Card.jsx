@@ -51,7 +51,6 @@ function Card(props) {
     return (
       <div className={`card A ${props.className}`} onClick={props.onClick && ((e) => props.onClick(props.id))}>
         <p>{props.text}</p>
-        <p>{props.id}</p>
       </div>
     );
   }

@@ -13,7 +13,7 @@ function JoinPartyScreen() {
     return (
       <Screen>
         <Top>
-          <Card cardType="Link" link="abc123" />
+          <Card cardType="Title" />
         </Top>
         <Bottom>
           <Title text="Join an existing party"/>

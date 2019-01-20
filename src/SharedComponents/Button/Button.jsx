@@ -1,12 +1,15 @@
 import React from 'react'
 import "./Button.css"
+// Routing
+import {Link} from "react-router-dom";
 
 function Button(props) {
-  // let extraClasses = `${props.extraClasses} menuButton`;
   return (
-    <div className={`menuButton ${props.className}`}>
-      {props.text}
-    </div>
+    <Link to={props.link ? props.link : "/404"} className={`${props.className}`}>
+      <button type="button" className={`menuButton`}>
+          {props.text}
+      </button>
+    </Link>
   );
 }
 

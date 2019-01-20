@@ -28,11 +28,11 @@ function PlayerList(props) {
   );
 }
 
-function StartGameScreen() {
+function StartGameScreen(props) {
     return (
       <Screen>
         <Top>
-          <Card cardType="Link" link="abc123" />
+          <Card cardType="Link" link={props.match.params.partyCode} />
         </Top>
         <Bottom>
           <Title text="Players Joined"/>

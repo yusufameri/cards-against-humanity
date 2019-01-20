@@ -26,13 +26,13 @@ function HomeScreen() {
         <Card cardType="Title" text="Cards Against Humanity" />
       </Top>
       <Bottom>
-          <Title text="A party game for horrible people"/>
-          <Button text="Join Party" className="center"/>
-          <Or />
-          <Button text="Create Game" className="center"/>
-          <Footer>
-            Like us on <a href="http://www.facebook.com/yusufameri"> Facebook!</a>
-          </Footer>
+        <Title text="A party game for horrible people"/>
+        <Button text="Join Party" className="center" link="/join-party"/>
+        <Or />
+        <Button text="Create Game" className="center" link="gameplay"/>
+        <Footer>
+          Like us on <a href="http://www.facebook.com/yusufameri"> Facebook!</a>
+        </Footer>
       </Bottom>
     </Screen>
   );

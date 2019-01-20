@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import './normalize.css'
+import App from './App'
 
+// import { HashRouter, Route } from "react-router-dom";
 // Done
 
 // import HomeScreen from "./Screens/HomeScreen/HomeScreen"
@@ -14,5 +16,6 @@ import './normalize.css'
 // import StartGameScreen from "./Screens/StartGameScreen/StartGameScreen"
 // ReactDOM.render(<StartGameScreen />, document.getElementById('root'));
 
-import PlayerSelectionScreen from './Screens/PlayerSelectionScreen/PlayerSelectionScreen'
-ReactDOM.render(<PlayerSelectionScreen />, document.getElementById('root'));
+// import PlayerSelectionScreen from './Screens/PlayerSelectionScreen/PlayerSelectionScreen'
+
+ReactDOM.render(<App/>, document.getElementById('root'));

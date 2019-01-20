@@ -11,3 +11,7 @@ li {
 .enterName {
     border: none;
 }
+
+.inner {
+    justify-content: space-around;
+}

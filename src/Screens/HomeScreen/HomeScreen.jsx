@@ -1,5 +1,4 @@
 import React from 'react'
-import "./HomeScreen.css"
 
 import Button from "../../SharedComponents/Button/Button"
 import Top from "../../SharedComponents/Top/Top"
@@ -8,6 +7,7 @@ import Card from "../../SharedComponents/Card/Card"
 import Screen from "../../SharedComponents/Screen/Screen"
 import Bottom from "../../SharedComponents/Bottom/Bottom"
 import Footer from "../../SharedComponents/Footer/Footer"
+import "./HomeScreen.css"
 
 function Or() {
   return (

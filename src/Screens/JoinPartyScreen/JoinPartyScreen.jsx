@@ -1,5 +1,4 @@
 import React from 'react'
-import "./JoinPartyScreen.css"
 
 import Screen from "../../SharedComponents/Screen/Screen"
 import Top from "../../SharedComponents/Top/Top"
@@ -7,12 +6,14 @@ import Title from "../../SharedComponents/Title/Title"
 import Bottom from "../../SharedComponents/Bottom/Bottom"
 import Button from "../../SharedComponents/Button/Button"
 import Card from "../../SharedComponents/Card/Card"
+import Footer from "../../SharedComponents/Footer/Footer"
+import "./JoinPartyScreen.css"
 
 function JoinPartyScreen() {
     return (
       <Screen>
         <Top>
-          <Card cardType="Link" link="abc123" />
+          <Card cardType="Title" />
         </Top>
         <Bottom>
           <Title text="Join an existing party"/>
@@ -21,6 +22,9 @@ function JoinPartyScreen() {
 						<input className ="input" type="text" name="partyCode" placeholder="cah.co/<enter_party_code>"/>
 					</div>
 					<Button text = "Join Party" className="center"/>
+          <Footer>
+            Like us on <a href="http://www.facebook.com/yusufameri"> Facebook!</a>
+          </Footer>
         </Bottom>
       </Screen>
     );

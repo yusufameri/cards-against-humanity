@@ -1,5 +1,4 @@
 import React from 'react'
-import "./StartGameScreen.css"
 
 import Screen from "../../SharedComponents/Screen/Screen"
 import Top from "../../SharedComponents/Top/Top"
@@ -8,6 +7,7 @@ import Bottom from "../../SharedComponents/Bottom/Bottom"
 import Card from "../../SharedComponents/Card/Card"
 import Button from "../../SharedComponents/Button/Button"
 import Footer from "../../SharedComponents/Footer/Footer"
+import "./StartGameScreen.css"
 
 let players = [
   "Yusuf",

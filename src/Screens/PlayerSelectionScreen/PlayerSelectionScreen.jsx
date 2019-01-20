@@ -1,64 +1,147 @@
 import React from 'react'
 import "./PlayerSelectionScreen.css"
 
+// Import SharedComponents
 import Screen from "../../SharedComponents/Screen/Screen"
 import Top from "../../SharedComponents/Top/Top"
 import HeaderMenu from "../../SharedComponents/HeaderMenu/HeaderMenu"
 import DropCardSpace from "../../SharedComponents/DropCardSpace/DropCardSpace"
 import Bottom from "../../SharedComponents/Bottom/Bottom"
-import Footer from "../../SharedComponents/Footer/Footer"
 import CardCarousel from "../../SharedComponents/CardCarousel/CardCarousel"
+import Footer from "../../SharedComponents/Footer/Footer"
+import Status from "../../SharedComponents/Status/Status"
 
-// Black Card
-let QCard = {
-  cardType: "Q",
-  text: "TSA guidelines now prohibit _ on airplanes.",
-  id: 0
-}
+// Import Helper Libraries
+import _ from "lodash"
 
-// Mocking cards data to demo usage in props...
-let cards = [
-  {
-    type: "A",
-    text: "A disappointing birthday party.",
-    id: 1
-  },
-  {
-    type: "A",
-    text: "Steven Hawking talking dirty.",
-    id: 2
-  },
-  {
-    type: "A",
-    text: "Crippling debt.",
-    id: 3
+class PlayerSelectionScreen extends React.Component {
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      playerChoice: null,
+      timeLeft: 60,
+      QCard: {
+        cardType: "Q",
+        text: "TSA guidelines now prohibit _ on airplanes.",
+        id: 0
+      },
+      cards: [
+        {
+          type: "A",
+          text: "A disappointing birthday party.",
+          id: 0
+        },
+        {
+          type: "A",
+          text: "The terrorists.",
+          id: 1
+        },
+        {
+          type: "A",
+          text: "Steven Hawking talking dirty.",
+          id: 2
+        },
+        {
+          type: "A",
+          text: "Asians who aren't good at math.",
+          id: 3
+        },
+        {
+          type: "A",
+          text: "The Chinese gymnastics team.",
+          id: 4
+        },
+        {
+          type: "A",
+          text: "Police brutality.",
+          id: 5
+        },
+        {
+          type: "A",
+          text: "Hot people.",
+          id: 6
+        },
+        {
+          type: "A",
+          text: "Kanye West.",
+          id: 7
+        },
+        {
+          type: "A",
+          text: "The true meaning of Christmas.",
+          id: 8
+        },
+        {
+          type: "A",
+          text: "An honest cop with nothing left to lose.",
+          id: 9
+        }
+      ]
+    }
+
+    this.chooseCard = this.chooseCard.bind(this);
   }
-];
 
-function Status(props) {
-  return (
-    <div className={`statusModal center ${props.className}`}>
-      <p>{props.message}</p>
-    </div>
-  );
-}
+  componentDidMount() {
+    // timer counts down by 1 second then alerts that time is up!
+    setInterval(() => {
+      if(this.state.timeLeft < 1) {
+        this.setState({timeLeft: 60});
+        alert("times up!")
+      }
+      else {
+        this.setState((state, props) => ({
+          timeLeft: state.timeLeft - 1
+        }));
+      }
+    }, 1000);
+  }
 
-function PlayerSelectionScreen() {
-  return (
-    <Screen>
-      <Top>
-        <HeaderMenu text="Yusuf is the Judge" timeLeft={49}/>
-        <DropCardSpace QCard = {QCard} playerChoice = {cards[0]} status="Waiting for 2/5 Players"/>
-      </Top>
-      <Bottom>
-        <Status message = "Choose 1 Card"/>
-        <CardCarousel cards = {cards}/>
-        <Footer>
-          Invite your friends with Party Code: abc123
-        </Footer>
-      </Bottom>
-    </Screen>
-  );
+  // Choose the card with given ID to be in the placeholder (DropcCardSpace),
+  // if a card is already choosen and we chooseCard again, then the card is swapped.
+  chooseCard(id) {
+    console.log(`${id} was clicked!`);
+    
+    let newCards = this.state.cards;
+    if(this.state.playerChoice) {
+      newCards.unshift(this.state.playerChoice)
+    }
+    // console.log(`newCards = ${newCards.map(c => c.id)}`)
+
+    // remove the card we just selected
+    let newPlayerChoice = _.find(newCards, card => { return card.id === id });
+    // console.log(`new playerChoice = ${newPlayerChoice}`)
+    
+    _.remove(newCards, (card) => {
+      return card.id === id
+    });
+    // console.log(`removing card with id: ${id}`)
+    // console.log(`newCards after removal = ${newCards.map(c => c.id)}`)
+
+    this.setState({
+      playerChoice: newPlayerChoice,
+      cards: newCards
+    });
+  }
+  
+  render() {
+    return (
+      <Screen>
+        <Top>
+          <HeaderMenu text="Yusuf is the Judge" timeLeft={this.state.timeLeft} />
+          <DropCardSpace QCard={this.state.QCard} playerChoice={this.state.playerChoice} status="Waiting for 2/5 Players" />
+        </Top>
+        <Bottom>
+          <Status message="Choose 1 Card" />
+          <CardCarousel cards={this.state.cards} onClick={this.chooseCard}/>
+          <Footer>
+            Invite your friends with Party Code: abc123
+          </Footer>
+        </Bottom>
+      </Screen>
+    );
+  }
 }
 
 export default PlayerSelectionScreen;

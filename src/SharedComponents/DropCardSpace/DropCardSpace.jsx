@@ -1,12 +1,12 @@
 import React from 'react'
-import "./DropCardSpace.css"
 import Card from "../Card/Card"
+import "./DropCardSpace.css"
 
 function DropCardSpace(props) {
   return (
     <div className="drop-space">
-      {props.playerChoice && <Card cardType= "placeholder"/>}
       <Card {...props.QCard} status={props.status}/>
+      {(props.playerChoice && <Card {...props.playerChoice}/>) || <Card cardType= "placeholder"/>}
     </div>
   );
 }

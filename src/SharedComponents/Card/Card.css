@@ -27,20 +27,26 @@
 
 /* Black Title Cards */
 .Title {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
     width: 240px;
     height: 330px;
     background-color: black;
     color:  #F7F7F7; 
     line-height: .2;
-    margin-left: 15%;
-    margin-top: 20%;
-    display: inline-block;
+    margin-top: 20px;
     font-size: 26px;
     box-shadow: -20px 8px 2px 0px rgba(0,0,0,.5);
     border: 0px;
     opacity: 50%;
     padding-left: 25px;
-    padding-top: 15px;
+    padding-top: 40px;
+}
+
+.Title h3 {
+    margin-top: 0;
 }
 
 /* Link inside of a Title Card */

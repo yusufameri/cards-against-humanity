@@ -20,7 +20,7 @@ function Card(props) {
   else if (props.cardType === "Title") {
     return (
       <div className={`card Title ${props.className}`}>
-        <h3>Cards</h3>
+        <h3>Cards</h3> 
         <h3>Against</h3>
         <h3>Humanity</h3>
       </div>
@@ -49,7 +49,7 @@ function Card(props) {
   }
   else {
     return (
-      <div className={`card A ${props.className}`}>
+      <div className={`card A ${props.className}`} onClick={props.onClick && ((e) => props.onClick(props.id))}>
         <p>{props.text}</p>
       </div>
     );

@@ -2,14 +2,14 @@ import React from 'react'
 import "./PlayerSelectionScreen.css"
 
 // Import SharedComponents
-import Screen from "../../SharedComponents/Screen/Screen"
-import Top from "../../SharedComponents/Top/Top"
-import HeaderMenu from "../../SharedComponents/HeaderMenu/HeaderMenu"
-import DropCardSpace from "../../SharedComponents/DropCardSpace/DropCardSpace"
-import Bottom from "../../SharedComponents/Bottom/Bottom"
-import CardCarousel from "../../SharedComponents/CardCarousel/CardCarousel"
-import Footer from "../../SharedComponents/Footer/Footer"
-import Status from "../../SharedComponents/Status/Status"
+import Screen from "../../components/Screen/Screen"
+import Top from "../../components/Top/Top"
+import HeaderMenu from "../../components/HeaderMenu/HeaderMenu"
+import DropCardSpace from "../../components/DropCardSpace/DropCardSpace"
+import Bottom from "../../components/Bottom/Bottom"
+import CardCarousel from "../../components/CardCarousel/CardCarousel"
+import Footer from "../../components/Footer/Footer"
+import Status from "../../components/Status/Status"
 
 // Import Helper Libraries
 import _ from "lodash"

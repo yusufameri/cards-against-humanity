@@ -1,12 +1,12 @@
 import React from 'react'
 
-import Screen from "../../SharedComponents/Screen/Screen"
-import Top from "../../SharedComponents/Top/Top"
-import Title from "../../SharedComponents/Title/Title"
-import Bottom from "../../SharedComponents/Bottom/Bottom"
-import Button from "../../SharedComponents/Button/Button"
-import Card from "../../SharedComponents/Card/Card"
-import Footer from "../../SharedComponents/Footer/Footer"
+import Screen from "../../components/Screen/Screen"
+import Top from "../../components/Top/Top"
+import Title from "../../components/Title/Title"
+import Bottom from "../../components/Bottom/Bottom"
+import Button from "../../components/Button/Button"
+import Card from "../../components/Card/Card"
+import Footer from "../../components/Footer/Footer"
 import "./JoinPartyScreen.css"
 
 class JoinPartyScreen extends React.Component {
@@ -19,8 +19,6 @@ class JoinPartyScreen extends React.Component {
     }
 
     updatePartyCode(e) {
-      // console.log(`updatePartyCode, ${e.target.value}`);
-      
       this.setState({
         partyCode: e.target.value
       })

@@ -2,14 +2,14 @@ import React from 'react'
 import "./PlayerSelectionScreen.css"
 
 // Import SharedComponents
-import Screen from "../../SharedComponents/Screen/Screen"
-import Top from "../../SharedComponents/Top/Top"
-import HeaderMenu from "../../SharedComponents/HeaderMenu/HeaderMenu"
-import DropCardSpace from "../../SharedComponents/DropCardSpace/DropCardSpace"
-import Bottom from "../../SharedComponents/Bottom/Bottom"
-import CardCarousel from "../../SharedComponents/CardCarousel/CardCarousel"
-import Footer from "../../SharedComponents/Footer/Footer"
-import Status from "../../SharedComponents/Status/Status"
+import Screen from "../../components/Screen/Screen"
+import Top from "../../components/Top/Top"
+import HeaderMenu from "../../components/HeaderMenu/HeaderMenu"
+import DropCardSpace from "../../components/DropCardSpace/DropCardSpace"
+import Bottom from "../../components/Bottom/Bottom"
+import CardCarousel from "../../components/CardCarousel/CardCarousel"
+import Footer from "../../components/Footer/Footer"
+import Status from "../../components/Status/Status"
 
 // Import Helper Libraries
 import _ from "lodash"
@@ -84,8 +84,9 @@ class PlayerSelectionScreen extends React.Component {
   }
 
   componentDidMount() {
+    console.log("PlayerSelectionScreen: componentDidMount()")
     // timer counts down by 1 second then alerts that time is up!
-    setInterval(() => {
+    let intervalID = setInterval(() => {
       if(this.state.timeLeft < 1) {
         this.setState({timeLeft: 60});
         alert("times up!")
@@ -96,6 +97,13 @@ class PlayerSelectionScreen extends React.Component {
         }));
       }
     }, 1000);
+
+    this.setState({intervalID});
+  }
+
+  componentWillUnmount() {
+    console.log("PlayerSelectionScreen: componentWillUnmount()")
+    clearInterval(this.state.intervalID);
   }
 
   // Choose the card with given ID to be in the placeholder (DropcCardSpace),
@@ -136,7 +144,7 @@ class PlayerSelectionScreen extends React.Component {
           <Status message="Choose 1 Card" />
           <CardCarousel cards={this.state.cards} onClick={this.chooseCard}/>
           <Footer>
-            Invite your friends with Party Code: abc123
+            Invite your friends with Party Code: {this.props.match.params.partyCode}
           </Footer>
         </Bottom>
       </Screen>

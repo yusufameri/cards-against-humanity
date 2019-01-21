@@ -39,10 +39,10 @@ function Card(props) {
       <div className={`card Title Link ${props.className}`}>
         <h3>Invite</h3>
         <h3>Friends</h3>
-        <h3>with Link</h3>
+        <h3>with party code:</h3>
         <h6 className="link">
           <Link to={props.link}>
-            {`Party Code: ${props.link}`}
+            {`${props.link}`}
           </Link>
         </h6>
       </div>

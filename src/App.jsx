@@ -22,7 +22,7 @@ function App() {
           render={(props) => <JoinPartyScreen {...props} isAuthed={true} />} 
         />
         <Route
-          exact path='/gameplay'
+          exact path='/gameplay/:partyCode'
           component={PlayerSelectionScreen} 
         />
       </Screen>

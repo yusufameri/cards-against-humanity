@@ -42,7 +42,7 @@ function Card(props) {
         <h3>with Link</h3>
         <h6 className="link">
           <Link to={props.link}>
-            {`cah.com/game/${props.link}`}
+            {`Party Code: ${props.link}`}
           </Link>
         </h6>
       </div>

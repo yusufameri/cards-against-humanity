@@ -144,7 +144,7 @@ class PlayerSelectionScreen extends React.Component {
           <Status message="Choose 1 Card" />
           <CardCarousel cards={this.state.cards} onClick={this.chooseCard}/>
           <Footer>
-            Invite your friends with Party Code: abc123
+            Invite your friends with Party Code: {this.props.match.params.partyCode}
           </Footer>
         </Bottom>
       </Screen>

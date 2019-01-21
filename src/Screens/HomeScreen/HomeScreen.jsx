@@ -19,6 +19,15 @@ function Or() {
   );
 }
 
+function CreateGame() {
+  // TODO: call backend api to create a game and return the party code,
+  // mocking the response for now...
+  let partyCodeFromServer = Math.random().toString(36).slice(2).substring(5);
+  console.log(`partyCodeFromServer ${partyCodeFromServer}`);
+  
+  return partyCodeFromServer;
+}
+
 function HomeScreen() {
   return (
     <Screen>
@@ -29,7 +38,7 @@ function HomeScreen() {
         <Title text="A party game for horrible people"/>
         <Button text="Join Party" className="center" link="/join-party"/>
         <Or />
-        <Button text="Create Game" className="center" link="/gameplay"/>
+        <Button text="Create Game" className="center" link={`game/${CreateGame()}`}/>
         <Footer>
           Like us on <a href="http://www.facebook.com/yusufameri"> Facebook!</a>
         </Footer>

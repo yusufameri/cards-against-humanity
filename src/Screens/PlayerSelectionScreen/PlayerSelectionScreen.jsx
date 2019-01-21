@@ -84,8 +84,9 @@ class PlayerSelectionScreen extends React.Component {
   }
 
   componentDidMount() {
+    console.log("PlayerSelectionScreen: componentDidMount()")
     // timer counts down by 1 second then alerts that time is up!
-    setInterval(() => {
+    let intervalID = setInterval(() => {
       if(this.state.timeLeft < 1) {
         this.setState({timeLeft: 60});
         alert("times up!")
@@ -96,6 +97,13 @@ class PlayerSelectionScreen extends React.Component {
         }));
       }
     }, 1000);
+
+    this.setState({intervalID});
+  }
+
+  componentWillUnmount() {
+    console.log("PlayerSelectionScreen: componentWillUnmount()")
+    clearInterval(this.state.intervalID);
   }
 
   // Choose the card with given ID to be in the placeholder (DropcCardSpace),

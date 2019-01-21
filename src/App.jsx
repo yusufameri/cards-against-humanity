@@ -15,16 +15,14 @@ function App() {
         <Route
           exact path='/game/:partyCode' // need to add regex to this partyCode
           // access the route param via => props.match.params.partyCode
-          render={(props) => <StartGameScreen {...props} isAuthed={true} />} 
+          render={(props) => <StartGameScreen {...props}  />} 
         />
         <Route
-          exact path='/join-party' // need to add regex to this partyCode
-          // access the route param via => props.match.params.partyCode
-          render={(props) => <JoinPartyScreen {...props} />} 
+          exact path='/join-party' // you can add additional props like below...
+          render={(props) => <JoinPartyScreen {...props} isAuthed={true} />} 
         />
         <Route
-          exact path='/gameplay' // need to add regex to this partyCode
-          // access the route param via => props.match.params.partyCode
+          exact path='/gameplay'
           component={PlayerSelectionScreen} 
         />
       </Screen>

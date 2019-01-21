@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Card.css"
+import {Link} from "react-router-dom";
 
 function Card(props) {
   if (props.cardType === "Q") {
@@ -40,9 +41,9 @@ function Card(props) {
         <h3>Friends</h3>
         <h3>with Link</h3>
         <h6 className="link">
-          <a href={`cah.com/${props.link}`}>
-            {`cah.com/${props.link}`}
-          </a>
+          <Link to={props.link}>
+            {`cah.com/game/${props.link}`}
+          </Link>
         </h6>
       </div>
     )

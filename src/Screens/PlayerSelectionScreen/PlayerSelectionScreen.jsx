@@ -18,13 +18,37 @@ class PlayerSelectionScreen extends React.Component {
   constructor(props) {
     super(props);
     
+    // populate the whole state via the socket/backend api
+
+    // if player
+    // 1 --> 5 --> 6
+    // if judge
+    // 3 --> 4 --> 6
+
+    // roundType can be:
+    // 1. player-selecting -- done
+    //  This means its the players turn and they are selecting a car 
+    // 3. judge-waiting
+    //  Its the judges turn and they are waiting for the other players to turn in their cards (screen 7 in figma)
+    // 4. judge-selecting
+    //  This occurs when the round is over, and the judge goes through each card, 1 by 1 to select the funiest. The cards are hidden and
+    // become revealed once the judge clicks on the white card (screen 8 on figma)
+    // 5. player-viewing
+    // This occurs simultaneously with (4), only the player is viewing and cannot do anything. Options are revealed whenever
+    // the judge in (4) selects to reveal the cards. (screen 7 on figma)
+    // 6. Winner-choosen
+    // Everyone sees the same page, a winner is choose. Tapping anywhere to continue takes you to the next screen
+    // Once at least half of the players have joined, the timer begins.
     this.state = {
+      roundType: "player-selecting", // player-selecting | player-viewing | viewing-winner | 
+      roundRole: "player", // player | judge
+      roundJudge: "Yusuf",
       playerChoice: null,
       timeLeft: 60,
       QCard: {
         cardType: "Q",
         text: "TSA guidelines now prohibit _ on airplanes.",
-        id: 0
+        id: 25
       },
       cards: [
         {
@@ -85,11 +109,10 @@ class PlayerSelectionScreen extends React.Component {
 
   componentDidMount() {
     console.log("PlayerSelectionScreen: componentDidMount()")
-    // timer counts down by 1 second then alerts that time is up!
     let intervalID = setInterval(() => {
       if(this.state.timeLeft < 1) {
-        this.setState({timeLeft: 60});
         alert("times up!")
+        this.setState({timeLeft: 60});
       }
       else {
         this.setState((state, props) => ({
@@ -131,6 +154,14 @@ class PlayerSelectionScreen extends React.Component {
       playerChoice: newPlayerChoice,
       cards: newCards
     });
+  }
+
+  animateWinner() {
+    
+  }
+
+  restoreScreen() {
+    
   }
   
   render() {

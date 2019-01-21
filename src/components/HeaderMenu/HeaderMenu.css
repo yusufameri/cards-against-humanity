@@ -8,8 +8,7 @@
 .innerHeaderMenu {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  padding: 0px 30px 0px 30px;
+  justify-content: space-around;
   line-height: 50%;
   font-size: 21px;
 }
@@ -17,6 +16,7 @@
 /* Hamburger Menu CSS below */
 .hamburgerMenu {
   margin-top: 15px;
+  cursor: pointer;
 }
 
 .bar1, .bar2, .bar3 {
@@ -42,4 +42,27 @@
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
   transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+/* Expanded Menu */
+.expanedMenu {
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:2;
+  top:0;
+  left:0;
+  background-color: white;
+  border: 1px solid #D8D8D8;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  line-height: 50%;
+  font-size: 21px;
+  text-align: center;
+  overflow-x:hidden;
+  padding-top:15px;
+  transition: 0.25s;
+  /* transition-timing-function: ease-in; */
 }

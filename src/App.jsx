@@ -4,8 +4,7 @@ import StartGameScreen from "./Screens/StartGameScreen/StartGameScreen"
 import PlayerSelectionScreen from './Screens/PlayerSelectionScreen/PlayerSelectionScreen'
 import React from 'react'
 import { BrowserRouter, Route } from "react-router-dom";
-import Screen from "./SharedComponents/Screen/Screen"
-
+import Screen from "./components/Screen/Screen"
 
 function App() {
   return (

@@ -3,10 +3,6 @@
     margin-bottom: 0;
 }
 
-.inner {
-    justify-content: space-around;
-}
-
 .input {
     width: 100%;
     border: 1px solid;

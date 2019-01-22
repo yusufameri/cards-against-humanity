@@ -17,7 +17,7 @@ import _ from "lodash"
 class PlayerSelectionScreen extends React.Component {
   constructor(props) {
     super(props);
-    
+
     // populate the whole state via the socket/backend api
 
     // if player
@@ -41,7 +41,7 @@ class PlayerSelectionScreen extends React.Component {
     // Once at least half of the players have joined, the timer begins.
     this.state = {
       roundType: "player-selecting", // player-selecting | player-viewing | viewing-winner | 
-      roundRole: "player", // player | judge
+      roundPlayerRole: "player", // player | judge
       roundJudge: "Yusuf",
       playerChoice: null,
       timeLeft: 60,
@@ -109,46 +109,43 @@ class PlayerSelectionScreen extends React.Component {
 
   componentDidMount() {
     console.log("PlayerSelectionScreen: componentDidMount()")
-    let intervalID = setInterval(() => {
-      if(this.state.timeLeft < 1) {
-        alert("times up!")
-        this.setState({timeLeft: 60});
+    let timerIntervalID = setInterval(() => {
+      if (this.state.timeLeft < 1) {
+        // this.animateWinner()
+        this.setState({ timeLeft: 60 });
       }
-      else {
-        this.setState((state, props) => ({
-          timeLeft: state.timeLeft - 1
-        }));
-      }
+      // else if(this.state.timeLeft % 3 === 0) {
+      //   this.animateWinner();
+      // }
+      // else if(this.state.timeLeft % 7 === 0) {
+      //   // this.restoreScreen();
+      // }
+      this.setState((state, props) => ({
+        timeLeft: state.timeLeft - 1
+      }));
     }, 1000);
 
-    this.setState({intervalID});
+    this.setState({ timerIntervalID });
   }
 
   componentWillUnmount() {
     console.log("PlayerSelectionScreen: componentWillUnmount()")
-    clearInterval(this.state.intervalID);
+    clearInterval(this.state.timerIntervalID);
   }
 
   // Choose the card with given ID to be in the placeholder (DropcCardSpace),
   // if a card is already choosen and we chooseCard again, then the card is swapped.
   chooseCard(id) {
     console.log(`${id} was clicked!`);
-    
+
     let newCards = this.state.cards;
-    if(this.state.playerChoice) {
+    if (this.state.playerChoice) {
       newCards.unshift(this.state.playerChoice)
     }
-    // console.log(`newCards = ${newCards.map(c => c.id)}`)
-
-    // remove the card we just selected
     let newPlayerChoice = _.find(newCards, card => { return card.id === id });
-    // console.log(`new playerChoice = ${newPlayerChoice}`)
-    
     _.remove(newCards, (card) => {
       return card.id === id
     });
-    // console.log(`removing card with id: ${id}`)
-    // console.log(`newCards after removal = ${newCards.map(c => c.id)}`)
 
     this.setState({
       playerChoice: newPlayerChoice,
@@ -157,13 +154,17 @@ class PlayerSelectionScreen extends React.Component {
   }
 
   animateWinner() {
-    
+    console.log("Showing winner");
+    document.getElementById('top').style.height = '100%';
+    this.setState({ roundType: "viewing-winner" });
   }
 
   restoreScreen() {
-    
+    console.log("restoring screen");
+    document.getElementById('top').style.height = '55%';
+    this.setState({ roundType: "player-selecting" });
   }
-  
+
   render() {
     return (
       <Screen>
@@ -173,7 +174,7 @@ class PlayerSelectionScreen extends React.Component {
         </Top>
         <Bottom>
           <Status message="Choose 1 Card" />
-          <CardCarousel cards={this.state.cards} onClick={this.chooseCard}/>
+          <CardCarousel cards={this.state.cards} onClick={this.chooseCard} />
           <Footer>
             Invite your friends with Party Code: {this.props.match.params.partyCode}
           </Footer>

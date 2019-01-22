@@ -4,4 +4,6 @@
   background-color: #D8D8D8;
   z-index: 0;
   overflow: hidden;
+
+  transition: 1s;
 }

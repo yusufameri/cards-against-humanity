@@ -1,16 +1,21 @@
 /* Bottom Half */
 .bottom {
-  width: 100%;
   height: 45%;
   z-index: 1;
   background-color: white;
   position: relative;
-}
 
-.inner {
+  /* inner */
   padding: 0px 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+
+  /* transition */
+  transition: 1s;
 }
+/* 
+.inner {
+  
+  height: 100%;
+} */

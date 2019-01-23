@@ -1,6 +1,9 @@
 import React from 'react'
 import "./Card.css"
-import {Link} from "react-router-dom";
+
+// external imports
+import { Link } from "react-router-dom";
+import { Draggable } from "react-beautiful-dnd"
 
 function Card(props) {
   if (props.cardType === "Q") {
@@ -10,7 +13,7 @@ function Card(props) {
           <p>{props.text.replace("_", "__________")}</p>
         </div>
         {
-          props.status && 
+          props.status &&
           <div className={`status ${props.className}`}>
             <span>{props.status}</span>
           </div>
@@ -21,7 +24,7 @@ function Card(props) {
   else if (props.cardType === "Title") {
     return (
       <div className={`card Title ${props.className}`}>
-        <h3>Cards</h3> 
+        <h3>Cards</h3>
         <h3>Against</h3>
         <h3>Humanity</h3>
       </div>
@@ -50,9 +53,20 @@ function Card(props) {
   }
   else {
     return (
-      <div className={`card A ${props.className}`} onClick={props.onClick && ((e) => props.onClick(props.id))}>
-        <p>{props.text}</p>
-      </div>
+      <Draggable draggableId={`${props.id}`} index={props.index}>
+        {
+          (provider) => (
+            <div
+              className={`card A ${props.className}`}
+              {...provider.draggableProps}
+              {...provider.dragHandleProps}
+              ref={provider.innerRef}
+            >
+              <p>{props.text}</p>
+            </div>
+          )
+        }
+      </Draggable>
     );
   }
 }

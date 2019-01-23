@@ -3,10 +3,8 @@ import "./Bottom.css"
 
 function Bottom(props) {
   return (
-    <div className="bottom">
-      <div className="inner">
-        {props.children}
-      </div>
+    <div className="bottom" id="bottom">
+      {props.children}
     </div>
   );
 }

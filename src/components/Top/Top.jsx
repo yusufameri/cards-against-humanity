@@ -3,7 +3,7 @@ import "./Top.css"
 
 function Top(props) {
   return (
-    <div className="top">
+    <div className="top" id="top">
       {props.children}
   </div>
   );

@@ -13,6 +13,7 @@ import Status from "../../components/Status/Status"
 
 // Import Helper Libraries
 import _ from "lodash"
+import { DragDropContext } from "react-beautiful-dnd";
 
 class PlayerSelectionScreen extends React.Component {
   constructor(props) {
@@ -109,23 +110,23 @@ class PlayerSelectionScreen extends React.Component {
 
   componentDidMount() {
     console.log("PlayerSelectionScreen: componentDidMount()")
-    let timerIntervalID = setInterval(() => {
-      if (this.state.timeLeft < 1) {
-        // this.animateWinner()
-        this.setState({ timeLeft: 60 });
-      }
-      // else if(this.state.timeLeft % 3 === 0) {
-      //   this.animateWinner();
-      // }
-      // else if(this.state.timeLeft % 7 === 0) {
-      //   // this.restoreScreen();
-      // }
-      this.setState((state, props) => ({
-        timeLeft: state.timeLeft - 1
-      }));
-    }, 1000);
+    // let timerIntervalID = setInterval(() => {
+    //   if (this.state.timeLeft < 1) {
+    //     // this.animateWinner()
+    //     this.setState({ timeLeft: 60 });
+    //   }
+    //   // else if(this.state.timeLeft % 3 === 0) {
+    //   //   this.animateWinner();
+    //   // }
+    //   // else if(this.state.timeLeft % 7 === 0) {
+    //   //   // this.restoreScreen();
+    //   // }
+    //   this.setState((state, props) => ({
+    //     timeLeft: state.timeLeft - 1
+    //   }));
+    // }, 1000);
 
-    this.setState({ timerIntervalID });
+    // this.setState({ timerIntervalID });
   }
 
   componentWillUnmount() {
@@ -165,21 +166,50 @@ class PlayerSelectionScreen extends React.Component {
     this.setState({ roundType: "player-selecting" });
   }
 
+
+  onDragEnd = result => {
+    const { destination, source } = result;
+    console.log(result);
+
+    if (!destination) {
+      return;
+    }
+    if (destination.droppableId === source.droppableId &&
+      destination.index === source.index
+    ) {
+      return;
+    }
+
+    if (source.droppableId === destination.droppableId) {
+      // shift cards in correct order @ CardCarousel
+      console.log("swapping!")
+      let newCards = Array.from(this.state.cards);
+      newCards.splice(source.index, 1);
+      newCards.splice(destination.index, 0, this.state.cards[source.index])
+      this.setState({ cards: newCards })
+    }
+    else if (source.droppableId === "bottom" && destination.droppableId === "top") {
+      // TODO: swapping from current cards, into placeholder
+    }
+  }
+
   render() {
     return (
       <Screen>
-        <Top>
-          <HeaderMenu text="Yusuf is the Judge" timeLeft={this.state.timeLeft} />
-          <DropCardSpace QCard={this.state.QCard} playerChoice={this.state.playerChoice} status="Waiting for 2/5 Players" />
-        </Top>
-        <Bottom>
-          <Status message="Choose 1 Card" />
-          <CardCarousel cards={this.state.cards} onClick={this.chooseCard} />
-          <Footer>
-            Invite your friends with Party Code: {this.props.match.params.partyCode}
-          </Footer>
-        </Bottom>
-      </Screen>
+        <DragDropContext onDragEnd={this.onDragEnd} >
+          <Top>
+            <HeaderMenu text="Yusuf is the Judge" timeLeft={this.state.timeLeft} />
+            <DropCardSpace QCard={this.state.QCard} playerChoice={this.state.playerChoice} status="Waiting for 2/5 Players" />
+          </Top>
+          <Bottom>
+            <Status message="Choose 1 Card" />
+            <CardCarousel cards={this.state.cards} />
+            <Footer>
+              Invite your friends with Party Code: {this.props.match.params.partyCode}
+            </Footer>
+          </Bottom >
+        </DragDropContext >
+      </Screen >
     );
   }
 }

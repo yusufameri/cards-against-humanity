@@ -12,7 +12,6 @@ import Footer from "../../components/Footer/Footer"
 import Status from "../../components/Status/Status"
 
 // Import Helper Libraries
-import _ from "lodash"
 import { DragDropContext } from "react-beautiful-dnd";
 
 class PlayerSelectionScreen extends React.Component {
@@ -104,54 +103,32 @@ class PlayerSelectionScreen extends React.Component {
         }
       ]
     }
-
-    this.chooseCard = this.chooseCard.bind(this);
   }
 
   componentDidMount() {
     console.log("PlayerSelectionScreen: componentDidMount()")
-    // let timerIntervalID = setInterval(() => {
-    //   if (this.state.timeLeft < 1) {
-    //     // this.animateWinner()
-    //     this.setState({ timeLeft: 60 });
-    //   }
-    //   // else if(this.state.timeLeft % 3 === 0) {
-    //   //   this.animateWinner();
-    //   // }
-    //   // else if(this.state.timeLeft % 7 === 0) {
-    //   //   // this.restoreScreen();
-    //   // }
-    //   this.setState((state, props) => ({
-    //     timeLeft: state.timeLeft - 1
-    //   }));
-    // }, 1000);
+    let timerIntervalID = setInterval(() => {
+      if (this.state.timeLeft < 1) {
+        // this.animateWinner()
+        this.setState({ timeLeft: 60 });
+      }
+      // else if(this.state.timeLeft % 3 === 0) {
+      //   this.animateWinner();
+      // }
+      // else if(this.state.timeLeft % 7 === 0) {
+      //   // this.restoreScreen();
+      // }
+      this.setState((state, props) => ({
+        timeLeft: state.timeLeft - 1
+      }));
+    }, 1000);
 
-    // this.setState({ timerIntervalID });
+    this.setState({ timerIntervalID });
   }
 
   componentWillUnmount() {
     console.log("PlayerSelectionScreen: componentWillUnmount()")
     clearInterval(this.state.timerIntervalID);
-  }
-
-  // Choose the card with given ID to be in the placeholder (DropcCardSpace),
-  // if a card is already choosen and we chooseCard again, then the card is swapped.
-  chooseCard(id) {
-    console.log(`${id} was clicked!`);
-
-    let newCards = this.state.cards;
-    if (this.state.playerChoice) {
-      newCards.unshift(this.state.playerChoice)
-    }
-    let newPlayerChoice = _.find(newCards, card => { return card.id === id });
-    _.remove(newCards, (card) => {
-      return card.id === id
-    });
-
-    this.setState({
-      playerChoice: newPlayerChoice,
-      cards: newCards
-    });
   }
 
   animateWinner() {
@@ -167,9 +144,10 @@ class PlayerSelectionScreen extends React.Component {
   }
 
 
+  // choosing card logic (drag-and-drop)
   onDragEnd = result => {
     const { destination, source } = result;
-    console.log(result);
+    // console.log(result);
 
     if (!destination) {
       return;
@@ -181,15 +159,33 @@ class PlayerSelectionScreen extends React.Component {
     }
 
     if (source.droppableId === destination.droppableId) {
-      // shift cards in correct order @ CardCarousel
+      // shift/move cards in correct order @ CardCarousel
       console.log("swapping!")
-      let newCards = Array.from(this.state.cards);
+      let newCards = [...this.state.cards];
       newCards.splice(source.index, 1);
       newCards.splice(destination.index, 0, this.state.cards[source.index])
       this.setState({ cards: newCards })
     }
-    else if (source.droppableId === "bottom" && destination.droppableId === "top") {
-      // TODO: swapping from current cards, into placeholder
+    else if (source.droppableId === "bottom" && destination.droppableId === "top" && this.state.playerChoice == null) {
+      console.log("choose a card!")
+      let newCards = [...this.state.cards];
+      // remove source card from cards
+      // TODO: should swap if already choosen a card (maybe, or are they locked in?...)
+      newCards.splice(source.index, 1);
+      this.setState({
+        playerChoice: this.state.cards[source.index],
+        cards: newCards
+      })
+    }
+    else if (source.droppableId === "top" && destination.droppableId === "bottom") {
+      // returned a card to the deck
+      console.log("returned a card to the deck!")
+      let newCards = [...this.state.cards]
+      newCards.splice(destination.index, 0, this.state.playerChoice)
+      this.setState({
+        cards: newCards,
+        playerChoice: null
+      });
     }
   }
 

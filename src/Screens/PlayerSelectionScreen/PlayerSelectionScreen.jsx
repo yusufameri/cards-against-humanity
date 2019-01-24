@@ -134,6 +134,7 @@ class PlayerSelectionScreen extends React.Component {
   animateWinner() {
     console.log("Showing winner");
     document.getElementById('top').style.height = '100%';
+    document.getElementById('bottom').style.display = 'none;';
     this.setState({ roundType: "viewing-winner" });
   }
 
@@ -161,8 +162,8 @@ class PlayerSelectionScreen extends React.Component {
     if (source.droppableId === destination.droppableId) {
       // shift/move cards in correct order @ CardCarousel
       console.log("swapping!")
-      let newCards = [...this.state.cards];
-      newCards.splice(source.index, 1);
+      let newCards = [...this.state.cards]
+      newCards.splice(source.index, 1)
       newCards.splice(destination.index, 0, this.state.cards[source.index])
       this.setState({ cards: newCards })
     }
@@ -175,7 +176,8 @@ class PlayerSelectionScreen extends React.Component {
       this.setState({
         playerChoice: this.state.cards[source.index],
         cards: newCards
-      })
+      });
+      // this.animateWinner();
     }
     else if (source.droppableId === "top" && destination.droppableId === "bottom") {
       // returned a card to the deck

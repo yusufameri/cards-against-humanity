@@ -195,7 +195,7 @@ class PlayerSelectionScreen extends React.Component {
         <DragDropContext onDragEnd={this.onDragEnd} >
           <Top>
             <HeaderMenu text="Yusuf is the Judge" timeLeft={this.state.timeLeft} />
-            <DropCardSpace QCard={this.state.QCard} playerChoice={this.state.playerChoice} status="Waiting for 2/5 Players" />
+            <DropCardSpace QCard={this.state.QCard} playerChoice={this.state.playerChoice} status="2/5 Cards In" />
           </Top>
           <Bottom>
             <Status message="Choose 1 Card" />

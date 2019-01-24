@@ -2,15 +2,38 @@
     width: 160px;
     height: 220px;
     font-family: 'Helvetica Neue';
+    font-size: 22px;
+    font-weight: bold;
     border-radius: 8px;
     border: 1px solid #979797;
     padding: 12px 10px 12px 10px;
-    font-weight: bold;
-    font-size: 22px;
     cursor: pointer;
     word-wrap: break-word;
     position: relative;
     z-index: 1;
+
+    /* prevent text highlighting in cards */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+/* iPhone 6 and iPhone X screens */
+/* Samsung s8 screen */
+@media (max-width: 380px) {
+    .card {
+      width: 112px;
+      height: 154px;
+      font-size: 17px;
+    }
+    .status {
+        width: 112px;
+        font-size: 15px;
+    }
 }
 
 /* CardType specific styling below */

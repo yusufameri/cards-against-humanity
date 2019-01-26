@@ -1,10 +1,5 @@
 import openSocket from 'socket.io-client';
-const socket = openSocket('http://192.168.1.160:8000');
-
-function subscribeToTimer(cb) {
-  socket.on('timer', timestamp => cb(null, timestamp));
-  socket.emit('subscribeToTimer', 1000);
-}
+const socket = openSocket('http://192.168.1.2:8000');
 
 function joinParty({name, partyCode}, cb) {
   socket.emit('joinParty', {partyCode, name});
@@ -17,4 +12,4 @@ function getPartyPlayers({partyCode}, cb) {
   socket.on('getPartyPlayers', players => cb(players));
 }
 
-export { subscribeToTimer, joinParty , getPartyPlayers};
+export { joinParty , getPartyPlayers};

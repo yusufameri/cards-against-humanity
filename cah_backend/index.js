@@ -14,22 +14,25 @@ io.on('connection', (client) => {
   //   }, interval);
   // });
 
-  client.on('joinParty', (data) => {
-    console.log('User wants to join party: ', data)
-    players[data.partyCode] = [...players[data.partyCode], (data.name)]
-    client.emit('joinedParty', data);
-    io.emit('getPartyPlayers', [...players[data.partyCode]])
+  client.on('joinParty', ({partyCode, name}) => {
+    console.log(`${name} --<> ${partyCode}`)
+    players[partyCode] = [...players[partyCode], (name)]
+    io.to(partyCode).emit('joinedParty', {partyCode, name});
+    io.to(partyCode).emit('getPartyPlayers', [...players[partyCode]])
   });
 
   client.on('getPartyPlayers', ({partyCode}) => {
     console.log(`client ${client.id} wants to know the players in partyGroup ${partyCode}`)
+    client.join(partyCode);
     if(players[partyCode]){
-      client.emit('getPartyPlayers', [...players[partyCode]])
+      io.to(partyCode).emit('getPartyPlayers', [...players[partyCode]])
     } else {
       players[partyCode] = []
-      client.emit('getPartyPlayers', [...players[partyCode]])
+      io.to(partyCode).emit('getPartyPlayers', [...players[partyCode]])
     }
-  })
+  });
+
+
 });
 
 const port = 8000;

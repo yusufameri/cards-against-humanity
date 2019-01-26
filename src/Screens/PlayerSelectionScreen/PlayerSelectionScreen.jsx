@@ -18,6 +18,13 @@ class PlayerSelectionScreen extends React.Component {
   constructor(props) {
     super(props);
 
+    // subscribeToTimer((err, timeLeft) => {
+    //   this.setState({
+    //     timeLeft
+    //   });
+    //   console.log(`tick ${new Date()}`)
+    // });
+
     // populate the whole state via the socket/backend api
 
     // if player
@@ -40,10 +47,13 @@ class PlayerSelectionScreen extends React.Component {
     // Everyone sees the same page, a winner is choose. Tapping anywhere to continue takes you to the next screen
     // Once at least half of the players have joined, the timer begins.
     this.state = {
-      roundType: "player-selecting", // player-selecting | player-viewing | viewing-winner | 
+      // player-selecting | player-viewing | winner-choosen | 
+      roundType: "player-selecting",
       roundPlayerRole: "player", // player | judge
       roundJudge: "Yusuf",
       playerChoice: null,
+      winningCard: null,
+      roundNum: null,
       timeLeft: 60,
       QCard: {
         cardType: "Q",
@@ -107,28 +117,21 @@ class PlayerSelectionScreen extends React.Component {
 
   componentDidMount() {
     console.log("PlayerSelectionScreen: componentDidMount()")
-    let timerIntervalID = setInterval(() => {
-      if (this.state.timeLeft < 1) {
-        // this.animateWinner()
-        this.setState({ timeLeft: 60 });
-      }
-      // else if(this.state.timeLeft % 3 === 0) {
-      //   this.animateWinner();
-      // }
-      // else if(this.state.timeLeft % 7 === 0) {
-      //   // this.restoreScreen();
-      // }
-      this.setState((state, props) => ({
-        timeLeft: state.timeLeft - 1
-      }));
-    }, 1000);
+    // let timerIntervalID = setInterval(() => {
+    //   if (this.state.timeLeft < 1) {
+    //     this.setState({ timeLeft: 60 });
+    //   }
+    //   this.setState((state, props) => ({
+    //     timeLeft: state.timeLeft - 1
+    //   }));
+    // }, 1000);
 
-    this.setState({ timerIntervalID });
+    // this.setState({ timerIntervalID });
   }
 
   componentWillUnmount() {
     console.log("PlayerSelectionScreen: componentWillUnmount()")
-    clearInterval(this.state.timerIntervalID);
+    // clearInterval(this.state.timerIntervalID);
   }
 
   animateWinner() {

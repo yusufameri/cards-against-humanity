@@ -11,7 +11,7 @@ import PlayerList from "../../components/PlayerList/PlayerList"
 import "./StartGameScreen.css"
 
 import { joinParty } from "../../api"
-import { getPartyPlayers, } from "../../api"
+import { getPartyPlayers } from "../../api"
 
 
 class StartGameScreen extends React.Component {
@@ -43,43 +43,43 @@ class StartGameScreen extends React.Component {
           joined: true
         }));
       });
-      }
-    }
-
-    // REFACTOR: need to pass this to the PlayerList Component 
-    // to retrieve the user input (nested)
-    updatePlayerName(e) {
-      this.setState({
-        currentPlayerName: e.target.value
-      });
-    }
-
-    Button() {
-      if (!this.state.joined) {
-        return <Button text="Join Party" className="center" disabled={this.state.currentPlayerName.length === 0} onClick={this.joinParty} />;
-      }
-      else {
-        return <Button text="Start Game" className="center" disabled={this.state.players.length < 3} link={`/gameplay/${this.props.match.params.partyCode}`} />;
-      }
-    }
-
-    render() {
-      return (
-        <Screen>
-          <Top>
-            <Card cardType="Link" link={this.props.match.params.partyCode} />
-          </Top>
-          <Bottom>
-            <Title text="Players Joined" />
-            <PlayerList players={this.state.players} joined={this.state.joined} className="center" onChange={this.updatePlayerName} />
-            {this.Button()}
-            <Footer>
-              {this.state.players.length < 3 ? "Need at least 3 players to start game" : "Ready to start Game!"}
-            </Footer>
-          </Bottom>
-        </Screen>
-      );
     }
   }
 
-  export default StartGameScreen;
+  // REFACTOR: need to pass this to the PlayerList Component 
+  // to retrieve the user input (nested)
+  updatePlayerName(e) {
+    this.setState({
+      currentPlayerName: e.target.value
+    });
+  }
+
+  Button() {
+    if (!this.state.joined) {
+      return <Button text="Join Party" className="center" disabled={this.state.currentPlayerName.length === 0} onClick={this.joinParty} />;
+    }
+    else {
+      return <Button text="Start Game" className="center" disabled={this.state.players.length < 3} link={`/gameplay/${this.props.match.params.partyCode}`} />;
+    }
+  }
+
+  render() {
+    return (
+      <Screen>
+        <Top>
+          <Card cardType="Link" link={this.props.match.params.partyCode} />
+        </Top>
+        <Bottom>
+          <Title text="Players Joined" />
+          <PlayerList players={this.state.players} joined={this.state.joined} className="center" onChange={this.updatePlayerName} />
+          {this.Button()}
+          <Footer>
+            {this.state.players.length < 3 ? "Need at least 3 players to start game" : "Ready to start Game!"}
+          </Footer>
+        </Bottom>
+      </Screen>
+    );
+  }
+}
+
+export default StartGameScreen;

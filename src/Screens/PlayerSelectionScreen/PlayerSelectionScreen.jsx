@@ -117,21 +117,10 @@ class PlayerSelectionScreen extends React.Component {
 
   componentDidMount() {
     console.log("PlayerSelectionScreen: componentDidMount()")
-    // let timerIntervalID = setInterval(() => {
-    //   if (this.state.timeLeft < 1) {
-    //     this.setState({ timeLeft: 60 });
-    //   }
-    //   this.setState((state, props) => ({
-    //     timeLeft: state.timeLeft - 1
-    //   }));
-    // }, 1000);
-
-    // this.setState({ timerIntervalID });
   }
 
   componentWillUnmount() {
     console.log("PlayerSelectionScreen: componentWillUnmount()")
-    // clearInterval(this.state.timerIntervalID);
   }
 
   animateWinner() {
@@ -194,10 +183,17 @@ class PlayerSelectionScreen extends React.Component {
     }
   }
 
+  // vibrate on drag start
+  onDragStart = () => {
+    if (window.navigator.vibrate) {
+      window.navigator.vibrate(100);
+    };
+  }
+
   render() {
     return (
       <Screen>
-        <DragDropContext onDragEnd={this.onDragEnd} >
+        <DragDropContext onDragEnd={this.onDragEnd} onDragStart={this.onDragStart}>
           <Top>
             <HeaderMenu text="Yusuf is the Judge" timeLeft={this.state.timeLeft} />
             <DropCardSpace QCard={this.state.QCard} playerChoice={this.state.playerChoice} status="2/5 Cards In" />

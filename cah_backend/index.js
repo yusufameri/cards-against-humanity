@@ -5,15 +5,6 @@ let players = {
 }
 
 io.on('connection', (client) => {
-  // client.on('subscribeToTimer', (interval) => {
-  //   console.log('client is subscribing to timer with interval ', interval);
-  //   console.log(client.id)
-    
-  //   setInterval(() => {
-  //     client.emit('timer', new Date());
-  //   }, interval);
-  // });
-
   client.on('joinParty', ({partyCode, name}) => {
     console.log(`${name} --<> ${partyCode}`)
     players[partyCode] = [...players[partyCode], (name)]
@@ -31,8 +22,6 @@ io.on('connection', (client) => {
       io.to(partyCode).emit('getPartyPlayers', [...players[partyCode]])
     }
   });
-
-
 });
 
 const port = 8000;

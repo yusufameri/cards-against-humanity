@@ -13,12 +13,14 @@ import "./DropCardSpace.css"
 // judge-selecting & player   (don't show status)
 // judge-waiting & judge    (show status)
 function DropCardSpace(props) {
+  let status = (props.cardsIn > 0 && props.roundState !== 'viewing-winner') ? `${props.cardsIn} Cards In` : ""
   // draggable
   if ((props.roundRole === 'player' && props.roundState === 'player-selecting') ||
-    (props.roundRole === 'judge' && props.roundState === 'judge-selecting')) {
+    (props.roundRole === 'judge' && props.roundState === 'judge-selecting') ||
+    (props.roundState === 'viewing-winner')) {
     return (
       <div className="drop-space">
-        <Card {...props.QCard} status={props.roundState !== 'judge-selecting' && props.status} />
+        <Card {...props.QCard} status={props.roundState !== 'judge-selecting' && status} />
         <Droppable droppableId='top' direction="horizontal">
           {
             (provider) => (
@@ -39,11 +41,11 @@ function DropCardSpace(props) {
   else if ((props.roundRole === 'player' && props.roundState === 'judge-selecting') ||
     (props.roundRole === 'player' && props.roundState === 'player-waiting') ||
     (props.roundRole === 'judge' && props.roundState === 'judge-waiting')) {
-      return (
-        <div className="drop-space">
-          <Card {...props.QCard} status={props.roundState !== 'judge-selecting' && props.status} />
-        </div>
-      );
+    return (
+      <div className="drop-space">
+        <Card {...props.QCard} status={props.roundState !== 'judge-selecting' && status} />
+      </div>
+    );
   }
   // unknown combo of roundStand and roundRole
   else {

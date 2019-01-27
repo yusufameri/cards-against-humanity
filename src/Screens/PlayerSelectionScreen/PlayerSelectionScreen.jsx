@@ -198,7 +198,7 @@ class PlayerSelectionScreen extends React.Component {
       this.setState({ cards: newCards })
     }
     else if (source.droppableId === "bottom" && destination.droppableId === "top" && this.state.playerChoice == null) {
-      if (this.state.roundState === 'judge-selecting') {
+      if (this.state.roundState === 'judge-selecting' && this.state.roundRole === 'judge') {
         // judge-selecting card
         console.log(`winner card chosen: ${JSON.stringify(this.state.QCard)}`);
         let newCards = [...this.state.otherPlayerCards];

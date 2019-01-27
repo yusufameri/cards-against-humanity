@@ -36,7 +36,7 @@ function HomeScreen() {
       </Top>
       <Bottom>
         <Title text="A party game for horrible people"/>
-        <Button text="Join Party" className="center" link="/join-party"/>
+        <Button text="Join Party" className="center" link="/join"/>
         <Or />
         <Button text="Create Game" className="center" link={`game/${CreateGame()}`}/>
         <Footer>

@@ -17,7 +17,7 @@ function App() {
           render={(props) => <StartGameScreen {...props}  />} 
         />
         <Route
-          exact path='/join-party' // you can add additional props like below...
+          exact path='/join' // you can add additional props like below...
           render={(props) => <JoinPartyScreen {...props} isAuthed={true} />} 
         />
         <Route

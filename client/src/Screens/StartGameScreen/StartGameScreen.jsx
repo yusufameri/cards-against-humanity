@@ -29,9 +29,9 @@ class StartGameScreen extends React.Component {
   componentDidMount() {
     let partyCode = this.props.match.params.partyCode
     getLobbyState(partyCode, (response) => {
-      console.log('GOT UPDATED lobbyState')
+      console.log('GOT UPDATED lobbyState', partyCode)
       console.log(`getLobbyState ${JSON.stringify(response)}`)
-      if(response.currentPlayer) {
+      if (response.currentPlayer) {
         this.setState({
           joined: true,
           players: response.players

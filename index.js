@@ -12,7 +12,6 @@ server.listen(5000, () => {
 var session = require('express-session') // for express
 var sharedsession = require("express-socket.io-session"); // for socket.io
 var RedisStore = require('connect-redis')(session);
-// var uuidv1 = require("uuid/v1")
 
 // create a redis client
 var redis = require("redis"),

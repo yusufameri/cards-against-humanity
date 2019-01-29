@@ -1,5 +1,5 @@
 import openSocket from 'socket.io-client';
-const socket = openSocket("localhost:5000");
+const socket = openSocket("http://192.168.1.2:5000");
 
 function handleCookie(cb) {
   socket.on('setCookie', cookie => cb(cookie))

@@ -30,17 +30,11 @@ class PlayerSelectionScreen extends React.Component {
     //    judge-waiting -> judge-selecting -> showing-winner -> [player-selecting]
 
     this.state = {
+      // get these on getRoundState
       roundState: "judge-waiting",  //type=Enum player-selecting | player-viewing | judge-selecting |
       roundRole: "judge", // type=Enum player | judge
       roundJudge: "Yusuf",
-      headerText: "You are the Judge",
-      playerChoice: null, // type=Card
-      winningCard: null, // type=Card
       roundNum: null, // type=Number
-      cardsIn: 1, //type=Number
-      totalPlayers: 5, //type=Number
-      timeLeft: 60, //type=Number @meta: time in seconds left, for the round
-      directions: "Waiting for other Players", //type=String if(player-viewing) -> 'Yusuf is selecting the Card'
       QCard: {
         cardType: "Q",
         text: "TSA guidelines now prohibit _ on airplanes.",
@@ -98,6 +92,15 @@ class PlayerSelectionScreen extends React.Component {
           id: 9
         }
       ],
+
+      // these should be set implicitely based on above state
+      directions: "Waiting for other Players", //type=String if(player-viewing) -> 'Yusuf is selecting the Card'
+      headerText: "You are the Judge",
+
+      // this is set when user selects a card
+      playerChoice: null, // type=Card
+
+      // these are set for everyone as everyone is selecting their own cards
       otherPlayerCards: [
         {
           type: "A",
@@ -117,7 +120,17 @@ class PlayerSelectionScreen extends React.Component {
           id: 12,
           cardOwner: "Mostafa"
         }
-      ]
+      ],
+
+      // this is set when judge selects a card
+      winningCard: null, // type=Card
+
+      // this is set implcitely
+      cardsIn: 1, //type=Number
+      totalPlayers: 5, //type=Number
+
+      // temporarily turning this feature off
+      // timeLeft: 60, //type=Number @meta: time in seconds left, for the round
     }
   }
 
@@ -178,16 +191,16 @@ class PlayerSelectionScreen extends React.Component {
   // choosing card logic (drag-and-drop)
   chooseCardHandler = result => {
     const { destination, source } = result;
-        // console.log(result);
+    // console.log(result);
 
-        if (!destination) {
-          return;
-        }
-        if (destination.droppableId === source.droppableId &&
-          destination.index === source.index
-        ) {
-          return;
-        }
+    if (!destination) {
+      return;
+    }
+    if (destination.droppableId === source.droppableId &&
+      destination.index === source.index
+    ) {
+      return;
+    }
 
     if (source.droppableId === destination.droppableId) {
       // shift/move cards in correct order @ CardCarousel
@@ -259,7 +272,11 @@ class PlayerSelectionScreen extends React.Component {
           </Top>
           <Bottom>
             <Status message={this.state.directions} />
-            <CardCarousel cards={this.state.roundState === 'judge-selecting' ? this.state.otherPlayerCards : this.state.cards} />
+            <CardCarousel
+              cards={
+                this.state.roundState === 'judge-selecting' ? this.state.otherPlayerCards :
+                  this.state.roundState === 'judge-waiting' ? [] : this.state.cards
+              } />
             <Footer>
               Invite your friends with Party Code: {this.props.match.params.partyCode}
             </Footer>

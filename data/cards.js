@@ -9255,4 +9255,4 @@ const cards = [
     }
 ]
 
-export default cards;
+module.exports = cards;

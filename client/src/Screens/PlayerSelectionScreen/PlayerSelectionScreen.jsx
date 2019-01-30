@@ -23,15 +23,15 @@ class PlayerSelectionScreen extends React.Component {
 
     // roundRole: player
     // roundState:
-    //    player-selecting -> player-waiting -> judge-selecting -> showing-winner -> [player-selecting | judge-selecting]
+    //    player-selecting -> player-waiting -> judge-selecting -> [player-selecting | judge-selecting]
     // 
     // roundRole: judge
     // roundState
-    //    judge-waiting -> judge-selecting -> showing-winner -> [player-selecting]
+    //    judge-waiting -> judge-selecting -> [player-selecting]
 
     this.state = {
       // get these on getRoundState
-      roundState: "judge-waiting",  //type=Enum player-selecting | player-viewing | judge-selecting |
+      roundState: "judge-selecting",  //type=Enum player-selecting | player-viewing | judge-selecting |
       roundRole: "judge", // type=Enum player | judge
       roundJudge: "Yusuf",
       roundNum: null, // type=Number
@@ -127,8 +127,6 @@ class PlayerSelectionScreen extends React.Component {
 
       // this is set implcitely
       cardsIn: 1, //type=Number
-      totalPlayers: 5, //type=Number
-
       // temporarily turning this feature off
       // timeLeft: 60, //type=Number @meta: time in seconds left, for the round
     }
@@ -153,15 +151,15 @@ class PlayerSelectionScreen extends React.Component {
   // called after judge selects their favorite card
   animateWinner() {
     console.log("Showing winner");
-    document.getElementById('top').style.height = '100%';
-    document.getElementById('continueMsg').style.display = 'block';
+    // document.getElementById('top').style.height = '100%';
+    // document.getElementById('continueMsg').style.display = 'block';
   }
 
   // called after viewing-winner, resets state and gets new state from server. Begins new round
   restoreScreen() {
     console.log("restoring screen");
-    document.getElementById('top').style.height = '55%';
-    document.getElementById('continueMsg').style.display = 'none';
+    // document.getElementById('top').style.height = '55%';
+    // document.getElementById('continueMsg').style.display = 'none';
     // ask server to get the new state for the current player in this.state.roundNum + 1
     // need:
     // roundRole (player | judge)
@@ -216,12 +214,13 @@ class PlayerSelectionScreen extends React.Component {
         console.log(`winner card chosen: ${JSON.stringify(this.state.QCard)}`);
         let newCards = [...this.state.otherPlayerCards];
         newCards.splice(source.index, 1);
-        let winnerCard = this.state.otherPlayerCards[source.index];
+        let winningCard = this.state.otherPlayerCards[source.index];
         this.setState({
-          playerChoice: winnerCard,
+          playerChoice: winningCard,
+          winningCard,
           otherPlayerCards: newCards,
           roundState: 'viewing-winner',
-          headerText: `${winnerCard.cardOwner} Won!`
+          headerText: `${winningCard.cardOwner} Won!`,
         });
 
         this.animateWinner();
@@ -254,7 +253,7 @@ class PlayerSelectionScreen extends React.Component {
     return (
       <Screen>
         <DragDropContext onDragEnd={this.chooseCardHandler} onDragStart={this.onDragStart}>
-          <Top>
+          <Top className={this.state.roundState === 'viewing-winner' ? 'winner' : ''}>
             <HeaderMenu
               text={this.state.headerText}
               timeLeft={this.state.timeLeft}
@@ -266,7 +265,7 @@ class PlayerSelectionScreen extends React.Component {
               roundState={this.state.roundState}
               roundRole={this.state.roundRole}
             />
-            <div className="continueMsg" id="continueMsg" onClick={this.restoreScreen}>
+            <div className={this.state.roundState === 'viewing-winner' ? 'continueMsg' : ''} id="continueMsg" onClick={this.restoreScreen}>
               {this.state.roundState === 'viewing-winner' ? "Tap anywhere to Continue" : ""}
             </div>
           </Top>

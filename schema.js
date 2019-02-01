@@ -24,8 +24,6 @@ export function joinGame(partyCode, sessionID, name) {
 
 // returns the players in the game []
 export function getLobbyState(partyCode, sessionID) {
-  console.log(`getLobbyState | ${partyCode} | ${sessionID}`)
-
   let game = getOrCreateGame(partyCode);
   let currentPlayer = game.getPlayer(sessionID)
 
@@ -35,7 +33,17 @@ export function getLobbyState(partyCode, sessionID) {
 
   response = {
     players,
-    currentPlayer: currentPlayer
+    currentPlayer: currentPlayer || null
   }
   return response;
+}
+
+export function getPlayerRoundState(partyCode, sessionID) {
+  let game = getOrCreateGame(partyCode);
+  return game.getPlayerRoundState(sessionID);
+}
+
+export function playCard(partyCode, cardID, sessionID) {
+  let game = getOrCreateGame(partyCode);
+  game.playCard(sessionID, cardID);
 }

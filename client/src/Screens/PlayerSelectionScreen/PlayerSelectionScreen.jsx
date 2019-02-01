@@ -13,13 +13,14 @@ import Status from "../../components/Status/Status"
 
 // Import Helper Libraries
 import { DragDropContext } from "react-beautiful-dnd";
+import { getPlayerRoundState, newGameState, playCard } from "../../api"
+import _ from "lodash"
 
 class PlayerSelectionScreen extends React.Component {
   constructor(props) {
     super(props);
 
     this.restoreScreen = this.restoreScreen.bind(this);
-    this.animateWinner = this.animateWinner.bind(this);
 
     // roundRole: player
     // roundState:
@@ -127,32 +128,50 @@ class PlayerSelectionScreen extends React.Component {
 
       // this is set implcitely
       cardsIn: 1, //type=Number
-      // temporarily turning this feature off
-      // timeLeft: 60, //type=Number @meta: time in seconds left, for the round
     }
   }
 
   componentDidMount() {
     console.log("PlayerSelectionScreen: componentDidMount()")
-    let timer = setTimeout(() => {
+    let partyCode = this.props.match.params.partyCode
+    let newState = (roundState) => {
+      console.log('RoundState: ', roundState)
       this.setState({
-        roundState: 'judge-selecting',
-        directions: `Select your favorite card` // ${this.state.roundJudge} is viewing the cards
+       QCard: roundState.QCard[0],
+       cards: roundState.cards,
+       otherPlayerCards: roundState.otherPlayerCards,
+       roundNum: roundState.roundNum,
+       roundRole: roundState.roundRole,
+       roundJudge: roundState.roundJudge,
+       headerText: roundState.roundRole === 'judge' ? 'You are the Judge' : `${roundState.roundJudge} is the Judge`,
+       roundState: roundState.roundState,
+       winner: roundState.winner,
+       winningCard: roundState.winningCard,
+       cardsIn: roundState.otherPlayerCards.length,
+       timeLeft: roundState.timeLeft
       });
-    }, 5000);
-    this.setState({ timer });
+      setInterval(() => {
+        this.setState({
+          timeLeft: _.max([0, this.state.timeLeft - 1])
+        });
+      }, 1000)
+    };
+
+    getPlayerRoundState(partyCode, newState);
+    newGameState(partyCode);
+
+    // let timer = setTimeout(() => {
+    //   this.setState({
+    //     roundState: 'judge-selecting',
+    //     directions: `Select your favorite card` // ${this.state.roundJudge} is viewing the cards
+    //   });
+    // }, 5000);
+    // this.setState({ timer });
   }
 
   componentWillUnmount() {
     console.log("PlayerSelectionScreen: componentWillUnmount()")
     clearTimeout(this.state.timer);
-  }
-
-  // called after judge selects their favorite card
-  animateWinner() {
-    console.log("Showing winner");
-    // document.getElementById('top').style.height = '100%';
-    // document.getElementById('continueMsg').style.display = 'block';
   }
 
   // called after viewing-winner, resets state and gets new state from server. Begins new round
@@ -222,22 +241,23 @@ class PlayerSelectionScreen extends React.Component {
           roundState: 'viewing-winner',
           headerText: `${winningCard.cardOwner} Won!`,
         });
-
-        this.animateWinner();
       }
       else {
         // player-selecting card
         console.log("player chose a card!");
         let newCards = [...this.state.cards];
         newCards.splice(source.index, 1);
+        let partyCode = this.props.match.params.partyCode
+        playCard(partyCode, this.state.cards[source.index].id)
+
         // TODO: tell server you choose a card
-        this.setState({
-          playerChoice: this.state.cards[source.index],
-          cards: newCards,
-          roundState: 'player-waiting',
-          cardsIn: this.state.cardsIn + 1,
-          directions: "Wait for other Players"
-        });
+        // this.setState({
+        //   playerChoice: this.state.cards[source.index],
+        //   cards: newCards,
+        //   roundState: 'player-waiting',
+        //   cardsIn: this.state.cardsIn + 1,
+        //   directions: "Wait for other Players"
+        // });
       }
     }
   }

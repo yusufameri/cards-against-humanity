@@ -40,18 +40,27 @@ app.get('/', (req, res) => {
   }
 });
 
-io.on('connection', (client) => {
-  console.log(`client connected: ${client.handshake.sessionID}`)
+io.on('connect', (client) => {
+  console.log(`client connected: session(${client.handshake.sessionID}) socket.id(${client.id})`)
 
-  client.on('getLobbyState', partyCode => {
-    let response = game.getLobbyState(partyCode, client.handshake.sessionID)
+  client.on('getLobbyState', (partyCode, tellOthers) => {
     client.join(partyCode);
-    io.to(partyCode).emit("getLobbyState", response);
+    let response = game.getLobbyState(partyCode, client.handshake.sessionID)
+    client.emit("getLobbyState", response);
   });
 
   client.on('joinParty', ({ partyCode, name }) => {
     game.joinGame(partyCode, client.handshake.sessionID, name)
-    let response = game.getLobbyState(partyCode, client.handshake.sessionID)
-    io.to(partyCode).emit('getLobbyState', response)
+    io.to(partyCode).emit('newLobbyState');
+  });
+
+  client.on('getPlayerRoundState', (partyCode) => {
+    let gameState = game.getPlayerRoundState(partyCode, client.handshake.sessionID)
+    client.emit('getPlayerRoundState', gameState);
+  });
+
+  client.on('playCard', (partyCode, cardID) => {
+    game.playCard(partyCode,cardID, client.handshake.sessionID);
+    io.to(partyCode).emit('newGameState')
   });
 });

@@ -10,7 +10,7 @@ import Footer from "../../components/Footer/Footer"
 import PlayerList from "../../components/PlayerList/PlayerList"
 import "./StartGameScreen.css"
 
-import { joinParty, getLobbyState } from "../../api"
+import { joinParty, getLobbyState, newLobbyState } from "../../api"
 
 class StartGameScreen extends React.Component {
   constructor(props) {
@@ -29,19 +29,13 @@ class StartGameScreen extends React.Component {
   componentDidMount() {
     let partyCode = this.props.match.params.partyCode
     getLobbyState(partyCode, (response) => {
-      console.log('GOT UPDATED lobbyState', partyCode)
       console.log(`getLobbyState ${JSON.stringify(response)}`)
-      if (response.currentPlayer) {
-        this.setState({
-          joined: true,
-          players: response.players
-        })
-      } else {
-        this.setState({
-          players: response.players
-        })
-      }
-    })
+      this.setState({
+        joined: response.currentPlayer ? true : false,
+        players: response.players
+      });
+    });
+    newLobbyState(partyCode);
   }
 
   joinParty() {

@@ -9,7 +9,7 @@ class Game {
     this.ACardDeck = getShuffledACard().slice(0, 9);
     this.players = {};
     this.rounds = [];
-    this.roundLength = 5;
+    this.roundLength = roundLength;
 
     this.addNewPlayer = this.addNewPlayer.bind(this);
     this.getPlayer = this.getPlayer.bind(this);
@@ -17,7 +17,6 @@ class Game {
     this.getPlayerRoundState = this.getPlayerRoundState.bind(this);
   }
 
-  // O(1)
   addNewPlayer( name, sessionID ) {
     if (name == undefined || sessionID == undefined) {
       console.log(`trying to addNewPlayer to ${this.partyCode}`)
@@ -92,7 +91,7 @@ class Game {
     if (player == null) return null;
     let latestRound = this.getLatestRound()
     let roundRole = this.isRoundJudge(sessionID, latestRound) ? 'judge' : 'player'
-    let playerChoice = _.find(latestRound.otherPlayerCards, card => card.owner.pID === player.pID);
+    let playerChoice = _.find(latestRound.otherPlayerCards, card => card.owner.pID === player.pID) || null;
     let otherPlayerCards = latestRound.otherPlayerCards;
     let cards = player.cards;
     let QCard = latestRound.QCard;

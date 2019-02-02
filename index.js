@@ -1,12 +1,10 @@
-var app = require('express')();
+var express = require('express')
+var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 var game = require("./schema")
-
-// open server
-server.listen(5000, () => {
-  console.log("Listening on port 5000")
-});
+var path = require('path')
+app.use(express.static(path.join(__dirname, 'client', 'build')));
 
 // session
 var session = require('express-session') // for express
@@ -31,13 +29,18 @@ var iosession = session({
 app.use(iosession);
 io.use(sharedsession(iosession, { autoSave: true }));
 
-app.get('/', (req, res) => {
+app.get('/session', (req, res) => {
   if (req.session.name) {
     res.json(`welcome: ${req.session.name}`)
   } else {
     req.session.name = "Yusuf"
     res.json(`welcome for the first time!`)
   }
+});
+
+// serve all other routes to build
+app.get('*', (req,res) =>{
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
 
 io.on('connect', (client) => {
@@ -100,4 +103,9 @@ io.on('connect', (client) => {
   client.on('disconnect', function () {
     console.log(`client DISCONNECTED: session(${client.handshake.sessionID})`)
   });
+});
+
+// open server
+server.listen(8080, () => {
+  console.log("Listening on port 8080")
 });

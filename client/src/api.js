@@ -40,11 +40,6 @@ export function judgeSelectCard(partyCode, cardID) {
   socket.emit('judgeSelectCard', partyCode, cardID);
 }
 
-export function fetchNewGameState(partyCode) {
-  console.log('api.js')
-  socket.emit('fetchNewGameState', partyCode)
-}
-
 export function endRound(partyCode) {
   socket.emit('endRound', partyCode);
 }

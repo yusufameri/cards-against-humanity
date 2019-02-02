@@ -13,7 +13,7 @@ import Status from "../../components/Status/Status"
 
 // Import Helper Libraries
 import { DragDropContext } from "react-beautiful-dnd";
-import { getPlayerRoundState, newGameState, playCard, judgeSelectCard, endRound, fetchNewGameState } from "../../api"
+import { getPlayerRoundState, newGameState, playCard, judgeSelectCard, endRound } from "../../api"
 
 class PlayerSelectionScreen extends React.Component {
   constructor(props) {

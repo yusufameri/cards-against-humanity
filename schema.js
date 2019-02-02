@@ -50,7 +50,7 @@ export function judgeSelectCard(partyCode, cardID, sessionID, cb) {
   game.judgeSelectCard(sessionID, cardID, cb);
 }
 
-export function endRound(partyCode) {
+export function endRound(partyCode, cb) {
   let game = getOrCreateGame(partyCode);
-  game.endRound();
+  game.endRound(cb);
 }

@@ -187,7 +187,7 @@ class Game {
     }
   }
 
-  endRound() {
+  endRound(cb) {
     // TODO
     // make a copy of the latestRound.otherPlayerCards
     // remove the 'owners' property on the cards
@@ -200,7 +200,13 @@ class Game {
     // let otherPlayerCardsCopy = Object.assign({}, obj, ...(latestRound.otherPlayerCards))
     // otherPlayerCardsCopy = _.map(otherPlayerCardsCopy, card => card.owner = undefined)
     // console.log('Removing owners', otherPlayerCardsCopy)
-    latestRound.active = false;
+    if(latestRound) {
+      latestRound.active = false;
+      cb(true, `Round ${latestRound.roundNum} successfully finished`)
+    }
+    else {
+      cb(false, `Cannot endRound, since no rounds exist for the following game!`)
+    }
   }
 
   shuffleCard(sessionID, srcCardIDIndex, destCardIDIndex) {

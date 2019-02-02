@@ -60,31 +60,36 @@ io.on('connect', (client) => {
 
   client.on('getPlayerRoundState', (partyCode) => {
     console.log(`${client.handshake.sessionID} | getPlayerRoundState`)
+    client.join(partyCode);
     let gameState = game.getPlayerRoundState(partyCode, client.handshake.sessionID);
     client.emit('getPlayerRoundState', gameState);
   });
 
   client.on('playCard', (partyCode, cardID) => {
-    game.playCard(partyCode, cardID, client.handshake.sessionID, (status, message) => {
-      console.log(`playCard | ${status} | ${message}`)
-      io.to(partyCode).emit('newGameState');
+    game.playCard(partyCode, cardID, client.handshake.sessionID, (success, message) => {
+      console.log(`playCard | ${success} | ${message}`)
+      if(success) {
+        io.to(partyCode).emit('newGameState');
+      }
     });
   });
 
-  client.on('fetchNewGameState', partyCode => {
-    io.to(partyCode).emit('newGameState');
-  });
-
   client.on('judgeSelectCard', (partyCode, cardID) => {
-    game.judgeSelectCard(partyCode, cardID, client.handshake.sessionID, (status, message) => {
-      console.log(`judgeSelectCard | ${status} | ${message}`)
-      io.to(partyCode).emit('newGameState')
+    game.judgeSelectCard(partyCode, cardID, client.handshake.sessionID, (success, message) => {
+      console.log(`judgeSelectCard | ${success} | ${message} | ${client.handshake.sessionID}`)
+      if(success) {
+        io.to(partyCode).emit('newGameState')
+      }
     })
   });
 
   client.on('endRound', partyCode => {
-    game.endRound(partyCode);
-    io.to(partyCode).emit('newGameState');
+    game.endRound(partyCode, (success, message) => {
+      console.log(`endRound | ${success} | ${message} | ${client.handshake.sessionID}`)
+      if(success) {
+        io.to(partyCode).emit('newGameState');
+      }
+    });
   });
 
   client.on('disconnect', function () {

@@ -39,7 +39,6 @@ class Game {
   }
 
   // return the player in the game, if exists, else return null
-  // helper
   getPlayer(sessionID) {
     return this.players[sessionID] ? this.players[sessionID] : null;
   }
@@ -115,7 +114,7 @@ class Game {
     else if (roundRole == 'judge') {
       roundState = 'judge-waiting'
     }
-    else if (playerChoice) {
+    else if (playerChoice != null) {
       roundState = 'player-waiting'
     }
     else {
@@ -199,20 +198,18 @@ class Game {
   }
 
   endRound(cb) {
-    // TODO
     let latestRound = this.getLatestRound();
     if (latestRound) {
       latestRound.active = false;
       clearTimeout(this.roundTimer)
-      // make a copy of the latestRound.otherPlayerCards
-      // remove the 'owners' property on the cards
-      // place the cards back into the ACardDeck
-
       // console.log("Before ADeck", this.ACardDeck.length)
       let cardsPlayed = []
+      // make a copy of the latestRound.otherPlayerCards
       latestRound.otherPlayerCards.forEach((card) => cardsPlayed.push({ ...card }));
+      // remove the 'owners' property on the cards
       cardsPlayed.map(card => delete card.owner)
       // console.log('cardsPlayed, ', cardsPlayed.length)
+      // place the cards back into the ACardDeck
       this.ACardDeck = this.ACardDeck.concat(cardsPlayed)
       // console.log("After ADeck", this.ACardDeck.length)
       // console.log("Before QDeck", this.QCardDeck.length)
@@ -221,12 +218,20 @@ class Game {
       cb(true, `Round ${latestRound.roundNum} successfully finished`)
     }
     else {
-      cb(false, `Cannot endRound, since no rounds exist for the following game!`)
+      cb(false, `Cannot endRound(), since no rounds exist for the following game!`)
     }
   }
 
-  shuffleCard(sessionID, srcCardIDIndex, destCardIDIndex) {
-    // TODO
+  shuffleCard(sessionID, srcCardIDIndex, destCardIDIndex, cb) {
+    let player = this.getPlayer(sessionID);
+    if (player == null) {
+      cb(false, `cannot shuffle card! ${sessionID} not a player in game!`)
+    }
+    let newCardOrder = [...player.cards]
+    newCardOrder.splice(srcCardIDIndex, 1)
+    newCardOrder.splice(destCardIDIndex, 0, player.cards[srcCardIDIndex])
+    player.cards = newCardOrder;
+    cb(true, `shuffled ${srcCardIDIndex} <=> ${destCardIDIndex} for ${player.name}`)
   }
 }
 

@@ -8,7 +8,7 @@ function getOrCreateGame(partyCode, cb) {
     return games[partyCode]
   }
   else {
-    games[partyCode] = new Game(partyCode, 30, cb)
+    games[partyCode] = new Game(partyCode, 60, cb)
   }
   return games[partyCode]
 }
@@ -45,6 +45,11 @@ export function playCard(partyCode, cardID, sessionID, cb) {
 export function judgeSelectCard(partyCode, cardID, sessionID, cb) {
   let game = getOrCreateGame(partyCode);
   game.judgeSelectCard(sessionID, cardID, cb);
+}
+
+export function shuffleCards(partyCode, sourceIdx, destIdx, sessionID, cb) {
+  let game = getOrCreateGame(partyCode);
+  game.shuffleCard(sessionID, sourceIdx, destIdx, cb);
 }
 
 export function endRound(partyCode, cb) {

@@ -40,6 +40,10 @@ export function judgeSelectCard(partyCode, cardID) {
   socket.emit('judgeSelectCard', partyCode, cardID);
 }
 
+export function shuffleCards(partyCode, sourceIdx, destIdx) {
+  socket.emit('shuffleCards', partyCode, sourceIdx, destIdx);
+}
+
 export function endRound(partyCode) {
   socket.emit('endRound', partyCode);
 }

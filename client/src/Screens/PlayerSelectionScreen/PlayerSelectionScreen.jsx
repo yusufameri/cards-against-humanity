@@ -13,7 +13,7 @@ import Status from "../../components/Status/Status"
 
 // Import Helper Libraries
 import { DragDropContext } from "react-beautiful-dnd";
-import { getPlayerRoundState, newGameState, playCard, judgeSelectCard, endRound } from "../../api"
+import { getPlayerRoundState, newGameState, playCard, judgeSelectCard, shuffleCards, endRound } from "../../api"
 
 class PlayerSelectionScreen extends React.Component {
   constructor(props) {
@@ -165,26 +165,30 @@ class PlayerSelectionScreen extends React.Component {
         timeLeft: roundState.timeLeft,
         directions
       });
+
+      if (this.state.ticker) {
+        console.log('updated timeLeft!, deleting ticker')
+        clearInterval(this.state.ticker)
+      }
+      var ticker = setInterval(() => {
+        if (this.state.timeLeft <= 0) {
+          console.log('clearing interval timeout!', ticker)
+          clearInterval(ticker)
+        }
+        else {
+          console.log('tick');
+          this.setState({
+            timeLeft: this.state.timeLeft - 1,
+            ticker
+          });
+        }
+      }, 1000);
     };
 
-    // clearInterval(this.state.ticker);
-    // TODO: fix/figure out where to place this count-down interval...
-    // var ticker = setInterval(() => {
-    //   if (this.state.timeLeft <= 0) {
-    //     console.log('clearing interval timeout!', ticker)
-    //     clearInterval(ticker)
-    //     fetchNewGameState(partyCode)
-    //   }
-    //   else {
-    //     this.setState({
-    //       timeLeft: this.state.timeLeft - 1,
-    //       ticker
-    //     });
-    //   }
-    // }, 1000);
-
+    // ask server to send current gameStateEvents
     getPlayerRoundState(partyCode, newState);
-    newGameState(partyCode); // subscribe to newGameState
+    // subscribe to newGameState events
+    newGameState(partyCode); 
   }
 
   componentWillUnmount() {
@@ -203,7 +207,7 @@ class PlayerSelectionScreen extends React.Component {
   chooseCardHandler = result => {
     const { destination, source } = result;
     // console.log(result);
-
+    
     if (!destination || (destination.droppableId === source.droppableId && destination.index === source.index)) {
       return;
     }
@@ -211,11 +215,8 @@ class PlayerSelectionScreen extends React.Component {
     if (source.droppableId === destination.droppableId) {
       // shift/move cards in correct order @ CardCarousel
       console.log("swapping!")
-      let newCards = [...this.state.cards]
-      newCards.splice(source.index, 1)
-      newCards.splice(destination.index, 0, this.state.cards[source.index])
-      this.setState({ cards: newCards })
-      // TODO: call api to shuffle cards
+      let partyCode = this.props.match.params.partyCode
+      shuffleCards(partyCode, source.index, destination.index)
     }
     else if (source.droppableId === "bottom" && destination.droppableId === "top" && this.state.playerChoice == null) {
       if (this.state.roundState === 'judge-selecting' && this.state.roundRole === 'judge') {

@@ -91,6 +91,15 @@ io.on('connect', (client) => {
     })
   });
 
+  client.on('shuffleCards', (partyCode, sourceIdx, destIdx) => {
+    game.shuffleCards(partyCode, sourceIdx, destIdx, client.handshake.sessionID, (success, message) => {
+      console.log(`shuffleCards | ${client.handshake.sessionID} | ${success} | ${message}`)
+      if(success) {
+        client.emit('newGameState')
+      }
+    })
+  })
+
   client.on('endRound', partyCode => {
     game.endRound(partyCode, (success, message) => {
       console.log(`endRound | ${success} | ${message} | ${client.handshake.sessionID}`)

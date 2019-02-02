@@ -8,7 +8,7 @@ function getOrCreateGame(partyCode, cb) {
     return games[partyCode]
   }
   else {
-    games[partyCode] = new Game(partyCode, 15, cb)
+    games[partyCode] = new Game(partyCode, 30, cb)
   }
   return games[partyCode]
 }
@@ -28,6 +28,7 @@ export function getLobbyState(partyCode, sessionID, cb) {
     players,
     currentPlayer: currentPlayer || null
   }
+  
   return response;
 }
 

@@ -2,23 +2,25 @@ import _ from "lodash"
 import { getShuffledACard, getShuffledQCard } from "./Card"
 
 class Game {
-  constructor(partyCode, roundLength = 15, roundFinishedNotifier) {
+  constructor(partyCode, roundLength = 60, roundFinishedNotifier = () => { }) {
     this.partyCode = partyCode;
     this.gameStartDate = new Date();
-    this.QCardDeck = getShuffledQCard().slice(0, 2);
-    this.ACardDeck = getShuffledACard().slice(0, 9);
+    this.QCardDeck = getShuffledQCard();//.slice(0, 2);
+    this.ACardDeck = getShuffledACard();//.slice(0, 11);
     this.players = {};
     this.rounds = [];
     this.roundLength = roundLength;
     this.roundFinishedNotifier = roundFinishedNotifier;
+    this.roundTimer = 0;
 
     this.addNewPlayer = this.addNewPlayer.bind(this);
     this.getPlayer = this.getPlayer.bind(this);
     this.getLatestRound = this.getLatestRound.bind(this);
     this.getPlayerRoundState = this.getPlayerRoundState.bind(this);
+    this.endRound = this.endRound.bind(this);
   }
 
-  addNewPlayer( name, sessionID ) {
+  addNewPlayer(name, sessionID) {
     if (name == undefined || sessionID == undefined) {
       console.log(`trying to addNewPlayer to ${this.partyCode}`)
     }
@@ -30,7 +32,7 @@ class Game {
         name,
         pID: _.size(this.players),
         roundsWon: [],
-        cards: this.ACardDeck.splice(0, 3),
+        cards: this.ACardDeck.splice(0, 10),
         roundState: "lobby"
       };
     }
@@ -62,13 +64,13 @@ class Game {
         roundStartTime: new Date(),
         roundEndTime: null,
         roundJudge: _.find(this.players, player => player.pID === (this.rounds.length % _.size(this.players))), // O(k), k is constant size number of players
-        QCard: _.take(this.QCardDeck),
+        QCard: _.take(this.QCardDeck)[0],
         otherPlayerCards: [],
         winningCard: null,
         winner: null,
       }
-      
-      setTimeout(() => {
+
+      this.roundTimer = setTimeout(() => {
         round.roundState = 'judge-selecting'
         console.log('Judge-selection time!')
         this.roundFinishedNotifier(true, 'Judge-selection time!')
@@ -104,9 +106,10 @@ class Game {
     let winningCard = latestRound.winningCard;
     let winner = latestRound.winner;
     let timeLeft = _.max([0, _.floor(this.roundLength - ((new Date() - latestRound.roundStartTime) / 1000))]); // timeRemaining in seconds
-
     let roundState;
+
     if (latestRound.roundState === 'judge-selecting' || latestRound.roundState === 'viewing-winner') {
+      timeLeft = 0
       roundState = latestRound.roundState
     }
     else if (roundRole == 'judge') {
@@ -150,10 +153,16 @@ class Game {
     // if they own the cardID they want to play, play the card for the latest round
     if (card) {
       _.remove(player.cards, c => c.id === cardID)
+      // add card to otherPlayerCards
       latestRound.otherPlayerCards.push({ ...card, owner: { "name": player.name, "pID": player.pID } })
-      if(latestRound.otherPlayerCards.length === this.players.length - 1) {
+      // give player a new card. TODO: error handle if ACardDeck is empty
+      player.cards = player.cards.concat(this.ACardDeck.splice(0, 1))
+      // player.
+      if (latestRound.otherPlayerCards.length === (_.size(this.players) - 1)) {
         latestRound.roundState = 'judge-selecting'
-        cb(true, 'all playyers have played their cards, going to judge-selecting!')
+        clearTimeout(this.roundTimer)
+        this.roundFinishedNotifier(true, 'all players have played their cards, going to judge-selecting!')
+        cb(true, `${player.name} was last player to play cards, going to judge-selecting!`)
       } else {
         cb(true, `${player.name} played their card!`)
       }
@@ -191,19 +200,24 @@ class Game {
 
   endRound(cb) {
     // TODO
-    // make a copy of the latestRound.otherPlayerCards
-    // remove the 'owners' property on the cards
-    // place the cards back into the ACardDeck
-    // give all of the players (except for the judge), a new ACard from the deck
-    // 
-    // set round.active = false -- only do this when the first player selects "Tap anywhere to continue"
     let latestRound = this.getLatestRound();
-    // let obj = {}
-    // let otherPlayerCardsCopy = Object.assign({}, obj, ...(latestRound.otherPlayerCards))
-    // otherPlayerCardsCopy = _.map(otherPlayerCardsCopy, card => card.owner = undefined)
-    // console.log('Removing owners', otherPlayerCardsCopy)
-    if(latestRound) {
+    if (latestRound) {
       latestRound.active = false;
+      clearTimeout(this.roundTimer)
+      // make a copy of the latestRound.otherPlayerCards
+      // remove the 'owners' property on the cards
+      // place the cards back into the ACardDeck
+
+      // console.log("Before ADeck", this.ACardDeck.length)
+      let cardsPlayed = []
+      latestRound.otherPlayerCards.forEach((card) => cardsPlayed.push({ ...card }));
+      cardsPlayed.map(card => delete card.owner)
+      // console.log('cardsPlayed, ', cardsPlayed.length)
+      this.ACardDeck = this.ACardDeck.concat(cardsPlayed)
+      // console.log("After ADeck", this.ACardDeck.length)
+      // console.log("Before QDeck", this.QCardDeck.length)
+      this.QCardDeck = this.QCardDeck.concat(latestRound.QCard)
+      // console.log("After QDeck", this.QCardDeck.length)
       cb(true, `Round ${latestRound.roundNum} successfully finished`)
     }
     else {
@@ -220,12 +234,14 @@ export default Game;
 
 // --------------------------------------------------------------------------------------------------------------------
 
-// let g = new Game("abc123")
+// let cb = (success, message) => console.log(`${success} | ${message}`)
+// let g = new Game("abc123", 5, cb)
+
 
 // // Yusuf Joins
-// g.addNewPlayer({ name: "Yusuf", sessionID: "yusufSession#123" });
-// g.addNewPlayer({ name: "Salman", sessionID: "salmanSession#456" });
-// g.addNewPlayer({ name: "Reza", sessionID: "rezaSession#456" });
+// g.addNewPlayer("Yusuf", "yusufSession#123");
+// g.addNewPlayer("Salman", "salmanSession#456");
+// g.addNewPlayer("Reza", "rezaSession#456");
 // console.log('1.------------------------------------------------------------------------')
 // console.log(g.getPlayerRoundState('yusufSession#123'))
 // console.log(g.getPlayerRoundState('salmanSession#456'))
@@ -238,12 +254,21 @@ export default Game;
 // // Salman cannot play a card that he does not own
 // let salman = g.getPlayer('salmanSession#456');
 // g.playCard('salmanSession#456', yusuf.cards[0].id)
-// // salman can only play a card that he owns
-// g.playCard('salmanSession#456', salman.cards[0].id)
+// salman can only play a card that he owns
+// g.playCard('salmanSession#456', salman.cards[0].id, cb)
 
 // // Reza plays a card
 // let reza = g.getPlayer('rezaSession#456');
-// g.playCard('rezaSession#456', reza.cards[0].id);
+// g.playCard('rezaSession#456', reza.cards[0].id, cb);
+// let latestRound = g.getLatestRound();
+// let ACardDeck = reza.cards
+// let cardsPlayed = []
+// latestRound.otherPlayerCards.forEach((card) => cardsPlayed.push({ ...card }));
+// cardsPlayed.map(card => delete card.owner)
+// console.log(cardsPlayed.concat(ACardDeck))
+// console.log(reza)
+// g.endRound(cb)
+// console.log(g.getLatestRound())
 
 // console.log('3-------------------------------------------------------------------------')
 // console.log(g.getPlayerRoundState('yusufSession#123'))

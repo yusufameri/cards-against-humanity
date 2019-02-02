@@ -152,7 +152,7 @@ class PlayerSelectionScreen extends React.Component {
       }
 
       this.setState({
-        QCard: roundState.QCard[0],
+        QCard: roundState.QCard,
         cards: roundState.cards,
         otherPlayerCards: roundState.otherPlayerCards,
         roundNum: roundState.roundNum,

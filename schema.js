@@ -7,11 +7,11 @@ let games = {}
 // this will create an empty game
 function getOrCreateGame(partyCode) {
   if (games[partyCode]) {
-    console.log(`get existing game | ${partyCode}`)
+    // console.log(`get existing game | ${partyCode}`)
     return games[partyCode]
   }
   else {
-    console.log(`get NEW (create) game | ${partyCode}`)
+    // console.log(`get NEW (create) game | ${partyCode}`)
     games[partyCode] = new Game(partyCode)
   }
   return games[partyCode]
@@ -26,12 +26,9 @@ export function joinGame(partyCode, sessionID, name) {
 export function getLobbyState(partyCode, sessionID) {
   let game = getOrCreateGame(partyCode);
   let currentPlayer = game.getPlayer(sessionID)
-
   let players = _.map(game.players, (player) => player.name);
 
-  let response = {}
-
-  response = {
+  let response = {
     players,
     currentPlayer: currentPlayer || null
   }
@@ -43,7 +40,17 @@ export function getPlayerRoundState(partyCode, sessionID) {
   return game.getPlayerRoundState(sessionID);
 }
 
-export function playCard(partyCode, cardID, sessionID) {
+export function playCard(partyCode, cardID, sessionID, cb) {
   let game = getOrCreateGame(partyCode);
-  game.playCard(sessionID, cardID);
+  game.playCard(sessionID, cardID, cb);
+}
+
+export function judgeSelectCard(partyCode, cardID, sessionID, cb) {
+  let game = getOrCreateGame(partyCode);
+  game.judgeSelectCard(sessionID, cardID, cb);
+}
+
+export function endRound(partyCode) {
+  let game = getOrCreateGame(partyCode);
+  game.endRound();
 }

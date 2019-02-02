@@ -2,7 +2,7 @@ import _ from "lodash"
 import { getShuffledACard, getShuffledQCard } from "./Card"
 
 class Game {
-  constructor(partyCode, roundLength = 60) {
+  constructor(partyCode, roundLength = 15) {
     this.partyCode = partyCode;
     this.gameStartDate = new Date();
     this.QCardDeck = getShuffledQCard().slice(0, 2);
@@ -66,10 +66,12 @@ class Game {
         winningCard: null,
         winner: null,
       }
+      
       setTimeout(() => {
         round.roundState = 'judge-selecting'
         console.log('Judge-selection time!')
       }, this.roundLength * 1000);
+
       this.rounds.push(round);
       return round;
     }
@@ -130,37 +132,36 @@ class Game {
     }
   }
 
-  // O(1)
-  playCard(sessionID, cardID) {
+  playCard(sessionID, cardID, cb) {
     let player = this.getPlayer(sessionID);
     if (player == null) return;
-    let card = _.find(player.cards, c => c.id === cardID) // O(1)
+    let card = _.find(player.cards, c => c.id === cardID)
     let latestRound = this.getLatestRound()
 
     if (latestRound.roundState != 'players-selecting') {
-      console.log('Cannot play card!, judge is currently selecting!')
-      return false;
+      cb(false, "Cannot play card!, judge is currently selecting!")
     }
-    else if (this.isRoundJudge(sessionID, latestRound)) { // O(1)
-      console.log(`${player.name} cannot play a card this round since they are the judge`)
-      return false;
+    else if (this.isRoundJudge(sessionID, latestRound)) {
+      cb(false, `${player.name} cannot play a card this round since they are the judge`)
     }
 
     // if they own the cardID they want to play, play the card for the latest round
     if (card) {
-      _.remove(player.cards, c => c.id === cardID) // O(1)
-      latestRound.otherPlayerCards.push({ ...card, owner: { "name": player.name, "pID": player.pID } }) // O(1)
-      console.log(`${player.name} played card ${cardID}`)
-      console.log(`${player.name} now has ${player.cards.length} cards`)
-      return true;
+      _.remove(player.cards, c => c.id === cardID)
+      latestRound.otherPlayerCards.push({ ...card, owner: { "name": player.name, "pID": player.pID } })
+      if(latestRound.otherPlayerCards.length === this.players.length - 1) {
+        latestRound.roundState = 'judge-selecting'
+        cb(true, 'all playyers have played their cards, going to judge-selecting!')
+      } else {
+        cb(true, `${player.name} played their card!`)
+      }
     }
     else {
-      console.log(`Player ${player.name}[${sessionID}] attempting to play card (${cardID}) they do not own! Hacker!`)
-      return false;
+      cb(false, `Player ${player.name}[${sessionID}] attempting to play card (${cardID}) they do not own! Hacker!`)
     }
   }
 
-  judgeSelectCard(sessionID, cardID) {
+  judgeSelectCard(sessionID, cardID, cb) {
     let latestRound = this.getLatestRound();
     if (this.isRoundJudge(sessionID, latestRound) && latestRound.roundState === 'judge-selecting') {
       let winningCard = _.find(latestRound.otherPlayerCards, card => card.id === cardID);
@@ -175,14 +176,14 @@ class Game {
           ACard: winningCard,
           QCard: latestRound.QCard
         });
-        console.log(`${latestRound.winner} won with card ${latestRound.winningCard.text}`)
+        cb(true, `${latestRound.winner} won with card ${latestRound.winningCard.text}`)
       }
       else {
-        console.log(`Attempted to play a winning card ${cardID} that was not played!`)
+        cb(false, `Attempted to play a winning card ${cardID} that was not played!`)
       }
     }
     else {
-      console.log('you are not the round judge! you cannot choose the winner!')
+      cb(false, 'you are not the round judge! you cannot choose the winner!')
     }
   }
 

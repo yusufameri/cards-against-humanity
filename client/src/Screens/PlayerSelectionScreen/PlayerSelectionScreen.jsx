@@ -13,8 +13,7 @@ import Status from "../../components/Status/Status"
 
 // Import Helper Libraries
 import { DragDropContext } from "react-beautiful-dnd";
-import { getPlayerRoundState, newGameState, playCard } from "../../api"
-import _ from "lodash"
+import { getPlayerRoundState, newGameState, playCard, judgeSelectCard, endRound, fetchNewGameState } from "../../api"
 
 class PlayerSelectionScreen extends React.Component {
   constructor(props) {
@@ -125,9 +124,6 @@ class PlayerSelectionScreen extends React.Component {
 
       // this is set when judge selects a card
       winningCard: null, // type=Card
-
-      // this is set implcitely
-      cardsIn: 1, //type=Number
     }
   }
 
@@ -135,74 +131,72 @@ class PlayerSelectionScreen extends React.Component {
     console.log("PlayerSelectionScreen: componentDidMount()")
     let partyCode = this.props.match.params.partyCode
     let newState = (roundState) => {
-      console.log('RoundState: ', roundState)
+      console.log(`${new Date().getMinutes()}:${new Date().getSeconds()}`)
+      console.log('RoundState:', roundState)
+      let headerText = ''
+      let directions = ''
+      if (roundState.roundState === 'viewing-winner') {
+        headerText = `${roundState.winner} Won!`
+        directions = '';
+      }
+      else if (roundState.roundRole === 'judge') {
+        headerText = `You are the Judge`
+        if (roundState.roundState === 'judge-waiting') directions = 'Waiting for players to choose Cards';
+        else if (roundState.roundState === 'judge-selecting') directions = 'Choose your favorite card';
+      }
+      else {
+        headerText = `${roundState.roundJudge} is the Judge`
+        if (roundState.roundState === 'player-selecting') directions = 'Choose one Card';
+        else if (roundState.roundState === 'player-waiting') directions = 'Waiting for other players';
+        else if (roundState.roundState === 'judge-selecting') directions = `${roundState.roundJudge} is choosing their favorite`
+      }
+
       this.setState({
-       QCard: roundState.QCard[0],
-       cards: roundState.cards,
-       otherPlayerCards: roundState.otherPlayerCards,
-       roundNum: roundState.roundNum,
-       roundRole: roundState.roundRole,
-       roundJudge: roundState.roundJudge,
-       headerText: roundState.roundRole === 'judge' ? 'You are the Judge' : `${roundState.roundJudge} is the Judge`,
-       roundState: roundState.roundState,
-       winner: roundState.winner,
-       winningCard: roundState.winningCard,
-       cardsIn: roundState.otherPlayerCards.length,
-       timeLeft: roundState.timeLeft
+        QCard: roundState.QCard[0],
+        cards: roundState.cards,
+        otherPlayerCards: roundState.otherPlayerCards,
+        roundNum: roundState.roundNum,
+        roundRole: roundState.roundRole,
+        roundJudge: roundState.roundJudge,
+        headerText,
+        roundState: roundState.roundState,
+        winner: roundState.winner,
+        winningCard: roundState.winningCard,
+        timeLeft: roundState.timeLeft,
+        directions
       });
-      setInterval(() => {
-        this.setState({
-          timeLeft: _.max([0, this.state.timeLeft - 1])
-        });
-      }, 1000)
     };
 
-    getPlayerRoundState(partyCode, newState);
-    newGameState(partyCode);
+    // clearInterval(this.state.ticker);
+    // TODO: fix/figure out where to place this count-down interval...
+    // var ticker = setInterval(() => {
+    //   if (this.state.timeLeft <= 0) {
+    //     console.log('clearing interval timeout!', ticker)
+    //     clearInterval(ticker)
+    //     fetchNewGameState(partyCode)
+    //   }
+    //   else {
+    //     this.setState({
+    //       timeLeft: this.state.timeLeft - 1,
+    //       ticker
+    //     });
+    //   }
+    // }, 1000);
 
-    // let timer = setTimeout(() => {
-    //   this.setState({
-    //     roundState: 'judge-selecting',
-    //     directions: `Select your favorite card` // ${this.state.roundJudge} is viewing the cards
-    //   });
-    // }, 5000);
-    // this.setState({ timer });
+    getPlayerRoundState(partyCode, newState);
+    newGameState(partyCode); // subscribe to newGameState
   }
 
   componentWillUnmount() {
     console.log("PlayerSelectionScreen: componentWillUnmount()")
-    clearTimeout(this.state.timer);
+    clearInterval(this.state.ticker);
   }
 
   // called after viewing-winner, resets state and gets new state from server. Begins new round
   restoreScreen() {
+    let partyCode = this.props.match.params.partyCode
+    endRound(partyCode);
     console.log("restoring screen");
-    // document.getElementById('top').style.height = '55%';
-    // document.getElementById('continueMsg').style.display = 'none';
-    // ask server to get the new state for the current player in this.state.roundNum + 1
-    // need:
-    // roundRole (player | judge)
-    // roundState (player-selecting | judge-waiting)
-    // roundJudge
-
-    // reset
-    // playerChoice = null
-    // winningCard = null
-    this.setState({
-      roundState: "player-selecting",
-      roundRole: "player",
-      directions: "Choose 1 Card",
-      headerText: "Reza is the Judge",
-      playerChoice: null,
-      winningCard: null,
-      roundNum: 2,
-      cardsIn: 0,
-      QCard: {
-        id: 459,
-        text: "_?  There's an app for that.",
-        cardType: "Q"
-      }
-    });
   }
 
   // choosing card logic (drag-and-drop)
@@ -226,38 +220,20 @@ class PlayerSelectionScreen extends React.Component {
       newCards.splice(source.index, 1)
       newCards.splice(destination.index, 0, this.state.cards[source.index])
       this.setState({ cards: newCards })
+      // TODO: call api to shuffle cards
     }
     else if (source.droppableId === "bottom" && destination.droppableId === "top" && this.state.playerChoice == null) {
       if (this.state.roundState === 'judge-selecting' && this.state.roundRole === 'judge') {
         // judge-selecting card
-        console.log(`winner card chosen: ${JSON.stringify(this.state.QCard)}`);
-        let newCards = [...this.state.otherPlayerCards];
-        newCards.splice(source.index, 1);
-        let winningCard = this.state.otherPlayerCards[source.index];
-        this.setState({
-          playerChoice: winningCard,
-          winningCard,
-          otherPlayerCards: newCards,
-          roundState: 'viewing-winner',
-          headerText: `${winningCard.cardOwner} Won!`,
-        });
+        console.log(`winner card chosen: ${JSON.stringify(this.state.otherPlayerCards[source.index])}`);
+        let partyCode = this.props.match.params.partyCode
+        judgeSelectCard(partyCode, this.state.otherPlayerCards[source.index].id);
       }
       else {
         // player-selecting card
         console.log("player chose a card!");
-        let newCards = [...this.state.cards];
-        newCards.splice(source.index, 1);
         let partyCode = this.props.match.params.partyCode
         playCard(partyCode, this.state.cards[source.index].id)
-
-        // TODO: tell server you choose a card
-        // this.setState({
-        //   playerChoice: this.state.cards[source.index],
-        //   cards: newCards,
-        //   roundState: 'player-waiting',
-        //   cardsIn: this.state.cardsIn + 1,
-        //   directions: "Wait for other Players"
-        // });
       }
     }
   }
@@ -280,8 +256,8 @@ class PlayerSelectionScreen extends React.Component {
             />
             <DropCardSpace
               QCard={this.state.QCard}
-              playerChoice={this.state.playerChoice}
-              cardsIn={this.state.cardsIn}
+              playerChoice={this.state.roundState === 'viewing-winner' ? this.state.winningCard : this.state.playerChoice}
+              cardsIn={this.state.otherPlayerCards.length}
               roundState={this.state.roundState}
               roundRole={this.state.roundRole}
             />

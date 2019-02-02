@@ -1,21 +1,24 @@
 import openSocket from 'socket.io-client';
 const socket = openSocket("localhost:5000");
 
-export function joinParty({partyCode, name}, cb) {
-  socket.emit('joinParty', {partyCode, name});
+// StartGameScreen
+
+export function joinParty({ partyCode, name }, cb) {
+  socket.emit('joinParty', { partyCode, name });
 }
 
 export function getLobbyState(partyCode, cb) {
-  socket.emit('getLobbyState', partyCode)
+  socket.emit('getLobbyState', partyCode);
   socket.on('getLobbyState', (response) => cb(response));
 }
 
 export function newLobbyState(partyCode) {
-  // whenever there is a newLobbyState, ask socket for new getLobbyState
   socket.on('newLobbyState', () => {
     socket.emit('getLobbyState', partyCode);
   });
 }
+
+// PlayerSelectionScreen
 
 export function getPlayerRoundState(partyCode, cb) {
   socket.emit('getPlayerRoundState', partyCode);
@@ -24,10 +27,29 @@ export function getPlayerRoundState(partyCode, cb) {
 
 export function newGameState(partyCode) {
   socket.on('newGameState', () => {
+    console.log('server telling me to get newGameState')
     socket.emit('getPlayerRoundState', partyCode);
-  })
+  });
 }
 
 export function playCard(partyCode, cardID) {
-  socket.emit('playCard', partyCode, cardID)
+  socket.emit('playCard', partyCode, cardID);
 }
+
+export function judgeSelectCard(partyCode, cardID) {
+  socket.emit('judgeSelectCard', partyCode, cardID);
+}
+
+export function fetchNewGameState(partyCode) {
+  console.log('api.js')
+  socket.emit('fetchNewGameState', partyCode)
+}
+
+export function endRound(partyCode) {
+  socket.emit('endRound', partyCode);
+}
+
+// TODO:
+// export function shuffleCard(partyCode, srcCardIdx, dstCardIdx) {
+//   socket.emit('shuffleCard', partyCode, srcCardIdx, dstCardIdx)
+// }

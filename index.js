@@ -11,7 +11,7 @@ server.listen(5000, () => {
 // session
 var session = require('express-session') // for express
 var sharedsession = require("express-socket.io-session"); // for socket.io
-var RedisStore = require('connect-redis')(session);
+var RedisStore = require('connect-redis')(session); // for storing session data
 
 // create a redis client
 var redis = require("redis"),
@@ -41,26 +41,53 @@ app.get('/', (req, res) => {
 });
 
 io.on('connect', (client) => {
-  console.log(`client connected: session(${client.handshake.sessionID}) socket.id(${client.id})`)
+  console.log(`client connected: session(${client.handshake.sessionID})`)
+
+  // StartGameScreen
 
   client.on('getLobbyState', (partyCode, tellOthers) => {
     client.join(partyCode);
-    let response = game.getLobbyState(partyCode, client.handshake.sessionID)
+    let response = game.getLobbyState(partyCode, client.handshake.sessionID);
     client.emit("getLobbyState", response);
   });
 
   client.on('joinParty', ({ partyCode, name }) => {
-    game.joinGame(partyCode, client.handshake.sessionID, name)
+    game.joinGame(partyCode, client.handshake.sessionID, name);
     io.to(partyCode).emit('newLobbyState');
   });
 
+  // PlayerSelectionScreen
+
   client.on('getPlayerRoundState', (partyCode) => {
-    let gameState = game.getPlayerRoundState(partyCode, client.handshake.sessionID)
+    console.log(`${client.handshake.sessionID} | getPlayerRoundState`)
+    let gameState = game.getPlayerRoundState(partyCode, client.handshake.sessionID);
     client.emit('getPlayerRoundState', gameState);
   });
 
   client.on('playCard', (partyCode, cardID) => {
-    game.playCard(partyCode,cardID, client.handshake.sessionID);
-    io.to(partyCode).emit('newGameState')
+    game.playCard(partyCode, cardID, client.handshake.sessionID, (status, message) => {
+      console.log(`playCard | ${status} | ${message}`)
+      io.to(partyCode).emit('newGameState');
+    });
+  });
+
+  client.on('fetchNewGameState', partyCode => {
+    io.to(partyCode).emit('newGameState');
+  });
+
+  client.on('judgeSelectCard', (partyCode, cardID) => {
+    game.judgeSelectCard(partyCode, cardID, client.handshake.sessionID, (status, message) => {
+      console.log(`judgeSelectCard | ${status} | ${message}`)
+      io.to(partyCode).emit('newGameState')
+    })
+  });
+
+  client.on('endRound', partyCode => {
+    game.endRound(partyCode);
+    io.to(partyCode).emit('newGameState');
+  });
+
+  client.on('disconnect', function () {
+    console.log(`client DISCONNECTED: session(${client.handshake.sessionID})`)
   });
 });

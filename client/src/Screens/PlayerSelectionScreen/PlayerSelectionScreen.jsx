@@ -204,12 +204,7 @@ class PlayerSelectionScreen extends React.Component {
     const { destination, source } = result;
     // console.log(result);
 
-    if (!destination) {
-      return;
-    }
-    if (destination.droppableId === source.droppableId &&
-      destination.index === source.index
-    ) {
+    if (!destination || (destination.droppableId === source.droppableId && destination.index === source.index)) {
       return;
     }
 

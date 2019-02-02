@@ -2,7 +2,7 @@ import _ from "lodash"
 import { getShuffledACard, getShuffledQCard } from "./Card"
 
 class Game {
-  constructor(partyCode, roundLength = 15) {
+  constructor(partyCode, roundLength = 15, roundFinishedNotifier) {
     this.partyCode = partyCode;
     this.gameStartDate = new Date();
     this.QCardDeck = getShuffledQCard().slice(0, 2);
@@ -10,6 +10,7 @@ class Game {
     this.players = {};
     this.rounds = [];
     this.roundLength = roundLength;
+    this.roundFinishedNotifier = roundFinishedNotifier;
 
     this.addNewPlayer = this.addNewPlayer.bind(this);
     this.getPlayer = this.getPlayer.bind(this);
@@ -70,6 +71,7 @@ class Game {
       setTimeout(() => {
         round.roundState = 'judge-selecting'
         console.log('Judge-selection time!')
+        this.roundFinishedNotifier(true, 'Judge-selection time!')
       }, this.roundLength * 1000);
 
       this.rounds.push(round);

@@ -29,10 +29,10 @@ var iosession = session({
 });
 
 app.use(iosession);
-io.use(sharedsession(iosession, {autoSave:true}));
+io.use(sharedsession(iosession, { autoSave: true }));
 
 app.get('/', (req, res) => {
-  if(req.session.name) {
+  if (req.session.name) {
     res.json(`welcome: ${req.session.name}`)
   } else {
     req.session.name = "Yusuf"
@@ -47,7 +47,12 @@ io.on('connect', (client) => {
 
   client.on('getLobbyState', (partyCode, tellOthers) => {
     client.join(partyCode);
-    let response = game.getLobbyState(partyCode, client.handshake.sessionID);
+
+    // place a cb for when the round timer finishes.
+    let response = game.getLobbyState(partyCode, client.handshake.sessionID, (success, message) => {
+      console.log(`Round ended, going to judge-selecting ${success} | ${message}`)
+      io.to(partyCode).emit('newGameState');
+    });
     client.emit("getLobbyState", response);
   });
 
@@ -68,7 +73,7 @@ io.on('connect', (client) => {
   client.on('playCard', (partyCode, cardID) => {
     game.playCard(partyCode, cardID, client.handshake.sessionID, (success, message) => {
       console.log(`playCard | ${success} | ${message}`)
-      if(success) {
+      if (success) {
         io.to(partyCode).emit('newGameState');
       }
     });
@@ -77,7 +82,7 @@ io.on('connect', (client) => {
   client.on('judgeSelectCard', (partyCode, cardID) => {
     game.judgeSelectCard(partyCode, cardID, client.handshake.sessionID, (success, message) => {
       console.log(`judgeSelectCard | ${success} | ${message} | ${client.handshake.sessionID}`)
-      if(success) {
+      if (success) {
         io.to(partyCode).emit('newGameState')
       }
     })
@@ -86,7 +91,7 @@ io.on('connect', (client) => {
   client.on('endRound', partyCode => {
     game.endRound(partyCode, (success, message) => {
       console.log(`endRound | ${success} | ${message} | ${client.handshake.sessionID}`)
-      if(success) {
+      if (success) {
         io.to(partyCode).emit('newGameState');
       }
     });

@@ -23,79 +23,39 @@ class PlayerSelectionScreen extends React.Component {
 
     // roundRole: player
     // roundState:
-    //    player-selecting -> player-waiting -> judge-selecting -> [player-selecting | judge-selecting]
+    //    player-selecting -> player-waiting -> judge-selecting -> viewing-winner -> [player-selecting | judge-selecting]
     // 
     // roundRole: judge
     // roundState
-    //    judge-waiting -> judge-selecting -> [player-selecting]
+    //    judge-waiting -> judge-selecting -> viewing-winner -> [player-selecting]
 
     this.state = {
       // get these on getRoundState
-      roundState: "judge-selecting",  //type=Enum player-selecting | player-viewing | judge-selecting |
-      roundRole: "judge", // type=Enum player | judge
+      roundState: "viewing-winner",  // player-selecting | player-waiting | judge-selecting | viewing-winner
+      roundRole: "judge", // player | judge
       roundJudge: "Yusuf",
-      roundNum: null, // type=Number
+      roundNum: null, // Number
       QCard: {
         cardType: "Q",
-        text: "TSA guidelines now prohibit _ on airplanes.",
-        id: 25
+        text: `Join the game with party code ${this.props.match.params.partyCode} before playing`,
+        id: 69
       },
       cards: [
         {
           type: "A",
-          text: "A disappointing birthday party.",
+          text: "Hey dummy!",
           id: 0
         },
         {
           type: "A",
-          text: "The terrorists.",
+          text: "Join the game from the home screen before starting!",
           id: 1
-        },
-        {
-          type: "A",
-          text: "Steven Hawking talking dirty.",
-          id: 2
-        },
-        {
-          type: "A",
-          text: "Asians who aren't good at math.",
-          id: 3
-        },
-        {
-          type: "A",
-          text: "The Chinese gymnastics team.",
-          id: 4
-        },
-        {
-          type: "A",
-          text: "Police brutality.",
-          id: 5
-        },
-        {
-          type: "A",
-          text: "Hot people.",
-          id: 6
-        },
-        {
-          type: "A",
-          text: "Kanye West.",
-          id: 7
-        },
-        {
-          type: "A",
-          text: "The true meaning of Christmas.",
-          id: 8
-        },
-        {
-          type: "A",
-          text: "An honest cop with nothing left to lose.",
-          id: 9
         }
       ],
 
       // these should be set implicitely based on above state
-      directions: "Waiting for other Players", //type=String if(player-viewing) -> 'Yusuf is selecting the Card'
-      headerText: "You are the Judge",
+      directions: "Waiting for other Players",
+      headerText: `Join game before playing`,
 
       // this is set when user selects a card
       playerChoice: null, // type=Card
@@ -106,24 +66,28 @@ class PlayerSelectionScreen extends React.Component {
           type: "A",
           text: "(Salmans Card)",
           id: 10,
-          cardOwner: "Salman"
+          owner: {
+            name: "Salman",
+            pID: 2
+          }
         },
         {
           type: "A",
           text: "(Reza's Card)",
           id: 11,
-          cardOwner: "Reza"
-        },
-        {
-          type: "A",
-          text: "(Mostafas Card)",
-          id: 12,
-          cardOwner: "Mostafa"
+          owner: {
+            name: "Reza",
+            pID: 1
+          }
         }
       ],
 
       // this is set when judge selects a card
-      winningCard: null, // type=Card
+      winningCard: { // type=Card || null
+        cardType: "A",
+        text: `Go to localhost:3000/game/${this.props.match.params.partyCode}`,
+        id: 42
+      },
     }
   }
 
@@ -131,6 +95,7 @@ class PlayerSelectionScreen extends React.Component {
     console.log("PlayerSelectionScreen: componentDidMount()")
     let partyCode = this.props.match.params.partyCode
     let newState = (roundState) => {
+      if(roundState == null) return;
       console.log(`${new Date().getMinutes()}:${new Date().getSeconds()}`)
       console.log('RoundState:', roundState)
       let headerText = ''

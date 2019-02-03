@@ -1,5 +1,5 @@
 import openSocket from 'socket.io-client';
-const socket = openSocket("localhost:8080");
+const socket = openSocket("localhost:5000");
 
 // StartGameScreen
 
@@ -47,8 +47,3 @@ export function shuffleCards(partyCode, sourceIdx, destIdx) {
 export function endRound(partyCode) {
   socket.emit('endRound', partyCode);
 }
-
-// TODO:
-// export function shuffleCard(partyCode, srcCardIdx, dstCardIdx) {
-//   socket.emit('shuffleCard', partyCode, srcCardIdx, dstCardIdx)
-// }

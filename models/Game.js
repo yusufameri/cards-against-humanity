@@ -1,12 +1,12 @@
-import _ from "lodash"
 import { getShuffledACard, getShuffledQCard } from "./Card"
+import _ from "lodash"
 
 class Game {
   constructor(partyCode, roundLength = 60, roundFinishedNotifier = () => { }) {
     this.partyCode = partyCode;
     this.gameStartDate = new Date();
-    this.QCardDeck = getShuffledQCard();//.slice(0, 2);
-    this.ACardDeck = getShuffledACard();//.slice(0, 11);
+    this.QCardDeck = getShuffledQCard();
+    this.ACardDeck = getShuffledACard();
     this.players = {};
     this.rounds = [];
     this.roundLength = roundLength;
@@ -43,16 +43,15 @@ class Game {
     return this.players[sessionID] ? this.players[sessionID] : null;
   }
 
-  // get the latest active round or create a new empty round (if its the first round, or )
-  // O(max(m,n,k)), m=size QCardDeck, n=size ACardDeck, k=# of players
+  // get the latest active round or create a new empty round (if its the first round)
   getLatestRound() {
-    if (_.size(this.players) < 3) { // O(1)
+    if (_.size(this.players) < 3) {
       console.log("Cannot getLatestRound. not enough players to start a game")
-      return
+      return null;
     }
-    else if (this.rounds.length === 0 || !(this.rounds.slice(-1)[0].active)) { // O(1)
+    else if (this.rounds.length === 0 || !(this.rounds.slice(-1)[0].active)) {
       console.log('creating new round, since old round was not active (or this is the first round)')
-      // shuffle the decks
+
       this.QCardDeck = _.shuffle(this.QCardDeck);
       this.ACardDeck = _.shuffle(this.ACardDeck);
 
@@ -62,8 +61,8 @@ class Game {
         roundState: "players-selecting",
         roundStartTime: new Date(),
         roundEndTime: null,
-        roundJudge: _.find(this.players, player => player.pID === (this.rounds.length % _.size(this.players))), // O(k), k is constant size number of players
-        QCard: _.take(this.QCardDeck)[0],
+        roundJudge: _.find(this.players, player => player.pID === (this.rounds.length % _.size(this.players))),
+        QCard: (this.QCardDeck.splice(0,1))[0],
         otherPlayerCards: [],
         winningCard: null,
         winner: null,
@@ -80,7 +79,7 @@ class Game {
     }
     else {
       console.log(`returning latest active round`)
-      return this.rounds.slice(-1)[0] // O(1)
+      return this.rounds.slice(-1)[0]
     }
   }
 
@@ -91,6 +90,7 @@ class Game {
   }
 
   // Return the round state for the player with given sessionID
+  // if the player is not in the game, return null
   getPlayerRoundState(sessionID) {
     let player = this.getPlayer(sessionID)
     if (player == null) return null;
@@ -104,7 +104,8 @@ class Game {
     let roundJudge = latestRound.roundJudge.name;
     let winningCard = latestRound.winningCard;
     let winner = latestRound.winner;
-    let timeLeft = _.max([0, _.floor(this.roundLength - ((new Date() - latestRound.roundStartTime) / 1000))]); // timeRemaining in seconds
+    // timeRemaining in seconds
+    let timeLeft = _.max([0, _.floor(this.roundLength - ((new Date() - latestRound.roundStartTime) / 1000))]);
     let roundState;
 
     if (latestRound.roundState === 'judge-selecting' || latestRound.roundState === 'viewing-winner') {
@@ -138,25 +139,22 @@ class Game {
 
   playCard(sessionID, cardID, cb) {
     let player = this.getPlayer(sessionID);
-    if (player == null) return;
+    if (player == null) cb(false, `Cannot playCard: ${sessionID} is not a player in game ${this.partyCode}`)
     let card = _.find(player.cards, c => c.id === cardID)
+    if(card === undefined) cb(false, `Player ${player.name}[${sessionID}] attempting to play card (${cardID}) they do not own!`);
     let latestRound = this.getLatestRound()
 
     if (latestRound.roundState != 'players-selecting') {
       cb(false, "Cannot play card!, judge is currently selecting!")
     }
-    else if (this.isRoundJudge(sessionID, latestRound)) {
-      cb(false, `${player.name} cannot play a card this round since they are the judge`)
+    if (this.isRoundJudge(sessionID, latestRound)) {
+      cb(false, `${player.name} cannot play a card this round since. ${player.name} is the round judge`)
     }
 
-    // if they own the cardID they want to play, play the card for the latest round
     if (card) {
       _.remove(player.cards, c => c.id === cardID)
-      // add card to otherPlayerCards
       latestRound.otherPlayerCards.push({ ...card, owner: { "name": player.name, "pID": player.pID } })
-      // give player a new card. TODO: error handle if ACardDeck is empty
       player.cards = player.cards.concat(this.ACardDeck.splice(0, 1))
-      // player.
       if (latestRound.otherPlayerCards.length === (_.size(this.players) - 1)) {
         latestRound.roundState = 'judge-selecting'
         clearTimeout(this.roundTimer)
@@ -165,9 +163,6 @@ class Game {
       } else {
         cb(true, `${player.name} played their card!`)
       }
-    }
-    else {
-      cb(false, `Player ${player.name}[${sessionID}] attempting to play card (${cardID}) they do not own! Hacker!`)
     }
   }
 
@@ -189,7 +184,7 @@ class Game {
         cb(true, `${latestRound.winner} won with card ${latestRound.winningCard.text}`)
       }
       else {
-        cb(false, `Attempted to play a winning card ${cardID} that was not played!`)
+        cb(false, `${sessionID} attempted to play a winning card ${cardID} that was not played!`)
       }
     }
     else {
@@ -200,21 +195,13 @@ class Game {
   endRound(cb) {
     let latestRound = this.getLatestRound();
     if (latestRound) {
-      latestRound.active = false;
       clearTimeout(this.roundTimer)
-      // console.log("Before ADeck", this.ACardDeck.length)
+      latestRound.active = false;
       let cardsPlayed = []
-      // make a copy of the latestRound.otherPlayerCards
       latestRound.otherPlayerCards.forEach((card) => cardsPlayed.push({ ...card }));
-      // remove the 'owners' property on the cards
       cardsPlayed.map(card => delete card.owner)
-      // console.log('cardsPlayed, ', cardsPlayed.length)
-      // place the cards back into the ACardDeck
       this.ACardDeck = this.ACardDeck.concat(cardsPlayed)
-      // console.log("After ADeck", this.ACardDeck.length)
-      // console.log("Before QDeck", this.QCardDeck.length)
       this.QCardDeck = this.QCardDeck.concat(latestRound.QCard)
-      // console.log("After QDeck", this.QCardDeck.length)
       cb(true, `Round ${latestRound.roundNum} successfully finished`)
     }
     else {
@@ -224,9 +211,7 @@ class Game {
 
   shuffleCard(sessionID, srcCardIDIndex, destCardIDIndex, cb) {
     let player = this.getPlayer(sessionID);
-    if (player == null) {
-      cb(false, `cannot shuffle card! ${sessionID} not a player in game!`)
-    }
+    if (player == null) cb(false, `cannot shuffle card! ${sessionID} not a player in game!`);
     let newCardOrder = [...player.cards]
     newCardOrder.splice(srcCardIDIndex, 1)
     newCardOrder.splice(destCardIDIndex, 0, player.cards[srcCardIDIndex])
@@ -236,57 +221,3 @@ class Game {
 }
 
 export default Game;
-
-// --------------------------------------------------------------------------------------------------------------------
-
-// let cb = (success, message) => console.log(`${success} | ${message}`)
-// let g = new Game("abc123", 5, cb)
-
-
-// // Yusuf Joins
-// g.addNewPlayer("Yusuf", "yusufSession#123");
-// g.addNewPlayer("Salman", "salmanSession#456");
-// g.addNewPlayer("Reza", "rezaSession#456");
-// console.log('1.------------------------------------------------------------------------')
-// console.log(g.getPlayerRoundState('yusufSession#123'))
-// console.log(g.getPlayerRoundState('salmanSession#456'))
-// console.log(g.getPlayerRoundState('rezaSession#456'))
-// console.log('2-------------------------------------------------------------------------')
-// // Yusuf Cannot play a card (since he is the judge)
-// let yusuf = g.getPlayer('yusufSession#123');
-// g.playCard('yusufSession#123', yusuf.cards[0].id)
-
-// // Salman cannot play a card that he does not own
-// let salman = g.getPlayer('salmanSession#456');
-// g.playCard('salmanSession#456', yusuf.cards[0].id)
-// salman can only play a card that he owns
-// g.playCard('salmanSession#456', salman.cards[0].id, cb)
-
-// // Reza plays a card
-// let reza = g.getPlayer('rezaSession#456');
-// g.playCard('rezaSession#456', reza.cards[0].id, cb);
-// let latestRound = g.getLatestRound();
-// let ACardDeck = reza.cards
-// let cardsPlayed = []
-// latestRound.otherPlayerCards.forEach((card) => cardsPlayed.push({ ...card }));
-// cardsPlayed.map(card => delete card.owner)
-// console.log(cardsPlayed.concat(ACardDeck))
-// console.log(reza)
-// g.endRound(cb)
-// console.log(g.getLatestRound())
-
-// console.log('3-------------------------------------------------------------------------')
-// console.log(g.getPlayerRoundState('yusufSession#123'))
-// console.log(g.getPlayerRoundState('salmanSession#456'))
-// console.log(g.getPlayerRoundState('rezaSession#456'));
-
-// // Yusuf choose winning card
-// setTimeout(() => {
-//   console.log("Choosing the winner!")
-//   g.judgeSelectCard('yusufSession#123', g.getLatestRound().otherPlayerCards[1].id);
-//   console.log(g.getPlayerRoundState('rezaSession#456'))
-//   g.endRound();
-// }, 7000)
-// // console.log(g.getPlayerRoundState('rezaSession#456'))
-// // g.endRound();
-// // console.log(g.getPlayerRoundState('rezaSession#456'))

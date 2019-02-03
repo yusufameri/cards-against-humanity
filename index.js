@@ -51,7 +51,6 @@ io.on('connect', (client) => {
   client.on('getLobbyState', (partyCode, tellOthers) => {
     client.join(partyCode);
 
-    // place a cb for when the round timer finishes.
     let response = game.getLobbyState(partyCode, client.handshake.sessionID, (success, message) => {
       console.log(`Round ended, going to judge-selecting ${success} | ${message}`)
       io.to(partyCode).emit('newGameState');
@@ -115,6 +114,7 @@ io.on('connect', (client) => {
 });
 
 // open server
-server.listen(8080, () => {
-  console.log("Listening on port 8080")
+const PORT = process.env.PORT || 5000
+server.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`)
 });

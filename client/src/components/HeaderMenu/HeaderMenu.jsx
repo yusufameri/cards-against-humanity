@@ -5,7 +5,8 @@ function HeaderMenu(props) {
   return (
     <div className="headerMenu">
       <div className="innerHeaderMenu">
-        <HamburgerMenu/>
+        {/* <HamburgerMenu/> temporarily removing this since the side menu is not implemented yet*/}
+        <p></p>
         <p>{ props.text }</p>
         <p>{ props.timeLeft }</p>
       </div>

@@ -10,17 +10,16 @@ import Footer from "../../components/Footer/Footer"
 import PlayerList from "../../components/PlayerList/PlayerList"
 import "./StartGameScreen.css"
 
-import { joinParty } from "../../api"
-import { getPartyPlayers } from "../../api"
-
+import { joinParty, getLobbyState, newLobbyState } from "../../api"
 
 class StartGameScreen extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       players: [],
       joined: false,
-      currentPlayerName: ""
+      currentPlayerName: "",
     }
 
     this.joinParty = this.joinParty.bind(this)
@@ -28,21 +27,23 @@ class StartGameScreen extends React.Component {
   }
 
   componentDidMount() {
-    getPartyPlayers({ partyCode: this.props.match.params.partyCode }, players => {
-      console.log(`got new players! ${players}`)
-      this.setState({ players })
+    let partyCode = this.props.match.params.partyCode
+    getLobbyState(partyCode, (response) => {
+      console.log(`getLobbyState ${JSON.stringify(response)}`)
+      this.setState({
+        joined: response.currentPlayer ? true : false,
+        players: response.players
+      });
     });
+    newLobbyState(partyCode);
   }
 
   joinParty() {
-    // TODO: mock calling backend api to join the party...
-    // adds player to the <PlayerList/>
     if (!this.state.joined) {
-      joinParty({ name: this.state.currentPlayerName, partyCode: this.props.match.params.partyCode }, (err, data) => {
-        this.setState((state) => ({
-          joined: true
-        }));
-      });
+      let name = this.state.currentPlayerName
+      let partyCode = this.props.match.params.partyCode
+      console.log(`requesting to join party:${partyCode}`)
+      joinParty({ name, partyCode });
     }
   }
 

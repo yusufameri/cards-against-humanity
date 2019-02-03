@@ -12,7 +12,7 @@ function App() {
       <Screen>
         <Route exact path ="/" component = {HomeScreen}/>
         <Route
-          exact path='/game/:partyCode' // need to add regex to this partyCode
+          exact path='/game/:partyCode'
           // access the route param via => props.match.params.partyCode
           render={(props) => <StartGameScreen {...props}  />} 
         />

@@ -1,17 +1,15 @@
-var app = require('express')();
+var express = require('express')
+var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
-
-// open server
-server.listen(80, () => {
-  console.log("Listening on port 80")
-});
+var game = require("./schema")
+var path = require('path')
+app.use(express.static(path.join(__dirname, 'client', 'build')));
 
 // session
 var session = require('express-session') // for express
 var sharedsession = require("express-socket.io-session"); // for socket.io
-var RedisStore = require('connect-redis')(session);
-var uuidv1 = require("uuid/v1")
+var RedisStore = require('connect-redis')(session); // for storing session data
 
 // create a redis client
 var redis = require("redis"),
@@ -22,62 +20,101 @@ var iosession = session({
   store: new RedisStore({
     client,
   }),
+  resave: true,
+  saveUninitialized: true,
   secret: 'keyboard cat',
-  resave: false,
-  genid: function () {
-    return uuidv1() // use UUIDs for session IDs
-  },
-  name: "iosession"
+  name: "cah_cookie_session"
 });
 
 app.use(iosession);
+io.use(sharedsession(iosession, { autoSave: true }));
 
-io.use(sharedsession(iosession, {autoSave:true}));
-
-io.use((socket, next) => {
-  console.log(`New User | ${socket.id} | ${++activeUsers}`)
-  next()
+app.get('/session', (req, res) => {
+  if (req.session.name) {
+    res.json(`welcome: ${req.session.name}`)
+  } else {
+    req.session.name = "Yusuf"
+    res.json(`welcome for the first time!`)
+  }
 });
 
-
-
-app.get('/', (req, res) => res.send("Hello World"))
-
-let players = {
-  "abc123": ["Joeseph", "Steve"]
-}
-
-let activeUsers = 0;
-
-//Debugging express
-app.use('*', function(req, res, next) {
-	console.log('Express `req.session` data is %j.', req.session);
-	next();
+// serve all other routes to build
+app.get('*', (req,res) =>{
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
 
-io.use(function(socket, next) {
-	console.log('socket.handshake session data is %j.', socket.handshake.session);
-	next();
-});
+io.on('connect', (client) => {
+  console.log(`client connected: session(${client.handshake.sessionID})`)
 
-io.on('connection', (client) => {
+  // StartGameScreen
+
+  client.on('getLobbyState', (partyCode, tellOthers) => {
+    client.join(partyCode);
+
+    let response = game.getLobbyState(partyCode, client.handshake.sessionID, (success, message) => {
+      console.log(`Round ended, going to judge-selecting ${success} | ${message}`)
+      io.to(partyCode).emit('newGameState');
+    });
+    client.emit("getLobbyState", response);
+  });
 
   client.on('joinParty', ({ partyCode, name }) => {
-    console.log(`${client.id} | joinParty | ${name} --<> ${partyCode}`)
-    players[partyCode] = [...players[partyCode], (name)]
-    io.to(partyCode).emit('joinedParty', { partyCode, name });
-    io.to(partyCode).emit('getPartyPlayers', [...players[partyCode]])
+    game.joinGame(partyCode, client.handshake.sessionID, name);
+    io.to(partyCode).emit('newLobbyState');
   });
 
-  client.on('getPartyPlayers', ({ partyCode }) => {
-    console.log(`${client.id} | getPartyPlayers | ${partyCode}`)
+  // PlayerSelectionScreen
+
+  client.on('getPlayerRoundState', (partyCode) => {
+    console.log(`${client.handshake.sessionID} | getPlayerRoundState`)
     client.join(partyCode);
-    if (players[partyCode]) {
-      io.to(partyCode).emit('getPartyPlayers', [...players[partyCode]])
-    } else {
-      players[partyCode] = []
-      io.to(partyCode).emit('getPartyPlayers', [...players[partyCode]])
-    }
+    let gameState = game.getPlayerRoundState(partyCode, client.handshake.sessionID);
+    client.emit('getPlayerRoundState', gameState);
+  });
+
+  client.on('playCard', (partyCode, cardID) => {
+    game.playCard(partyCode, cardID, client.handshake.sessionID, (success, message) => {
+      console.log(`playCard | ${success} | ${message}`)
+      if (success) {
+        io.to(partyCode).emit('newGameState');
+      }
+    });
+  });
+
+  client.on('judgeSelectCard', (partyCode, cardID) => {
+    game.judgeSelectCard(partyCode, cardID, client.handshake.sessionID, (success, message) => {
+      console.log(`judgeSelectCard | ${success} | ${message} | ${client.handshake.sessionID}`)
+      if (success) {
+        io.to(partyCode).emit('newGameState')
+      }
+    })
+  });
+
+  client.on('shuffleCards', (partyCode, sourceIdx, destIdx) => {
+    game.shuffleCards(partyCode, sourceIdx, destIdx, client.handshake.sessionID, (success, message) => {
+      console.log(`shuffleCards | ${client.handshake.sessionID} | ${success} | ${message}`)
+      if(success) {
+        client.emit('newGameState')
+      }
+    })
+  })
+
+  client.on('endRound', partyCode => {
+    game.endRound(partyCode, (success, message) => {
+      console.log(`endRound | ${success} | ${message} | ${client.handshake.sessionID}`)
+      if (success) {
+        io.to(partyCode).emit('newGameState');
+      }
+    });
+  });
+
+  client.on('disconnect', function () {
+    console.log(`client DISCONNECTED: session(${client.handshake.sessionID})`)
   });
 });
 
+// open server
+const PORT = process.env.PORT || 5000
+server.listen(PORT, () => {
+  console.log(`Listening on port ${PORT}`)
+});

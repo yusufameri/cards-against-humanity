@@ -1,61 +1,58 @@
-// outline the schema 
+import _ from "lodash"
+import Game from "./models/Game";
 
-// each document/row will look like:
-let gameData = {
-  partyCode: 'abc123',
-  gameStartDate: new Date(),
-  QCardDeck: [1,500],
-  WCardDeck: [1,500],
-  players: [
-    {
-      name: "Yusuf",
-      cookie: 1, // some UID/session that will be stored in users browser for session tracking,
-      cards: [1,45,21,12,68,32,12,68,32],
-      roundsWon: 0
-    },
-    {
-      name: "Salman",
-      cookie: 2,
-      cards: [3,51,221,24,8,31,23,81,92],
-      roundsWon: 1
-    },
-    {
-      name: "Reza",
-      cookie: 4,
-      cards: [2,71,251,31,48,93,13,111,94],
-      roundsWon: 0,
-    },
-    {
-      name: "Mostafa",
-      cookie: 5,
-      cards: [2,71,251,31,48,93,13,111,94],
-      roundsWon: 0
-    }
-  ],
-  rounds: [
-    {
-      roundNum: 1,
-      active: false, // | false
-      roundState: "winner-seen", //  | viewing-submissions | winner-seen
-      roundStartTime: new Date(),
-      roundEndTime: new Date(),
-      roundJudge: "Yusuf",
-      QCard: 99,
-      cardsPlayed: [3,45,251],
-      winningCard: 3,
-      winner: "Salman", // | null
-    },
-    {
-      roundNum: 2,
-      active: true, // | false
-      roundState: "players-selecting", //  | viewing-submissions | winner-seen
-      roundStartTime: new Date(),
-      roundEndTime: new Date(),
-      roundJudge: "Mostafa",
-      QCard: 33,
-      cardsPlayed: [1],
-      winningCard: null,
-      winner: null, // | null
-    }
-  ]
+let games = {}
+
+function getOrCreateGame(partyCode, cb) {
+  if (games[partyCode]) {
+    return games[partyCode]
+  }
+  else {
+    games[partyCode] = new Game(partyCode, 60, cb)
+  }
+  return games[partyCode]
+}
+
+export function joinGame(partyCode, sessionID, name) {
+  let game = getOrCreateGame(partyCode)
+  game.addNewPlayer(name, sessionID);
+}
+
+// returns the players in the game []
+export function getLobbyState(partyCode, sessionID, cb) {
+  let game = getOrCreateGame(partyCode, cb);
+  let currentPlayer = game.getPlayer(sessionID)
+  let players = _.map(game.players, (player) => player.name);
+
+  let response = {
+    players,
+    currentPlayer: currentPlayer || null
+  }
+  
+  return response;
+}
+
+export function getPlayerRoundState(partyCode, sessionID, cb) {
+  let game = getOrCreateGame(partyCode);
+  return game.getPlayerRoundState(sessionID);
+}
+
+export function playCard(partyCode, cardID, sessionID, cb) {
+  let game = getOrCreateGame(partyCode);
+  game.playCard(sessionID, cardID, cb);
+}
+
+export function judgeSelectCard(partyCode, cardID, sessionID, cb) {
+  let game = getOrCreateGame(partyCode);
+  game.judgeSelectCard(sessionID, cardID, cb);
+}
+
+export function shuffleCards(partyCode, sourceIdx, destIdx, sessionID, cb) {
+  let game = getOrCreateGame(partyCode);
+  game.shuffleCard(sessionID, sourceIdx, destIdx, cb);
+}
+
+export function endRound(partyCode, cb) {
+  let game = getOrCreateGame(partyCode);
+  game.endRound(cb);
 }

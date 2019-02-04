@@ -4,6 +4,8 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 var game = require("./schema")
 var path = require('path')
+
+// serve production build
 app.use(express.static(path.join(__dirname, 'client', 'build')));
 
 // session
@@ -11,9 +13,14 @@ var session = require('express-session') // for express
 var sharedsession = require("express-socket.io-session"); // for socket.io
 var RedisStore = require('connect-redis')(session); // for storing session data
 
-// create a redis client
+
+// create a redis client for storing sessions
 var redis = require("redis"),
   client = redis.createClient();
+
+// have socket.io use redis as an adaptor
+var socketio_redis = require('socket.io-redis');
+io.adapter(socketio_redis());
 
 // create a session
 var iosession = session({
@@ -36,11 +43,6 @@ app.get('/session', (req, res) => {
     req.session.name = "Yusuf"
     res.json(`welcome for the first time!`)
   }
-});
-
-// serve all other routes to build
-app.get('*', (req,res) =>{
-  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
 
 io.on('connect', (client) => {
@@ -111,6 +113,11 @@ io.on('connect', (client) => {
   client.on('disconnect', function () {
     console.log(`client DISCONNECTED: session(${client.handshake.sessionID})`)
   });
+});
+
+// serve routing to build
+app.get('*', (req,res) =>{
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
 
 // open server

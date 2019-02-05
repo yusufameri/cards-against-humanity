@@ -4,6 +4,7 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 var game = require("./schema")
 var path = require('path')
+var os = require('os');
 
 // serve production build
 app.use(express.static(path.join(__dirname, 'client', 'build')));
@@ -13,14 +14,15 @@ var session = require('express-session') // for express
 var sharedsession = require("express-socket.io-session"); // for socket.io
 var RedisStore = require('connect-redis')(session); // for storing session data
 
+console.log("REDIS_URL is, ", process.env.REDIS_URL)
 
 // create a redis client for storing sessions
 var redis = require("redis"),
-  client = redis.createClient();
+  client = redis.createClient(process.env.REDIS_URL);
 
 // have socket.io use redis as an adaptor
-var socketio_redis = require('socket.io-redis');
-io.adapter(socketio_redis());
+var redisAdaptor = require('socket.io-redis');
+io.adapter(redisAdaptor(process.env.REDIS_URL));
 
 // create a session
 var iosession = session({
@@ -46,15 +48,15 @@ app.get('/session', (req, res) => {
 });
 
 io.on('connect', (client) => {
-  console.log(`client connected: session(${client.handshake.sessionID})`)
+  console.log(`host ${os.hostname()} | client | ${client.handshake.sessionID}`)
 
   // StartGameScreen
 
-  client.on('getLobbyState', (partyCode, tellOthers) => {
+  client.on('getLobbyState', (partyCode) => {
     client.join(partyCode);
 
     let response = game.getLobbyState(partyCode, client.handshake.sessionID, (success, message) => {
-      console.log(`Round ended, going to judge-selecting ${success} | ${message}`)
+      // console.log(`Round ended, going to judge-selecting ${success} | ${message}`)
       io.to(partyCode).emit('newGameState');
     });
     client.emit("getLobbyState", response);
@@ -68,7 +70,7 @@ io.on('connect', (client) => {
   // PlayerSelectionScreen
 
   client.on('getPlayerRoundState', (partyCode) => {
-    console.log(`${client.handshake.sessionID} | getPlayerRoundState`)
+    // console.log(`${client.handshake.sessionID} | getPlayerRoundState`)
     client.join(partyCode);
     let gameState = game.getPlayerRoundState(partyCode, client.handshake.sessionID);
     client.emit('getPlayerRoundState', gameState);

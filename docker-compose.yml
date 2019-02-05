@@ -1,0 +1,14 @@
+redis:
+  image: redis
+  container_name: cache
+  expose:
+    - 6379
+app:
+  image: yusufameri/cah
+  links:
+    - redis
+  environment:
+    - REDIS_URL=redis://cache
+    - NODE_ENV=development
+  ports:
+    - "5000:5000"

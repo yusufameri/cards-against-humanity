@@ -46,11 +46,11 @@ class Game {
   // get the latest active round or create a new empty round (if its the first round)
   getLatestRound() {
     if (_.size(this.players) < 3) {
-      console.log("Cannot getLatestRound. not enough players to start a game")
+      // console.log("Cannot getLatestRound. not enough players to start a game")
       return null;
     }
     else if (this.rounds.length === 0 || !(this.rounds.slice(-1)[0].active)) {
-      console.log('creating new round, since old round was not active (or this is the first round)')
+      // console.log('creating new round, since old round was not active (or this is the first round)')
 
       this.QCardDeck = _.shuffle(this.QCardDeck);
       this.ACardDeck = _.shuffle(this.ACardDeck);
@@ -78,7 +78,7 @@ class Game {
       return round;
     }
     else {
-      console.log(`returning latest active round`)
+      // console.log(`returning latest active round`)
       return this.rounds.slice(-1)[0]
     }
   }

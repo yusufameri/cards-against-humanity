@@ -140,22 +140,23 @@ class PlayerSelectionScreen extends React.Component {
         directions
       });
 
-      this.setState((prevState, props) => {
-        clearInterval(prevState.ticker);
-        var ticker = setInterval(() => {
-          if (this.state.timeLeft <= 0) {
-            console.log('clearing interval timeout!', ticker)
-            clearInterval(ticker)
-          }
-          else {
-            console.log('tick');
-            this.setState({
-              timeLeft: this.state.timeLeft - 1,
-              ticker
-            });
-          }
-        }, 1000);
-      });
+      if (this.state.ticker) {
+        console.log('updated timeLeft!, deleting ticker')
+        clearInterval(this.state.ticker)
+      }
+      var ticker = setInterval(() => {
+        if (this.state.timeLeft <= 0) {
+          console.log('clearing interval timeout!', ticker)
+          clearInterval(ticker)
+        }
+        else {
+          console.log('tick');
+          this.setState({
+            timeLeft: this.state.timeLeft - 1,
+            ticker
+          });
+        }
+      }, 1000);
     };
 
     // ask server to send current gameStateEvents

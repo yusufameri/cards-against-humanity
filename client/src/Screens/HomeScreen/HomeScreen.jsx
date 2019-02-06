@@ -38,7 +38,7 @@ function HomeScreen() {
         <Title text="A party game for horrible people"/>
         <Button text="Join Party" className="center" link="/join"/>
         <Or />
-        <Button text="Create Game" className="center" link={`game/${CreateGame()}`}/>
+        <Button text="Create Game" className="center" link={`/join/${CreateGame()}`}/>
         <Footer>
           Like us on <a href="http://www.facebook.com/yusufameri"> Facebook!</a>
         </Footer>

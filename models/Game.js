@@ -2,7 +2,7 @@ import { getShuffledACard, getShuffledQCard } from "./Card"
 import _ from "lodash"
 
 class Game {
-  constructor(partyCode, roundLength = 60, roundFinishedNotifier = () => { }) {
+  constructor(partyCode, roundLength = 60, roundFinishedNotifier = () => {}) {
     this.partyCode = partyCode;
     this.gameStartDate = new Date();
     this.QCardDeck = getShuffledQCard();
@@ -24,7 +24,7 @@ class Game {
     if (name == undefined || sessionID == undefined) {
       console.log(`trying to addNewPlayer to ${this.partyCode}`)
     }
-    else if (this.ACardDeck.length < 3) { // remove this
+    else if (this.ACardDeck.length < 3) {
       console.log('Cannot add new player to deck, ACardDeck has ran out of cards!')
     }
     else {
@@ -52,7 +52,6 @@ class Game {
     else if (this.rounds.length === 0 || !(this.rounds.slice(-1)[0].active)) {
       // console.log('creating new round, since old round was not active (or this is the first round)')
 
-      this.QCardDeck = _.shuffle(this.QCardDeck);
       this.ACardDeck = _.shuffle(this.ACardDeck);
 
       let round = {

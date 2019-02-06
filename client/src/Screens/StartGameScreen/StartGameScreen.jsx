@@ -60,7 +60,7 @@ class StartGameScreen extends React.Component {
       return <Button text="Join Party" className="center" disabled={this.state.currentPlayerName.length === 0} onClick={this.joinParty} />;
     }
     else {
-      return <Button text="Start Game" className="center" disabled={this.state.players.length < 3} link={`/gameplay/${this.props.match.params.partyCode}`} />;
+      return <Button text="Start Game" className="center" disabled={this.state.players.length < 3} link={`/${this.props.match.params.partyCode}`} />;
     }
   }
 

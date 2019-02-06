@@ -95,7 +95,16 @@ class PlayerSelectionScreen extends React.Component {
     console.log("PlayerSelectionScreen: componentDidMount()")
     let partyCode = this.props.match.params.partyCode
     let newState = (roundState) => {
-      if(roundState == null) return;
+      if(roundState == null) {
+        // redirect them to join
+        if(partyCode === 'join') {
+          this.props.history.push(`/join`)
+        }
+        else {
+          this.props.history.push(`/join/${partyCode}`)
+        }
+        return;
+      }
       console.log(`${new Date().getMinutes()}:${new Date().getSeconds()}`)
       console.log('RoundState:', roundState)
       let headerText = ''
@@ -131,23 +140,22 @@ class PlayerSelectionScreen extends React.Component {
         directions
       });
 
-      if (this.state.ticker) {
-        console.log('updated timeLeft!, deleting ticker')
-        clearInterval(this.state.ticker)
-      }
-      var ticker = setInterval(() => {
-        if (this.state.timeLeft <= 0) {
-          console.log('clearing interval timeout!', ticker)
-          clearInterval(ticker)
-        }
-        else {
-          console.log('tick');
-          this.setState({
-            timeLeft: this.state.timeLeft - 1,
-            ticker
-          });
-        }
-      }, 1000);
+      this.setState((prevState, props) => {
+        clearInterval(prevState.ticker);
+        var ticker = setInterval(() => {
+          if (this.state.timeLeft <= 0) {
+            console.log('clearing interval timeout!', ticker)
+            clearInterval(ticker)
+          }
+          else {
+            console.log('tick');
+            this.setState({
+              timeLeft: this.state.timeLeft - 1,
+              ticker
+            });
+          }
+        }, 1000);
+      });
     };
 
     // ask server to send current gameStateEvents
@@ -234,7 +242,7 @@ class PlayerSelectionScreen extends React.Component {
                   this.state.roundState === 'judge-waiting' ? [] : this.state.cards
               } />
             <Footer>
-              Invite your friends with Party Code: {this.props.match.params.partyCode}
+              Share Link or Party Code: {this.props.match.params.partyCode}
             </Footer>
           </Bottom >
         </DragDropContext >

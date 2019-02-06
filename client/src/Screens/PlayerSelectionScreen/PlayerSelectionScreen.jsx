@@ -95,7 +95,16 @@ class PlayerSelectionScreen extends React.Component {
     console.log("PlayerSelectionScreen: componentDidMount()")
     let partyCode = this.props.match.params.partyCode
     let newState = (roundState) => {
-      if(roundState == null) return;
+      if(roundState == null) {
+        // redirect them to join
+        if(partyCode === 'join') {
+          this.props.history.push(`/join`)
+        }
+        else {
+          this.props.history.push(`/join/${partyCode}`)
+        }
+        return;
+      }
       console.log(`${new Date().getMinutes()}:${new Date().getSeconds()}`)
       console.log('RoundState:', roundState)
       let headerText = ''
@@ -234,7 +243,7 @@ class PlayerSelectionScreen extends React.Component {
                   this.state.roundState === 'judge-waiting' ? [] : this.state.cards
               } />
             <Footer>
-              Invite your friends with Party Code: {this.props.match.params.partyCode}
+              Share Link or Party Code: {this.props.match.params.partyCode}
             </Footer>
           </Bottom >
         </DragDropContext >

@@ -2,7 +2,9 @@ import { getShuffledACard, getShuffledQCard } from "./Card"
 import _ from "lodash"
 
 class Game {
-  constructor(partyCode, roundLength = 60, roundFinishedNotifier = () => { }) {
+  constructor(partyCode, roundLength = 10, roundFinishedNotifier = () => {}) {
+    this.active = true;
+    this.roundsIdle = 0; // if at least |this.players.length.length| roundsIdle, then game state is inactive
     this.partyCode = partyCode;
     this.gameStartDate = new Date();
     this.QCardDeck = getShuffledQCard();
@@ -24,7 +26,7 @@ class Game {
     if (name == undefined || sessionID == undefined) {
       console.log(`trying to addNewPlayer to ${this.partyCode}`)
     }
-    else if (this.ACardDeck.length < 3) { // remove this
+    else if (this.ACardDeck.length < 3) {
       console.log('Cannot add new player to deck, ACardDeck has ran out of cards!')
     }
     else {
@@ -52,7 +54,6 @@ class Game {
     else if (this.rounds.length === 0 || !(this.rounds.slice(-1)[0].active)) {
       // console.log('creating new round, since old round was not active (or this is the first round)')
 
-      this.QCardDeck = _.shuffle(this.QCardDeck);
       this.ACardDeck = _.shuffle(this.ACardDeck);
 
       let round = {
@@ -69,9 +70,22 @@ class Game {
       }
 
       this.roundTimer = setTimeout(() => {
-        round.roundState = 'judge-selecting'
-        console.log('Judge-selection time!')
-        this.roundFinishedNotifier(true, 'Judge-selection time!')
+        // TODO: if otherPlayerCards.length === 0, endRound()
+        if(round.otherPlayerCards.length === 0) {
+          this.endRound((success, message) => {
+            console.log('Had to end round, since no player choose a card')
+            console.log(`endRound prematurely | ${success} | ${message}`)
+          });
+          this.roundsIdle += 1;
+          console.log(`Rounds Idle: ${this.roundsIdle}`)
+          this.roundFinishedNotifier(true, 'Skipping judge!')
+        }
+        else {
+          this.roundsIdle = 0;
+          round.roundState = 'judge-selecting'
+          console.log('Judge-selection time!')
+          this.roundFinishedNotifier(true, 'Judge-selection time!')
+        }
       }, this.roundLength * 1000);
 
       this.rounds.push(round);
@@ -181,6 +195,7 @@ class Game {
           ACard: winningCard,
           QCard: latestRound.QCard
         });
+        this.roundsIdle = 0;
         cb(true, `${latestRound.winner} won with card ${latestRound.winningCard.text}`)
       }
       else {

@@ -12,16 +12,15 @@ function App() {
       <Screen>
         <Route exact path ="/" component = {HomeScreen}/>
         <Route
-          exact path='/game/:partyCode'
-          // access the route param via => props.match.params.partyCode
+          exact path='/join/:partyCode'
           render={(props) => <StartGameScreen {...props}  />} 
         />
         <Route
-          exact path='/join' // you can add additional props like below...
-          render={(props) => <JoinPartyScreen {...props} isAuthed={true} />} 
+          exact path='/join'
+          render={(props) => <JoinPartyScreen {...props} />} 
         />
         <Route
-          exact path='/gameplay/:partyCode'
+          exact path='/:partyCode'
           component={PlayerSelectionScreen} 
         />
       </Screen>

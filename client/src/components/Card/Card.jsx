@@ -24,9 +24,8 @@ function Card(props) {
   else if (props.cardType === "Title") {
     return (
       <div className={`card Title ${props.className}`}>
-        <h3>Cards</h3>
-        <h3>Against</h3>
-        <h3>Humanity</h3>
+        <h3>Cardi</h3>
+        <h3>Party</h3>
       </div>
     );
   }

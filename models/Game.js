@@ -75,10 +75,10 @@ class Game {
           this.endRound((success, message) => {
             console.log('Had to end round, since no player choose a card')
             console.log(`endRound prematurely | ${success} | ${message}`)
+            this.roundsIdle += 1;
+            console.log(`Rounds Idle: ${this.roundsIdle}`)
+            this.roundFinishedNotifier(true, 'Skipping judge!')
           });
-          this.roundsIdle += 1;
-          console.log(`Rounds Idle: ${this.roundsIdle}`)
-          this.roundFinishedNotifier(true, 'Skipping judge!')
         }
         else {
           this.roundsIdle = 0;

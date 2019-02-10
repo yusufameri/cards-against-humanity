@@ -44,7 +44,7 @@ function Card(props) {
         <h3>with party code:</h3>
         <h6 className="link">
           <Link to={props.link}>
-            {`${props.link}`}
+            cardiparty.co/{`${props.link}`}
           </Link>
         </h6>
       </div>

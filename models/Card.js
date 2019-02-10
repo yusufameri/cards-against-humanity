@@ -3,8 +3,7 @@ var _ = require("lodash")
 
 export function getShuffledACard() {
   let ACards = _.filter(cards, (card) => {
-    return card.cardType === "A" &&
-    card.expansion === 'Base'
+    return card.cardType === "A"
   });
   return _.shuffle(ACards)
 }

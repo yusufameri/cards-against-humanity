@@ -1,10 +1,14 @@
+
+Follow us on Instagram | https://www.instagram.com/cardipartygame/  
+Play the Game Now! | http://www.cardiparty.co/ 
+
+___ 
 # Welcome to Cards Against Humanity on Mobile!
 This project represents a mobile version of the popular party card game we all know and love, "**Cards Against Humanity!**"
 
 The game is simple! The person who plays the funniest card wins! For more info on intricate versions of the game, checkout the [official rulebook](https://s3.amazonaws.com/cah/CAH_Rules.pdf) from the creators.
 
 Although this game will be available to play online, it is meant to be played in person with friends, for those times we forget to carry that 5 lb brick of cards :P
-
 
 ## Developing Roadmap
 ### Iteration 1:

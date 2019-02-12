@@ -4,11 +4,12 @@ redis:
   expose:
     - 6379
 app:
-  image: yusufameri/cah
+  image: yusufameri/cah:0.1.0
   links:
     - redis
   environment:
     - REDIS_URL=redis://cache
     - NODE_ENV=development
+    - PORT=5000
   ports:
-    - "5000:5000"
+    - "80:5000"

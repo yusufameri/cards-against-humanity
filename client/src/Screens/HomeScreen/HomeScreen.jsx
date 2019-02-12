@@ -32,13 +32,13 @@ function HomeScreen() {
   return (
     <Screen>
       <Top>
-        <Card cardType="Title" text="Cards Against Humanity" />
+        <Card cardType="Title" />
       </Top>
       <Bottom>
         <Title text="A party game for horrible people"/>
         <Button text="Join Party" className="center" link="/join"/>
         <Or />
-        <Button text="Create Game" className="center" link={`/join/${CreateGame()}`}/>
+        <Button text="Create Party" className="center" link={`/join/${CreateGame()}`}/>
         <Footer>
           Like us on <a href="http://www.facebook.com/yusufameri"> Facebook!</a>
         </Footer>

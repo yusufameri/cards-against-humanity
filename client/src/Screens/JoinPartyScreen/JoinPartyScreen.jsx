@@ -36,8 +36,8 @@ class JoinPartyScreen extends React.Component {
         <Bottom>
           <Title text={`Join an existing party`} />
           <div className="enterCode center">
-            <p className="label">Enter the 5 digit Party Code</p>
-            <input className="input" type="text" name="partyCode" placeholder="cah.co/<enter_party_code>" onChange={this.updatePartyCode} />
+            <p className="label">Enter the Party Code</p>
+            <input className="input" type="text" name="partyCode" placeholder="cardiparty.co/<party_code>" onChange={this.updatePartyCode} />
           </div>
           <Button text="Join Party" className="center" disabled={this.state.partyCode.length === 0} link={`/join/${this.state.partyCode}`} />
           <Footer>

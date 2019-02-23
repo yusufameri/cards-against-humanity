@@ -1,0 +1,2824 @@
+yusuf@MyDockerVM:~/workspace/cards-against-humanity/models$ cat logs.txt 
+
+> cah_backend@1.0.0 server /usr/src/app
+> nodemon --exec babel-node index.js
+
+[nodemon] 1.18.9
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `babel-node index.js`
+REDIS_URL is,  redis://cache
+Listening on port 5000
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+
+> cah_backend@1.0.0 server /usr/src/app
+> nodemon --exec babel-node index.js
+
+[nodemon] 1.18.9
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `babel-node index.js`
+REDIS_URL is,  redis://cache
+Listening on port 5000
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+host a5d7bde65ee5 | client | 4ATJjiPzhqkos5RFQxvOBaMIKvZ-uMIA
+host a5d7bde65ee5 | client | RAS2CwD-DctKDCr3HKOn8sxw86_QfTQ8
+client DISCONNECTED: session(4ATJjiPzhqkos5RFQxvOBaMIKvZ-uMIA)
+client DISCONNECTED: session(RAS2CwD-DctKDCr3HKOn8sxw86_QfTQ8)
+host a5d7bde65ee5 | client | 5KpidoLMS-P0K1yMWUR2f0VUmhX2usEz
+client DISCONNECTED: session(5KpidoLMS-P0K1yMWUR2f0VUmhX2usEz)
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+host a5d7bde65ee5 | client | QjJ2pi_1oQHv3X1xw0O2LS2ps71xumPz
+host a5d7bde65ee5 | client | da5zhPieQ2vaxw-f77fv8SpioAtzLOHO
+host a5d7bde65ee5 | client | Eu_vjT7tTkkQYmcF2bs3cH0jfpli8PTj
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+client DISCONNECTED: session(da5zhPieQ2vaxw-f77fv8SpioAtzLOHO)
+host a5d7bde65ee5 | client | tQoFui1wdffLdLdgAcnrHowcvl_eHvpT
+client DISCONNECTED: session(QjJ2pi_1oQHv3X1xw0O2LS2ps71xumPz)
+host a5d7bde65ee5 | client | e-6mC7cICdVj2-IIYk18HDSkFqsk6XZ7
+client DISCONNECTED: session(tQoFui1wdffLdLdgAcnrHowcvl_eHvpT)
+host a5d7bde65ee5 | client | ulzLKz8OGKUPZfBNhF0H3l5TEi4eEikK
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+client DISCONNECTED: session(ulzLKz8OGKUPZfBNhF0H3l5TEi4eEikK)
+client DISCONNECTED: session(Eu_vjT7tTkkQYmcF2bs3cH0jfpli8PTj)
+client DISCONNECTED: session(e-6mC7cICdVj2-IIYk18HDSkFqsk6XZ7)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+host a5d7bde65ee5 | client | V8vWUrstenm96Y1eZ0xQZPyfkYk0cegG
+client DISCONNECTED: session(V8vWUrstenm96Y1eZ0xQZPyfkYk0cegG)
+host a5d7bde65ee5 | client | M-wrhDWgg7Sns70zPhq4hI4IJcsF1O7n
+client DISCONNECTED: session(M-wrhDWgg7Sns70zPhq4hI4IJcsF1O7n)
+host a5d7bde65ee5 | client | wdhHLq_RBJjwkNQrXTC6wP9TfsVQobEh
+client DISCONNECTED: session(wdhHLq_RBJjwkNQrXTC6wP9TfsVQobEh)
+host a5d7bde65ee5 | client | PwsaJdrOv5pbybUBWb0Fgc_HR2CVvABj
+host a5d7bde65ee5 | client | 9cY5T8iAJUIieLVeQ8h4MuW8s7-CSIFm
+host a5d7bde65ee5 | client | pRyNBobE6I54xCuCquwV8pBOye3hO73L
+client DISCONNECTED: session(9cY5T8iAJUIieLVeQ8h4MuW8s7-CSIFm)
+host a5d7bde65ee5 | client | yVLjajPpndwVG7C5ojrxSbBRLqGK8u6B
+client DISCONNECTED: session(yVLjajPpndwVG7C5ojrxSbBRLqGK8u6B)
+host a5d7bde65ee5 | client | yVLjajPpndwVG7C5ojrxSbBRLqGK8u6B
+client DISCONNECTED: session(yVLjajPpndwVG7C5ojrxSbBRLqGK8u6B)
+client DISCONNECTED: session(PwsaJdrOv5pbybUBWb0Fgc_HR2CVvABj)
+host a5d7bde65ee5 | client | yVLjajPpndwVG7C5ojrxSbBRLqGK8u6B
+client DISCONNECTED: session(yVLjajPpndwVG7C5ojrxSbBRLqGK8u6B)
+host a5d7bde65ee5 | client | yVLjajPpndwVG7C5ojrxSbBRLqGK8u6B
+client DISCONNECTED: session(yVLjajPpndwVG7C5ojrxSbBRLqGK8u6B)
+host a5d7bde65ee5 | client | yVLjajPpndwVG7C5ojrxSbBRLqGK8u6B
+client DISCONNECTED: session(pRyNBobE6I54xCuCquwV8pBOye3hO73L)
+client DISCONNECTED: session(yVLjajPpndwVG7C5ojrxSbBRLqGK8u6B)
+host a5d7bde65ee5 | client | yVLjajPpndwVG7C5ojrxSbBRLqGK8u6B
+client DISCONNECTED: session(yVLjajPpndwVG7C5ojrxSbBRLqGK8u6B)
+host a5d7bde65ee5 | client | yVLjajPpndwVG7C5ojrxSbBRLqGK8u6B
+client DISCONNECTED: session(yVLjajPpndwVG7C5ojrxSbBRLqGK8u6B)
+host a5d7bde65ee5 | client | yVLjajPpndwVG7C5ojrxSbBRLqGK8u6B
+client DISCONNECTED: session(yVLjajPpndwVG7C5ojrxSbBRLqGK8u6B)
+host a5d7bde65ee5 | client | nLAduXh2uRCiInhQA7GnK82UPa4y9zD9
+client DISCONNECTED: session(nLAduXh2uRCiInhQA7GnK82UPa4y9zD9)
+host a5d7bde65ee5 | client | LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU
+client DISCONNECTED: session(LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU)
+host a5d7bde65ee5 | client | LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU
+client DISCONNECTED: session(LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU)
+host a5d7bde65ee5 | client | bC6lp0nBnXFtnTX2CjIpTXzcGqpxr5CU
+client DISCONNECTED: session(bC6lp0nBnXFtnTX2CjIpTXzcGqpxr5CU)
+host a5d7bde65ee5 | client | LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU
+client DISCONNECTED: session(LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU)
+host a5d7bde65ee5 | client | LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU
+client DISCONNECTED: session(LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU)
+host a5d7bde65ee5 | client | LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU
+client DISCONNECTED: session(LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU)
+host a5d7bde65ee5 | client | LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU
+client DISCONNECTED: session(LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU)
+host a5d7bde65ee5 | client | LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU
+host a5d7bde65ee5 | client | LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU
+client DISCONNECTED: session(LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU)
+client DISCONNECTED: session(LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU)
+host a5d7bde65ee5 | client | LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU
+host a5d7bde65ee5 | client | LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU
+client DISCONNECTED: session(LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU)
+client DISCONNECTED: session(LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+host a5d7bde65ee5 | client | LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU
+host a5d7bde65ee5 | client | LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU
+host a5d7bde65ee5 | client | LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU
+client DISCONNECTED: session(LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU)
+client DISCONNECTED: session(LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU)
+client DISCONNECTED: session(LEDWSaep1OweUYI_BRyszFjLQ7uj-NWU)
+host a5d7bde65ee5 | client | qvux7jNG1aXmgNIzDrBOHti3E7bXUJBu
+client DISCONNECTED: session(qvux7jNG1aXmgNIzDrBOHti3E7bXUJBu)
+host a5d7bde65ee5 | client | 1lGSjVRdNnt13Canx66bx3up5oEbipP2
+client DISCONNECTED: session(1lGSjVRdNnt13Canx66bx3up5oEbipP2)
+host a5d7bde65ee5 | client | Y2AdhxqoVV3w9DAxPvHet0tltXgZqxJl
+client DISCONNECTED: session(Y2AdhxqoVV3w9DAxPvHet0tltXgZqxJl)
+host a5d7bde65ee5 | client | MLMCE4ucVcz6yTZayhBNKne3jkhvKIZL
+client DISCONNECTED: session(MLMCE4ucVcz6yTZayhBNKne3jkhvKIZL)
+host a5d7bde65ee5 | client | iBftepqunCGrzF8YPQBaCkunCvRyFZ19
+client DISCONNECTED: session(iBftepqunCGrzF8YPQBaCkunCvRyFZ19)
+host a5d7bde65ee5 | client | wEPRPEi34r9WPCXB8i_tp-oO5Brtk7v_
+client DISCONNECTED: session(wEPRPEi34r9WPCXB8i_tp-oO5Brtk7v_)
+host a5d7bde65ee5 | client | bfesMWj_McWigNZlMfUvJoUM9m42bosh
+client DISCONNECTED: session(bfesMWj_McWigNZlMfUvJoUM9m42bosh)
+host a5d7bde65ee5 | client | JpXBVPeUWOjypdMA7gibQytKoaxWBvCf
+client DISCONNECTED: session(JpXBVPeUWOjypdMA7gibQytKoaxWBvCf)
+host a5d7bde65ee5 | client | JpXBVPeUWOjypdMA7gibQytKoaxWBvCf
+client DISCONNECTED: session(JpXBVPeUWOjypdMA7gibQytKoaxWBvCf)
+host a5d7bde65ee5 | client | ZNSYR3VFZThC6Ra9-jdcl5d8opdQrmXh
+client DISCONNECTED: session(ZNSYR3VFZThC6Ra9-jdcl5d8opdQrmXh)
+host a5d7bde65ee5 | client | JpXBVPeUWOjypdMA7gibQytKoaxWBvCf
+client DISCONNECTED: session(JpXBVPeUWOjypdMA7gibQytKoaxWBvCf)
+host a5d7bde65ee5 | client | JpXBVPeUWOjypdMA7gibQytKoaxWBvCf
+client DISCONNECTED: session(JpXBVPeUWOjypdMA7gibQytKoaxWBvCf)
+host a5d7bde65ee5 | client | JpXBVPeUWOjypdMA7gibQytKoaxWBvCf
+client DISCONNECTED: session(JpXBVPeUWOjypdMA7gibQytKoaxWBvCf)
+host a5d7bde65ee5 | client | JpXBVPeUWOjypdMA7gibQytKoaxWBvCf
+host a5d7bde65ee5 | client | JpXBVPeUWOjypdMA7gibQytKoaxWBvCf
+client DISCONNECTED: session(JpXBVPeUWOjypdMA7gibQytKoaxWBvCf)
+client DISCONNECTED: session(JpXBVPeUWOjypdMA7gibQytKoaxWBvCf)
+host a5d7bde65ee5 | client | 99raht1UH-jE6VhluT-Ig2zFM3RLqmsZ
+client DISCONNECTED: session(99raht1UH-jE6VhluT-Ig2zFM3RLqmsZ)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+host a5d7bde65ee5 | client | 6tWueYOdAq1VlcauBB1uUHJ4AM7QlwTX
+client DISCONNECTED: session(6tWueYOdAq1VlcauBB1uUHJ4AM7QlwTX)
+host a5d7bde65ee5 | client | dRTQxqb5VUS7-ecDJn1cjNzXplbmSr5c
+client DISCONNECTED: session(dRTQxqb5VUS7-ecDJn1cjNzXplbmSr5c)
+host a5d7bde65ee5 | client | e_VKY3OwVUJY7-2YW3fl6_gpSJyh9yTH
+client DISCONNECTED: session(e_VKY3OwVUJY7-2YW3fl6_gpSJyh9yTH)
+host a5d7bde65ee5 | client | JpXBVPeUWOjypdMA7gibQytKoaxWBvCf
+client DISCONNECTED: session(JpXBVPeUWOjypdMA7gibQytKoaxWBvCf)
+host a5d7bde65ee5 | client | pHguqVhbkGeR0E4be7nAQYNPGNlQdMCO
+client DISCONNECTED: session(pHguqVhbkGeR0E4be7nAQYNPGNlQdMCO)
+host a5d7bde65ee5 | client | eYM-hVIjqvg2izp2fKaLMaplnJH3bi9T
+client DISCONNECTED: session(eYM-hVIjqvg2izp2fKaLMaplnJH3bi9T)
+host a5d7bde65ee5 | client | 1tna5Vm3FgEczxp1PEEeanRPoEUQ2sbu
+client DISCONNECTED: session(1tna5Vm3FgEczxp1PEEeanRPoEUQ2sbu)
+host a5d7bde65ee5 | client | xmTIKiR0pdgqntI2GuC-ReL4rIEYFIwj
+client DISCONNECTED: session(xmTIKiR0pdgqntI2GuC-ReL4rIEYFIwj)
+host a5d7bde65ee5 | client | THoSagHnJG7vOS8i17dPLYvXNJA7IcYU
+client DISCONNECTED: session(THoSagHnJG7vOS8i17dPLYvXNJA7IcYU)
+host a5d7bde65ee5 | client | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+host a5d7bde65ee5 | client | R-xpiYbj9JGQxtae3acD5MAGyNpMLXvs
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+host a5d7bde65ee5 | client | 9kYDgUVe2lQC8gF66ZK8NaEpvRrp67vH
+client DISCONNECTED: session(R-xpiYbj9JGQxtae3acD5MAGyNpMLXvs)
+client DISCONNECTED: session(9kYDgUVe2lQC8gF66ZK8NaEpvRrp67vH)
+host a5d7bde65ee5 | client | -oVN6N2fu8qG93k9Pby4WumlcI4v8amp
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+client DISCONNECTED: session(-oVN6N2fu8qG93k9Pby4WumlcI4v8amp)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+host a5d7bde65ee5 | client | wu2wgakhKerFubKVEmGWD6IG-kKVOBJZ
+client DISCONNECTED: session(wu2wgakhKerFubKVEmGWD6IG-kKVOBJZ)
+host a5d7bde65ee5 | client | wu2wgakhKerFubKVEmGWD6IG-kKVOBJZ
+client DISCONNECTED: session(wu2wgakhKerFubKVEmGWD6IG-kKVOBJZ)
+host a5d7bde65ee5 | client | wu2wgakhKerFubKVEmGWD6IG-kKVOBJZ
+playCard | true | Nasim played their card!
+playCard | true | Milad was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Milad won with card A good sniff. | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+endRound | true | Round 1 successfully finished | borWtnel4L-86902iv7j1L060tAPlHNw
+playCard | true | Yusuf played their card!
+playCard | true | Milad was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Milad won with card The hardworking Mexican. | borWtnel4L-86902iv7j1L060tAPlHNw
+endRound | true | Round 2 successfully finished | borWtnel4L-86902iv7j1L060tAPlHNw
+shuffleCards | borWtnel4L-86902iv7j1L060tAPlHNw | true | shuffled 6 <=> 3 for Nasim
+playCard | true | Yusuf played their card!
+playCard | true | Nasim was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Yusuf won with card Picking up girls at the abortion clinic. | wu2wgakhKerFubKVEmGWD6IG-kKVOBJZ
+endRound | true | Round 3 successfully finished | wu2wgakhKerFubKVEmGWD6IG-kKVOBJZ
+host a5d7bde65ee5 | client | fqhkOS3SbHqRZVqNE7tlTfEt6XOo0Es7
+client DISCONNECTED: session(fqhkOS3SbHqRZVqNE7tlTfEt6XOo0Es7)
+playCard | true | Nasim played their card!
+playCard | true | Milad was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Nasim won with card A disappointing birthday party. | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+endRound | true | Round 4 successfully finished | Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK
+shuffleCards | wu2wgakhKerFubKVEmGWD6IG-kKVOBJZ | true | shuffled 9 <=> 7 for Milad
+shuffleCards | wu2wgakhKerFubKVEmGWD6IG-kKVOBJZ | true | shuffled 7 <=> 5 for Milad
+shuffleCards | wu2wgakhKerFubKVEmGWD6IG-kKVOBJZ | true | shuffled 0 <=> 2 for Milad
+shuffleCards | wu2wgakhKerFubKVEmGWD6IG-kKVOBJZ | true | shuffled 2 <=> 4 for Milad
+client DISCONNECTED: session(wu2wgakhKerFubKVEmGWD6IG-kKVOBJZ)
+host a5d7bde65ee5 | client | wu2wgakhKerFubKVEmGWD6IG-kKVOBJZ
+playCard | true | Milad played their card!
+Judge-selection time!
+client DISCONNECTED: session(wu2wgakhKerFubKVEmGWD6IG-kKVOBJZ)
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(Zkb9CRyV0ZyIM-6WLQxZFPUnpHfkXpuK)
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+host a5d7bde65ee5 | client | PKviq_04KAcahrc4q-VCfTelX-VnbQoT
+client DISCONNECTED: session(PKviq_04KAcahrc4q-VCfTelX-VnbQoT)
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+host a5d7bde65ee5 | client | 7_KhJUjNawhP4W4gXmUa_qb-nuTTE9sG
+client DISCONNECTED: session(7_KhJUjNawhP4W4gXmUa_qb-nuTTE9sG)
+host a5d7bde65ee5 | client | DXnVrEI5eom0jla5M65ttpgaDISMNriA
+client DISCONNECTED: session(DXnVrEI5eom0jla5M65ttpgaDISMNriA)
+host a5d7bde65ee5 | client | 9MK59iy-It3oznFLD-xIuuWPklxF3-sI
+client DISCONNECTED: session(9MK59iy-It3oznFLD-xIuuWPklxF3-sI)
+host a5d7bde65ee5 | client | I2ijUwN8jIK2iyLOk_TnNsM8QHeJkGkG
+client DISCONNECTED: session(I2ijUwN8jIK2iyLOk_TnNsM8QHeJkGkG)
+host a5d7bde65ee5 | client | WJLLmlPM_7YCdP3Czhowai9mgi2hjuJZ
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(WJLLmlPM_7YCdP3Czhowai9mgi2hjuJZ)
+host a5d7bde65ee5 | client | WJLLmlPM_7YCdP3Czhowai9mgi2hjuJZ
+client DISCONNECTED: session(WJLLmlPM_7YCdP3Czhowai9mgi2hjuJZ)
+host a5d7bde65ee5 | client | WJLLmlPM_7YCdP3Czhowai9mgi2hjuJZ
+client DISCONNECTED: session(WJLLmlPM_7YCdP3Czhowai9mgi2hjuJZ)
+host a5d7bde65ee5 | client | WJLLmlPM_7YCdP3Czhowai9mgi2hjuJZ
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(WJLLmlPM_7YCdP3Czhowai9mgi2hjuJZ)
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+host a5d7bde65ee5 | client | YtP_csr2He8sDMDD_VpmeLROJtFUrWL7
+client DISCONNECTED: session(YtP_csr2He8sDMDD_VpmeLROJtFUrWL7)
+host a5d7bde65ee5 | client | YtP_csr2He8sDMDD_VpmeLROJtFUrWL7
+client DISCONNECTED: session(YtP_csr2He8sDMDD_VpmeLROJtFUrWL7)
+host a5d7bde65ee5 | client | YtP_csr2He8sDMDD_VpmeLROJtFUrWL7
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(YtP_csr2He8sDMDD_VpmeLROJtFUrWL7)
+host a5d7bde65ee5 | client | YtP_csr2He8sDMDD_VpmeLROJtFUrWL7
+client DISCONNECTED: session(YtP_csr2He8sDMDD_VpmeLROJtFUrWL7)
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | hHvnso6uVJiLpl0dlXLrTa6OCIU18gF_
+client DISCONNECTED: session(hHvnso6uVJiLpl0dlXLrTa6OCIU18gF_)
+host a5d7bde65ee5 | client | M6amIchyaHvULxZV0EJNtzkTf_nlKuWG
+client DISCONNECTED: session(M6amIchyaHvULxZV0EJNtzkTf_nlKuWG)
+host a5d7bde65ee5 | client | 5BN2219D3xuJGa6F-VFrO4d6Jxos-TBW
+client DISCONNECTED: session(5BN2219D3xuJGa6F-VFrO4d6Jxos-TBW)
+host a5d7bde65ee5 | client | ESmH_jt2docWNV6dwHsGzT7ic7Rf6iiW
+client DISCONNECTED: session(ESmH_jt2docWNV6dwHsGzT7ic7Rf6iiW)
+host a5d7bde65ee5 | client | 3E_lQhc7bA4xBvyU2qKLllrBKyjtwZEL
+client DISCONNECTED: session(3E_lQhc7bA4xBvyU2qKLllrBKyjtwZEL)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | miJAapxrz0AM6bQLcnUSsjhKu-1o_E8w
+client DISCONNECTED: session(miJAapxrz0AM6bQLcnUSsjhKu-1o_E8w)
+host a5d7bde65ee5 | client | QV-ZFJpWYuStZCoGAtgtjcgv_U6fJP1C
+host a5d7bde65ee5 | client | _mp2OtMITZwTlwDZ5qsgKOK6UriCpQQ0
+client DISCONNECTED: session(_mp2OtMITZwTlwDZ5qsgKOK6UriCpQQ0)
+host a5d7bde65ee5 | client | IMG4YntAymlny5RQ7D6mqhLqvoSgotnK
+client DISCONNECTED: session(IMG4YntAymlny5RQ7D6mqhLqvoSgotnK)
+host a5d7bde65ee5 | client | R-3NBLVRgQKwAw8NtVgy82QikDvLZ-f4
+client DISCONNECTED: session(R-3NBLVRgQKwAw8NtVgy82QikDvLZ-f4)
+host a5d7bde65ee5 | client | jaVIG0xjzB4-lUBELGwlBrfw5Lkcodyb
+client DISCONNECTED: session(jaVIG0xjzB4-lUBELGwlBrfw5Lkcodyb)
+host a5d7bde65ee5 | client | bXaro5umZjlbzXqy-hPS8QXDVVlQoLGH
+client DISCONNECTED: session(bXaro5umZjlbzXqy-hPS8QXDVVlQoLGH)
+host a5d7bde65ee5 | client | vjDIvJWdmwJc5Kx-OgaDAISKRGpX_Lry
+client DISCONNECTED: session(vjDIvJWdmwJc5Kx-OgaDAISKRGpX_Lry)
+host a5d7bde65ee5 | client | P8XPe4AHr69pebnzaAv3FncdeHOw1HCq
+client DISCONNECTED: session(P8XPe4AHr69pebnzaAv3FncdeHOw1HCq)
+host a5d7bde65ee5 | client | LjIWtAQjuKDt8aqyOXTmQzIDDB40ZQX8
+client DISCONNECTED: session(LjIWtAQjuKDt8aqyOXTmQzIDDB40ZQX8)
+host a5d7bde65ee5 | client | mHu4M8EODhoWmu11TJO-pG0IXcQzUuUR
+client DISCONNECTED: session(mHu4M8EODhoWmu11TJO-pG0IXcQzUuUR)
+host a5d7bde65ee5 | client | cxYTyfO36N0JZGJvfXMMgQklCOtuz-Kj
+client DISCONNECTED: session(cxYTyfO36N0JZGJvfXMMgQklCOtuz-Kj)
+host a5d7bde65ee5 | client | lQAqGVPylKnJDIZQggpzh9YqZggAPkQD
+client DISCONNECTED: session(lQAqGVPylKnJDIZQggpzh9YqZggAPkQD)
+host a5d7bde65ee5 | client | gmbLNQELi2hkNMp3x3fj5DyWrUoQFcfZ
+client DISCONNECTED: session(gmbLNQELi2hkNMp3x3fj5DyWrUoQFcfZ)
+client DISCONNECTED: session(QV-ZFJpWYuStZCoGAtgtjcgv_U6fJP1C)
+host a5d7bde65ee5 | client | 1EsmpZ69x6qtWNt5cDU3QL33pqAhKwL0
+host a5d7bde65ee5 | client | kTCIB9D7LctWa8JKSw09oZrQB7XGRZgV
+host a5d7bde65ee5 | client | QP87ce0b89-g5i7V04bZb32bLnDnOk1f
+playCard | true | Sal played their card!
+playCard | true | Hi was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Sal won with card A sassy black woman. | 1EsmpZ69x6qtWNt5cDU3QL33pqAhKwL0
+endRound | true | Round 1 successfully finished | kTCIB9D7LctWa8JKSw09oZrQB7XGRZgV
+playCard | true | Yusuf played their card!
+playCard | true | Sal was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Yusuf won with card Wiping her butt. | kTCIB9D7LctWa8JKSw09oZrQB7XGRZgV
+endRound | true | Round 2 successfully finished | kTCIB9D7LctWa8JKSw09oZrQB7XGRZgV
+playCard | true | Yusuf played their card!
+playCard | true | Hi was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Yusuf won with card A fetus. | QP87ce0b89-g5i7V04bZb32bLnDnOk1f
+endRound | true | Round 3 successfully finished | kTCIB9D7LctWa8JKSw09oZrQB7XGRZgV
+playCard | true | Sal played their card!
+playCard | true | Hi was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Sal won with card Actually taking candy from a baby. | 1EsmpZ69x6qtWNt5cDU3QL33pqAhKwL0
+client DISCONNECTED: session(kTCIB9D7LctWa8JKSw09oZrQB7XGRZgV)
+client DISCONNECTED: session(QP87ce0b89-g5i7V04bZb32bLnDnOk1f)
+client DISCONNECTED: session(1EsmpZ69x6qtWNt5cDU3QL33pqAhKwL0)
+host a5d7bde65ee5 | client | HqzaC9FVARgkJdvuWVrvAhzxRw_qN4tz
+client DISCONNECTED: session(HqzaC9FVARgkJdvuWVrvAhzxRw_qN4tz)
+host a5d7bde65ee5 | client | fQuEJ4A2ym6kEUEVi9aV9Q4U2rYOLjYZ
+host a5d7bde65ee5 | client | IKisA2_vZGBHKJhbXJDLdu6OVHUlgypF
+host a5d7bde65ee5 | client | 48_9FOyAuN5AcM_a2Bez72kxQnOBgP6D
+host a5d7bde65ee5 | client | O3ckV4SS7ywpcLGJYA3cw-3iH4vCu_H-
+client DISCONNECTED: session(IKisA2_vZGBHKJhbXJDLdu6OVHUlgypF)
+client DISCONNECTED: session(O3ckV4SS7ywpcLGJYA3cw-3iH4vCu_H-)
+client DISCONNECTED: session(48_9FOyAuN5AcM_a2Bez72kxQnOBgP6D)
+client DISCONNECTED: session(fQuEJ4A2ym6kEUEVi9aV9Q4U2rYOLjYZ)
+host a5d7bde65ee5 | client | uCSrZsHMoPQ0STCjr4N9q0CWvryMzZJk
+host a5d7bde65ee5 | client | QP87ce0b89-g5i7V04bZb32bLnDnOk1f
+client DISCONNECTED: session(QP87ce0b89-g5i7V04bZb32bLnDnOk1f)
+client DISCONNECTED: session(uCSrZsHMoPQ0STCjr4N9q0CWvryMzZJk)
+host a5d7bde65ee5 | client | bmthC3mmoSeKslp44-kUnLUwWGGoNVRY
+client DISCONNECTED: session(bmthC3mmoSeKslp44-kUnLUwWGGoNVRY)
+host a5d7bde65ee5 | client | 5uBw-SNGJDhk9eVEWypabZLZY5AKvgk4
+client DISCONNECTED: session(5uBw-SNGJDhk9eVEWypabZLZY5AKvgk4)
+host a5d7bde65ee5 | client | _zC1-mXs2MiySUnvlWM4KkMxU6wO3c2w
+host a5d7bde65ee5 | client | JpXBVPeUWOjypdMA7gibQytKoaxWBvCf
+client DISCONNECTED: session(_zC1-mXs2MiySUnvlWM4KkMxU6wO3c2w)
+client DISCONNECTED: session(JpXBVPeUWOjypdMA7gibQytKoaxWBvCf)
+host a5d7bde65ee5 | client | IdUB_q1g_erDAepJ2WsGozykcRkC4j-4
+client DISCONNECTED: session(IdUB_q1g_erDAepJ2WsGozykcRkC4j-4)
+host a5d7bde65ee5 | client | Kj-vBaJABL6neNZzHTw2G_mHgvJePSz2
+client DISCONNECTED: session(Kj-vBaJABL6neNZzHTw2G_mHgvJePSz2)
+host a5d7bde65ee5 | client | a4kMC7eyEjQTbQGATzMYcrO4A-cC_k_o
+client DISCONNECTED: session(a4kMC7eyEjQTbQGATzMYcrO4A-cC_k_o)
+host a5d7bde65ee5 | client | JpXBVPeUWOjypdMA7gibQytKoaxWBvCf
+client DISCONNECTED: session(JpXBVPeUWOjypdMA7gibQytKoaxWBvCf)
+host a5d7bde65ee5 | client | JpXBVPeUWOjypdMA7gibQytKoaxWBvCf
+client DISCONNECTED: session(JpXBVPeUWOjypdMA7gibQytKoaxWBvCf)
+host a5d7bde65ee5 | client | sDwnnXDamTNHC4BEb0GtK6DeMXjK1SVX
+client DISCONNECTED: session(sDwnnXDamTNHC4BEb0GtK6DeMXjK1SVX)
+host a5d7bde65ee5 | client | LG8nfV9wY59U4cS4e41NUY14dyxlF_Zc
+client DISCONNECTED: session(LG8nfV9wY59U4cS4e41NUY14dyxlF_Zc)
+host a5d7bde65ee5 | client | LdS9Kbw65-QAMaGhBIA8gYZgTYR47yxI
+client DISCONNECTED: session(LdS9Kbw65-QAMaGhBIA8gYZgTYR47yxI)
+host a5d7bde65ee5 | client | bH-6iOEvDYlgQUNh7rBOJqtd60F_powV
+client DISCONNECTED: session(bH-6iOEvDYlgQUNh7rBOJqtd60F_powV)
+host a5d7bde65ee5 | client | qpdhH3zvW_NigKZ8i4aEVtOhr-Sg_YNU
+client DISCONNECTED: session(qpdhH3zvW_NigKZ8i4aEVtOhr-Sg_YNU)
+host a5d7bde65ee5 | client | 0PREDsFIoPQ22UeqWDOb4wukkvyyFeln
+client DISCONNECTED: session(0PREDsFIoPQ22UeqWDOb4wukkvyyFeln)
+host a5d7bde65ee5 | client | Vzx5nw--zMP4TXxIJ_t6SrFPAfQY5xb8
+client DISCONNECTED: session(Vzx5nw--zMP4TXxIJ_t6SrFPAfQY5xb8)
+host a5d7bde65ee5 | client | Vzx5nw--zMP4TXxIJ_t6SrFPAfQY5xb8
+client DISCONNECTED: session(Vzx5nw--zMP4TXxIJ_t6SrFPAfQY5xb8)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+host a5d7bde65ee5 | client | OMHaPJys2TjMLRLwa675JOFUfr7s984K
+client DISCONNECTED: session(OMHaPJys2TjMLRLwa675JOFUfr7s984K)
+host a5d7bde65ee5 | client | WItkO1ASYfJf2Y0kjggBMOZQjFBikQqd
+client DISCONNECTED: session(WItkO1ASYfJf2Y0kjggBMOZQjFBikQqd)
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | Ntqi-Msf52P7buwhxUlMqxUX_ABGVyul
+client DISCONNECTED: session(Ntqi-Msf52P7buwhxUlMqxUX_ABGVyul)
+host a5d7bde65ee5 | client | qcCrv4vJ4Cdd9JIL6fUBiMSihFD3Ch0j
+client DISCONNECTED: session(qcCrv4vJ4Cdd9JIL6fUBiMSihFD3Ch0j)
+host a5d7bde65ee5 | client | rVKeZcRX9G4NvbDv9wlBl2xOFR22tOCd
+client DISCONNECTED: session(rVKeZcRX9G4NvbDv9wlBl2xOFR22tOCd)
+host a5d7bde65ee5 | client | wHf_tHUvufBiTyAei77HBEaKJraH82oK
+client DISCONNECTED: session(wHf_tHUvufBiTyAei77HBEaKJraH82oK)
+host a5d7bde65ee5 | client | pwYKr7C5X3jVTet6iDgihdUYRgsba-Mn
+client DISCONNECTED: session(pwYKr7C5X3jVTet6iDgihdUYRgsba-Mn)
+host a5d7bde65ee5 | client | jFFxz5lacd_YB_cKPYEr1DLx9Q39nlEt
+client DISCONNECTED: session(jFFxz5lacd_YB_cKPYEr1DLx9Q39nlEt)
+host a5d7bde65ee5 | client | 3pAComF7cEVxp2jqW7JoyRuB5ul9I4ce
+client DISCONNECTED: session(3pAComF7cEVxp2jqW7JoyRuB5ul9I4ce)
+host a5d7bde65ee5 | client | 5LRN2ghNd8y3j5s0IwEjQFH3hVHkxH56
+client DISCONNECTED: session(5LRN2ghNd8y3j5s0IwEjQFH3hVHkxH56)
+host a5d7bde65ee5 | client | 7mmBHh6nFIytyhYcy7HWnOTe7ouVqbmV
+client DISCONNECTED: session(7mmBHh6nFIytyhYcy7HWnOTe7ouVqbmV)
+host a5d7bde65ee5 | client | U0bIFPkF1ps9t4R1ucxG25OHCz0-mzHL
+client DISCONNECTED: session(U0bIFPkF1ps9t4R1ucxG25OHCz0-mzHL)
+host a5d7bde65ee5 | client | 933-O0fWVyTw4WN6lKx_AKOk5042Lltu
+client DISCONNECTED: session(933-O0fWVyTw4WN6lKx_AKOk5042Lltu)
+host a5d7bde65ee5 | client | IInLwFuuVV5Z11D08jzduVuOAMoAuaYF
+client DISCONNECTED: session(IInLwFuuVV5Z11D08jzduVuOAMoAuaYF)
+host a5d7bde65ee5 | client | c7U9mFn36WavoBgBQe_EsDPoiml5fbLF
+client DISCONNECTED: session(c7U9mFn36WavoBgBQe_EsDPoiml5fbLF)
+host a5d7bde65ee5 | client | RDLj9yGj0qvey-xdi7TCZA0v3e6XcOnC
+host a5d7bde65ee5 | client | ytnpzKK-uzd2b34BiS1JnADl2egUxVw_
+client DISCONNECTED: session(ytnpzKK-uzd2b34BiS1JnADl2egUxVw_)
+client DISCONNECTED: session(RDLj9yGj0qvey-xdi7TCZA0v3e6XcOnC)
+host a5d7bde65ee5 | client | pVMW5JEtfpPCu0Y2sWaxnMBTpQi9JYOQ
+host a5d7bde65ee5 | client | koCnfn0CuMxWz-7sQVhMH3JM0qulfiiL
+client DISCONNECTED: session(pVMW5JEtfpPCu0Y2sWaxnMBTpQi9JYOQ)
+client DISCONNECTED: session(koCnfn0CuMxWz-7sQVhMH3JM0qulfiiL)
+host a5d7bde65ee5 | client | m8wggvKrxG3XpLBB2KnmaKe2_q8VEEIs
+client DISCONNECTED: session(m8wggvKrxG3XpLBB2KnmaKe2_q8VEEIs)
+host a5d7bde65ee5 | client | CwOfcd70EHsM4VWA3qi5dlIc0DFod1I2
+client DISCONNECTED: session(CwOfcd70EHsM4VWA3qi5dlIc0DFod1I2)
+host a5d7bde65ee5 | client | OjOXN-P-cpTwHg4BitbgIQW1Zi7yg2Y1
+client DISCONNECTED: session(OjOXN-P-cpTwHg4BitbgIQW1Zi7yg2Y1)
+host a5d7bde65ee5 | client | LFcXY_qq1zqBMQWKR1QRr7xAFlzXRrgj
+client DISCONNECTED: session(LFcXY_qq1zqBMQWKR1QRr7xAFlzXRrgj)
+host a5d7bde65ee5 | client | g3Xmiu1p5dz92tgWGRCdl9rs_jOW-HCJ
+client DISCONNECTED: session(g3Xmiu1p5dz92tgWGRCdl9rs_jOW-HCJ)
+host a5d7bde65ee5 | client | _JqCPgk4-z0gKT_4qLFntmU1R2S5W-Qx
+client DISCONNECTED: session(_JqCPgk4-z0gKT_4qLFntmU1R2S5W-Qx)
+host a5d7bde65ee5 | client | IdAEqzfN2X_SDIO85ud0O1m5b48xEvwG
+client DISCONNECTED: session(IdAEqzfN2X_SDIO85ud0O1m5b48xEvwG)
+host a5d7bde65ee5 | client | E766lh-EzQaL-l9HxO6I1TgFyk19zpcN
+client DISCONNECTED: session(E766lh-EzQaL-l9HxO6I1TgFyk19zpcN)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | 2yQ7F5tFJvwWoAyJHA3jOyQbCXqFYp-i
+client DISCONNECTED: session(2yQ7F5tFJvwWoAyJHA3jOyQbCXqFYp-i)
+host a5d7bde65ee5 | client | m9GnZZocWrIZ0DQY8gJFeDuil0PNrJ3i
+client DISCONNECTED: session(m9GnZZocWrIZ0DQY8gJFeDuil0PNrJ3i)
+host a5d7bde65ee5 | client | OatD4DwsmH8eIAbvsD7MSLBPQCbRXy_k
+client DISCONNECTED: session(OatD4DwsmH8eIAbvsD7MSLBPQCbRXy_k)
+host a5d7bde65ee5 | client | XF-7DEHQMSs488YTpXI7ekhHwpPGhvCl
+client DISCONNECTED: session(XF-7DEHQMSs488YTpXI7ekhHwpPGhvCl)
+host a5d7bde65ee5 | client | YXz4zjPJImma9EMhyF1MHMk2_GTUzcLq
+client DISCONNECTED: session(YXz4zjPJImma9EMhyF1MHMk2_GTUzcLq)
+host a5d7bde65ee5 | client | vvHLU-Jxs_QLLBVtc3QKzzOv0oukgbjC
+client DISCONNECTED: session(vvHLU-Jxs_QLLBVtc3QKzzOv0oukgbjC)
+host a5d7bde65ee5 | client | moq7dOrSCYXHz_kYqWefOgu18qNfpEQM
+client DISCONNECTED: session(moq7dOrSCYXHz_kYqWefOgu18qNfpEQM)
+host a5d7bde65ee5 | client | RqAcR4C-BgHeoE-5ItBZyKtJLGNPXNwH
+client DISCONNECTED: session(RqAcR4C-BgHeoE-5ItBZyKtJLGNPXNwH)
+host a5d7bde65ee5 | client | cy8NcQrVol_2uat-2jW5cHuzpV8vxbCs
+client DISCONNECTED: session(cy8NcQrVol_2uat-2jW5cHuzpV8vxbCs)
+host a5d7bde65ee5 | client | -jj4aOWJhxrPg4UGPImtEYPew11wOt-X
+client DISCONNECTED: session(-jj4aOWJhxrPg4UGPImtEYPew11wOt-X)
+host a5d7bde65ee5 | client | kzHHd_9NAc0mRYwaIidLfblibsQmQB3p
+client DISCONNECTED: session(kzHHd_9NAc0mRYwaIidLfblibsQmQB3p)
+host a5d7bde65ee5 | client | 7TktXJ4B3eo2q5pMc2XDr8c12N3SXP3e
+client DISCONNECTED: session(7TktXJ4B3eo2q5pMc2XDr8c12N3SXP3e)
+host a5d7bde65ee5 | client | 7TktXJ4B3eo2q5pMc2XDr8c12N3SXP3e
+client DISCONNECTED: session(7TktXJ4B3eo2q5pMc2XDr8c12N3SXP3e)
+host a5d7bde65ee5 | client | 7TktXJ4B3eo2q5pMc2XDr8c12N3SXP3e
+client DISCONNECTED: session(7TktXJ4B3eo2q5pMc2XDr8c12N3SXP3e)
+host a5d7bde65ee5 | client | 7TktXJ4B3eo2q5pMc2XDr8c12N3SXP3e
+client DISCONNECTED: session(7TktXJ4B3eo2q5pMc2XDr8c12N3SXP3e)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | xwk6InkU1adkisxGq5z8PuhrByh43P-q
+client DISCONNECTED: session(xwk6InkU1adkisxGq5z8PuhrByh43P-q)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | Nz6SVcw4uVFsr4aB0hcTprkeC-dfuypT
+client DISCONNECTED: session(Nz6SVcw4uVFsr4aB0hcTprkeC-dfuypT)
+host a5d7bde65ee5 | client | xkt8COYe_43xjTdUqnKwXcdlWdHYnpm8
+client DISCONNECTED: session(xkt8COYe_43xjTdUqnKwXcdlWdHYnpm8)
+host a5d7bde65ee5 | client | borWtnel4L-86902iv7j1L060tAPlHNw
+client DISCONNECTED: session(borWtnel4L-86902iv7j1L060tAPlHNw)
+host a5d7bde65ee5 | client | CbvrHLrt7uUBLLcIqO0t5CmEdj4pgh6m
+client DISCONNECTED: session(CbvrHLrt7uUBLLcIqO0t5CmEdj4pgh6m)
+host a5d7bde65ee5 | client | CdkUkA1v6o0YHXdfFO4Q4wwBfSAaHjQs
+client DISCONNECTED: session(CdkUkA1v6o0YHXdfFO4Q4wwBfSAaHjQs)
+host a5d7bde65ee5 | client | YG-UaKDyI8xs1itXY5mpO_CtXoVYG9OM
+client DISCONNECTED: session(YG-UaKDyI8xs1itXY5mpO_CtXoVYG9OM)
+host a5d7bde65ee5 | client | BZWcG69m6x8CjnxHwgZhk575gr-xayF3
+client DISCONNECTED: session(BZWcG69m6x8CjnxHwgZhk575gr-xayF3)
+host a5d7bde65ee5 | client | TJHDF9vvLeRw3I37iIVhEfgtVsSispHP
+host a5d7bde65ee5 | client | EBlMO2w31mmtileGzfPbH25tI-RFnaOn
+client DISCONNECTED: session(TJHDF9vvLeRw3I37iIVhEfgtVsSispHP)
+client DISCONNECTED: session(EBlMO2w31mmtileGzfPbH25tI-RFnaOn)
+host a5d7bde65ee5 | client | wfxmuCz7jUHc6ZpSTJwrMvqIIaEfs7mm
+client DISCONNECTED: session(wfxmuCz7jUHc6ZpSTJwrMvqIIaEfs7mm)
+host a5d7bde65ee5 | client | U3x3JMsGuPtfidC_mDKQzNDMnc_jF2H1
+client DISCONNECTED: session(U3x3JMsGuPtfidC_mDKQzNDMnc_jF2H1)
+host a5d7bde65ee5 | client | HpvdcG5m_j3dVb4v5MSLMrlFfKgGQ3P1
+client DISCONNECTED: session(HpvdcG5m_j3dVb4v5MSLMrlFfKgGQ3P1)
+host a5d7bde65ee5 | client | PpO1czABzf63LRo55-J4gc_FInpTUww1
+client DISCONNECTED: session(PpO1czABzf63LRo55-J4gc_FInpTUww1)
+host a5d7bde65ee5 | client | 4KEHFQCmJDpGClf4YLYtT8QjixE7yuDZ
+client DISCONNECTED: session(4KEHFQCmJDpGClf4YLYtT8QjixE7yuDZ)
+host a5d7bde65ee5 | client | dld6EstjyfwwUU1H2D5mbwvWrmrZgBJX
+client DISCONNECTED: session(dld6EstjyfwwUU1H2D5mbwvWrmrZgBJX)
+host a5d7bde65ee5 | client | rkkN3cmYD_68uGKt3EyFddwCUQZ4d4IM
+host a5d7bde65ee5 | client | 3iZ6-HCLAWwgFQaEpHKvmhKeuzFxpJPA
+client DISCONNECTED: session(rkkN3cmYD_68uGKt3EyFddwCUQZ4d4IM)
+host a5d7bde65ee5 | client | OPjl9yOLTwyqLM3k5BSHwl2T6kKeJgLh
+client DISCONNECTED: session(OPjl9yOLTwyqLM3k5BSHwl2T6kKeJgLh)
+client DISCONNECTED: session(3iZ6-HCLAWwgFQaEpHKvmhKeuzFxpJPA)
+host a5d7bde65ee5 | client | 3iZ6-HCLAWwgFQaEpHKvmhKeuzFxpJPA
+client DISCONNECTED: session(3iZ6-HCLAWwgFQaEpHKvmhKeuzFxpJPA)
+host a5d7bde65ee5 | client | 3iZ6-HCLAWwgFQaEpHKvmhKeuzFxpJPA
+client DISCONNECTED: session(3iZ6-HCLAWwgFQaEpHKvmhKeuzFxpJPA)
+host a5d7bde65ee5 | client | 3iZ6-HCLAWwgFQaEpHKvmhKeuzFxpJPA
+client DISCONNECTED: session(3iZ6-HCLAWwgFQaEpHKvmhKeuzFxpJPA)
+host a5d7bde65ee5 | client | 3iZ6-HCLAWwgFQaEpHKvmhKeuzFxpJPA
+client DISCONNECTED: session(3iZ6-HCLAWwgFQaEpHKvmhKeuzFxpJPA)
+host a5d7bde65ee5 | client | 3iZ6-HCLAWwgFQaEpHKvmhKeuzFxpJPA
+client DISCONNECTED: session(3iZ6-HCLAWwgFQaEpHKvmhKeuzFxpJPA)
+host a5d7bde65ee5 | client | 3iZ6-HCLAWwgFQaEpHKvmhKeuzFxpJPA
+client DISCONNECTED: session(3iZ6-HCLAWwgFQaEpHKvmhKeuzFxpJPA)
+host a5d7bde65ee5 | client | _Mfg0O8p1RJC2wV5vguMLbWkwx85e9sM
+client DISCONNECTED: session(_Mfg0O8p1RJC2wV5vguMLbWkwx85e9sM)
+host a5d7bde65ee5 | client | iqhwNywDpdx7PuVloZtUmmrQD8NEWqIy
+client DISCONNECTED: session(iqhwNywDpdx7PuVloZtUmmrQD8NEWqIy)
+host a5d7bde65ee5 | client | wSSuFYigPSV1-nLkSyEMlOHeMcFZEtq1
+client DISCONNECTED: session(wSSuFYigPSV1-nLkSyEMlOHeMcFZEtq1)
+host a5d7bde65ee5 | client | 8_k8AmcsEHTYyHuqXXcPYZDUmgCyiAW_
+client DISCONNECTED: session(8_k8AmcsEHTYyHuqXXcPYZDUmgCyiAW_)
+host a5d7bde65ee5 | client | nj-5PKTAQtouTzyarDXQ69USn9b5QZiq
+client DISCONNECTED: session(nj-5PKTAQtouTzyarDXQ69USn9b5QZiq)
+host a5d7bde65ee5 | client | 16PvH7dWd_5FvTpbDUPkbPzvvWBpQ6o5
+host a5d7bde65ee5 | client | HvQwXLQqZWk5on88mQL80NVr0ii8cq-0
+client DISCONNECTED: session(16PvH7dWd_5FvTpbDUPkbPzvvWBpQ6o5)
+client DISCONNECTED: session(HvQwXLQqZWk5on88mQL80NVr0ii8cq-0)
+host a5d7bde65ee5 | client | POuhM6IWmZ3iPsjNZn48LPaExvNrRODx
+client DISCONNECTED: session(POuhM6IWmZ3iPsjNZn48LPaExvNrRODx)
+host a5d7bde65ee5 | client | k1LA1hbHEfsWsfECHJyXExs-85kJ3jrC
+host a5d7bde65ee5 | client | NlyZHeUOpomkDYw_qIOhmysfZ-oeg7Lt
+client DISCONNECTED: session(NlyZHeUOpomkDYw_qIOhmysfZ-oeg7Lt)
+client DISCONNECTED: session(k1LA1hbHEfsWsfECHJyXExs-85kJ3jrC)
+host a5d7bde65ee5 | client | 7Aa1jL5EWzqRjVbLHzRt-duhgDKjV1uC
+client DISCONNECTED: session(7Aa1jL5EWzqRjVbLHzRt-duhgDKjV1uC)
+host a5d7bde65ee5 | client | 1twd4H2CK7WjWLaBcuw3CBDrlLE0OQT0
+client DISCONNECTED: session(1twd4H2CK7WjWLaBcuw3CBDrlLE0OQT0)
+host a5d7bde65ee5 | client | NhoQDZQsDW6CbugnQfHNREY4TqePvcRC
+client DISCONNECTED: session(NhoQDZQsDW6CbugnQfHNREY4TqePvcRC)
+host a5d7bde65ee5 | client | 3iZ6-HCLAWwgFQaEpHKvmhKeuzFxpJPA
+client DISCONNECTED: session(3iZ6-HCLAWwgFQaEpHKvmhKeuzFxpJPA)
+host a5d7bde65ee5 | client | 1T9cdqyoszRNhLRuVsaG4ZUGqvyojnLe
+client DISCONNECTED: session(1T9cdqyoszRNhLRuVsaG4ZUGqvyojnLe)
+host a5d7bde65ee5 | client | RYgu9vKzZBZv20WOV44u2wJ1f_7W04Hk
+client DISCONNECTED: session(RYgu9vKzZBZv20WOV44u2wJ1f_7W04Hk)
+host a5d7bde65ee5 | client | Yh6jYpN7o63xVyOUAtPf5Oxh6w5uZAXJ
+client DISCONNECTED: session(Yh6jYpN7o63xVyOUAtPf5Oxh6w5uZAXJ)
+host a5d7bde65ee5 | client | F0m4KUoQ9JNbTKlIMD9LinKgj_jeZcjp
+client DISCONNECTED: session(F0m4KUoQ9JNbTKlIMD9LinKgj_jeZcjp)
+host a5d7bde65ee5 | client | 9GY4A02PYhWeoj86oLPnO-XgCQ2o5-Ki
+client DISCONNECTED: session(9GY4A02PYhWeoj86oLPnO-XgCQ2o5-Ki)
+host a5d7bde65ee5 | client | sOPcbxnrx99Rn-D2P2YDUQYOPyi-TpEL
+client DISCONNECTED: session(sOPcbxnrx99Rn-D2P2YDUQYOPyi-TpEL)
+host a5d7bde65ee5 | client | ponqnaa5j3kvjc7MHxrWBuwKZSs7tRDP
+host a5d7bde65ee5 | client | m_6m8cWnd0SG5vn5Y1wHJ09F96fxbUsF
+client DISCONNECTED: session(m_6m8cWnd0SG5vn5Y1wHJ09F96fxbUsF)
+host a5d7bde65ee5 | client | xN7GDLNCdBLSMUCZEqxuFZQ1TAPBZjo6
+client DISCONNECTED: session(xN7GDLNCdBLSMUCZEqxuFZQ1TAPBZjo6)
+client DISCONNECTED: session(ponqnaa5j3kvjc7MHxrWBuwKZSs7tRDP)
+host a5d7bde65ee5 | client | Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ
+client DISCONNECTED: session(Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ)
+host a5d7bde65ee5 | client | 7-rP7M8fAQwRyDIuCvnLWl5ZfaTEcrA_
+client DISCONNECTED: session(7-rP7M8fAQwRyDIuCvnLWl5ZfaTEcrA_)
+host a5d7bde65ee5 | client | Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ
+client DISCONNECTED: session(Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ)
+host a5d7bde65ee5 | client | wFd0M-iTArvoy06fB1IV2IIS5QGTPKUX
+client DISCONNECTED: session(wFd0M-iTArvoy06fB1IV2IIS5QGTPKUX)
+host a5d7bde65ee5 | client | Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ
+client DISCONNECTED: session(Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ)
+host a5d7bde65ee5 | client | Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ
+client DISCONNECTED: session(Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ)
+host a5d7bde65ee5 | client | Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ
+client DISCONNECTED: session(Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ)
+host a5d7bde65ee5 | client | Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ
+client DISCONNECTED: session(Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ)
+host a5d7bde65ee5 | client | Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ
+client DISCONNECTED: session(Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ)
+host a5d7bde65ee5 | client | Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ
+client DISCONNECTED: session(Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ)
+host a5d7bde65ee5 | client | Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ
+client DISCONNECTED: session(Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ)
+host a5d7bde65ee5 | client | r0NWA21x_1Ql6cqeg87n_EpSbc9fkErj
+client DISCONNECTED: session(r0NWA21x_1Ql6cqeg87n_EpSbc9fkErj)
+host a5d7bde65ee5 | client | g51c8NlJzE0QhFzqy_IXNcmGP4ES4pfv
+client DISCONNECTED: session(g51c8NlJzE0QhFzqy_IXNcmGP4ES4pfv)
+host a5d7bde65ee5 | client | g51c8NlJzE0QhFzqy_IXNcmGP4ES4pfv
+client DISCONNECTED: session(g51c8NlJzE0QhFzqy_IXNcmGP4ES4pfv)
+host a5d7bde65ee5 | client | g51c8NlJzE0QhFzqy_IXNcmGP4ES4pfv
+client DISCONNECTED: session(g51c8NlJzE0QhFzqy_IXNcmGP4ES4pfv)
+host a5d7bde65ee5 | client | Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ
+client DISCONNECTED: session(Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ)
+host a5d7bde65ee5 | client | D4owzwrq1ttrVGJIw_8G1k1Qz1CoLqW5
+client DISCONNECTED: session(D4owzwrq1ttrVGJIw_8G1k1Qz1CoLqW5)
+host a5d7bde65ee5 | client | sfoAxGcIgLoydPrv2u9BaUqWJtizlX0h
+host a5d7bde65ee5 | client | f1ffUK2JgNG61uytJBLE44NWce7a29Nz
+client DISCONNECTED: session(f1ffUK2JgNG61uytJBLE44NWce7a29Nz)
+host a5d7bde65ee5 | client | sWestqp7f-pUPAtrhIARmw-k3vgY6YUL
+client DISCONNECTED: session(sWestqp7f-pUPAtrhIARmw-k3vgY6YUL)
+host a5d7bde65ee5 | client | QU6dt-J1FmQg2Ccwy4A8F5bLY6FRJgQ_
+client DISCONNECTED: session(sfoAxGcIgLoydPrv2u9BaUqWJtizlX0h)
+client DISCONNECTED: session(QU6dt-J1FmQg2Ccwy4A8F5bLY6FRJgQ_)
+host a5d7bde65ee5 | client | P5KCRgMBFn9xz-oEidE_UPgzXzr-2XmL
+client DISCONNECTED: session(P5KCRgMBFn9xz-oEidE_UPgzXzr-2XmL)
+host a5d7bde65ee5 | client | MdTA4G74AuTgwoUqeWMz2km05d44uM8r
+client DISCONNECTED: session(MdTA4G74AuTgwoUqeWMz2km05d44uM8r)
+host a5d7bde65ee5 | client | HphBdV9LVEGrDGId6m_SoC5pbj7pjVPt
+client DISCONNECTED: session(HphBdV9LVEGrDGId6m_SoC5pbj7pjVPt)
+host a5d7bde65ee5 | client | fEwhu37LzSI77p458yPURHdUvOtneszD
+client DISCONNECTED: session(fEwhu37LzSI77p458yPURHdUvOtneszD)
+host a5d7bde65ee5 | client | 3O1Fdh7I5yTwUA4FKytDd5Ho-PQVJgKI
+client DISCONNECTED: session(3O1Fdh7I5yTwUA4FKytDd5Ho-PQVJgKI)
+host a5d7bde65ee5 | client | kaADxEWMnebcL7U77Bs13YGsoSwdzCC9
+client DISCONNECTED: session(kaADxEWMnebcL7U77Bs13YGsoSwdzCC9)
+host a5d7bde65ee5 | client | _PfQjAndYB2dIVXO_yyHb9RzAp-4jjLt
+client DISCONNECTED: session(_PfQjAndYB2dIVXO_yyHb9RzAp-4jjLt)
+host a5d7bde65ee5 | client | Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ
+client DISCONNECTED: session(Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ)
+host a5d7bde65ee5 | client | Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ
+client DISCONNECTED: session(Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ)
+host a5d7bde65ee5 | client | Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ
+client DISCONNECTED: session(Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ)
+host a5d7bde65ee5 | client | Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ
+client DISCONNECTED: session(Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ)
+host a5d7bde65ee5 | client | H2z1b2bU5rwKwBJCPv3IfCZoEhmCy-6H
+client DISCONNECTED: session(H2z1b2bU5rwKwBJCPv3IfCZoEhmCy-6H)
+host a5d7bde65ee5 | client | jvgPDsDPetLqzxRG8Qvsr1BuWIqTyKFN
+host a5d7bde65ee5 | client | TvwyfbO12ms4H7rjw6Le6gjU91Ea9TX9
+client DISCONNECTED: session(jvgPDsDPetLqzxRG8Qvsr1BuWIqTyKFN)
+host a5d7bde65ee5 | client | TvwyfbO12ms4H7rjw6Le6gjU91Ea9TX9
+client DISCONNECTED: session(TvwyfbO12ms4H7rjw6Le6gjU91Ea9TX9)
+host a5d7bde65ee5 | client | TvwyfbO12ms4H7rjw6Le6gjU91Ea9TX9
+client DISCONNECTED: session(TvwyfbO12ms4H7rjw6Le6gjU91Ea9TX9)
+host a5d7bde65ee5 | client | TvwyfbO12ms4H7rjw6Le6gjU91Ea9TX9
+host a5d7bde65ee5 | client | TvwyfbO12ms4H7rjw6Le6gjU91Ea9TX9
+client DISCONNECTED: session(TvwyfbO12ms4H7rjw6Le6gjU91Ea9TX9)
+host a5d7bde65ee5 | client | vECOHeMIjSVqaZxFGDzwugwyMO480SDm
+playCard | true | Sam played their card!
+playCard | true | Steven was last player to play cards, going to judge-selecting!
+client DISCONNECTED: session(TvwyfbO12ms4H7rjw6Le6gjU91Ea9TX9)
+client DISCONNECTED: session(vECOHeMIjSVqaZxFGDzwugwyMO480SDm)
+host a5d7bde65ee5 | client | TvwyfbO12ms4H7rjw6Le6gjU91Ea9TX9
+client DISCONNECTED: session(TvwyfbO12ms4H7rjw6Le6gjU91Ea9TX9)
+host a5d7bde65ee5 | client | TvwyfbO12ms4H7rjw6Le6gjU91Ea9TX9
+host a5d7bde65ee5 | client | vECOHeMIjSVqaZxFGDzwugwyMO480SDm
+client DISCONNECTED: session(TvwyfbO12ms4H7rjw6Le6gjU91Ea9TX9)
+client DISCONNECTED: session(vECOHeMIjSVqaZxFGDzwugwyMO480SDm)
+host a5d7bde65ee5 | client | vECOHeMIjSVqaZxFGDzwugwyMO480SDm
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+playCard | true | Ari played their card!
+Judge-selection time!
+judgeSelectCard | true | Ari won with card The Blood of Christ. | TvwyfbO12ms4H7rjw6Le6gjU91Ea9TX9
+endRound | true | Round 1 successfully finished | TvwyfbO12ms4H7rjw6Le6gjU91Ea9TX9
+playCard | true | CardiB played their card!
+playCard | true | Ari was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Ari won with card Date rape. | vECOHeMIjSVqaZxFGDzwugwyMO480SDm
+endRound | true | Round 2 successfully finished | vECOHeMIjSVqaZxFGDzwugwyMO480SDm
+playCard | true | CardiB played their card!
+playCard | true | Nicki M was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | CardiB won with card Multiple stab wounds. | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(TvwyfbO12ms4H7rjw6Le6gjU91Ea9TX9)
+client DISCONNECTED: session(vECOHeMIjSVqaZxFGDzwugwyMO480SDm)
+endRound | true | Round 3 successfully finished | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 4 successfully finished
+Rounds Idle: 1
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 5 successfully finished
+Rounds Idle: 2
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 6 successfully finished
+Rounds Idle: 3
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 7 successfully finished
+Rounds Idle: 4
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 8 successfully finished
+Rounds Idle: 5
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 37k6iRRc9de4T9vinebvUZw_1b_3qeVI
+client DISCONNECTED: session(37k6iRRc9de4T9vinebvUZw_1b_3qeVI)
+host a5d7bde65ee5 | client | 02_1SRtqDG9GnBdcgOQTNlowCyo8RWZe
+client DISCONNECTED: session(02_1SRtqDG9GnBdcgOQTNlowCyo8RWZe)
+host a5d7bde65ee5 | client | L4BSd_BcCgz1g26C5gchjUFYIAT_z5Sp
+client DISCONNECTED: session(L4BSd_BcCgz1g26C5gchjUFYIAT_z5Sp)
+host a5d7bde65ee5 | client | HrSpPoVV3XVovrK1oPn8ZVC5Ck_Z3Sq9
+client DISCONNECTED: session(HrSpPoVV3XVovrK1oPn8ZVC5Ck_Z3Sq9)
+host a5d7bde65ee5 | client | skVe5Xy8R14o4cEimh1tg6Wegr79ECIV
+client DISCONNECTED: session(skVe5Xy8R14o4cEimh1tg6Wegr79ECIV)
+host a5d7bde65ee5 | client | m59DzbKXRX_CwqTBiEmSc0RsCE07Zs91
+host a5d7bde65ee5 | client | VPBI5pkEyZxAeCJBDHjoI4MF0QszDgla
+client DISCONNECTED: session(m59DzbKXRX_CwqTBiEmSc0RsCE07Zs91)
+client DISCONNECTED: session(VPBI5pkEyZxAeCJBDHjoI4MF0QszDgla)
+host a5d7bde65ee5 | client | 4IitApZLwY4lQrIE-I-dIzOxwdHLEkoW
+host a5d7bde65ee5 | client | 3BRAnWCiPJA3hCRr27F2aUBpe8TZE3Yn
+host a5d7bde65ee5 | client | xWmONp-EbgQZULwvucfIImG74Cp0J0Wn
+client DISCONNECTED: session(xWmONp-EbgQZULwvucfIImG74Cp0J0Wn)
+host a5d7bde65ee5 | client | oRhfaoU1f_kXiSC625ODnXsTSbf3ddWo
+client DISCONNECTED: session(4IitApZLwY4lQrIE-I-dIzOxwdHLEkoW)
+client DISCONNECTED: session(3BRAnWCiPJA3hCRr27F2aUBpe8TZE3Yn)
+client DISCONNECTED: session(oRhfaoU1f_kXiSC625ODnXsTSbf3ddWo)
+host a5d7bde65ee5 | client | ZPTIdd7CB-1kVBpprbVevkoiEclo4Auq
+client DISCONNECTED: session(ZPTIdd7CB-1kVBpprbVevkoiEclo4Auq)
+host a5d7bde65ee5 | client | EQrUGeLQHlET3i_cfYxW_e_BgKUkExvP
+client DISCONNECTED: session(EQrUGeLQHlET3i_cfYxW_e_BgKUkExvP)
+host a5d7bde65ee5 | client | EQrUGeLQHlET3i_cfYxW_e_BgKUkExvP
+client DISCONNECTED: session(EQrUGeLQHlET3i_cfYxW_e_BgKUkExvP)
+host a5d7bde65ee5 | client | EQrUGeLQHlET3i_cfYxW_e_BgKUkExvP
+client DISCONNECTED: session(EQrUGeLQHlET3i_cfYxW_e_BgKUkExvP)
+host a5d7bde65ee5 | client | EQrUGeLQHlET3i_cfYxW_e_BgKUkExvP
+client DISCONNECTED: session(EQrUGeLQHlET3i_cfYxW_e_BgKUkExvP)
+host a5d7bde65ee5 | client | UqGeSuWKph1YEfWvZ20xBsFSNmOLHGiv
+client DISCONNECTED: session(UqGeSuWKph1YEfWvZ20xBsFSNmOLHGiv)
+host a5d7bde65ee5 | client | 4afh87nn2HOqG55Zy9lEI8rXdw8__MuF
+host a5d7bde65ee5 | client | E19eUcs8xW2ONYBvx8OMyt4NZj1ZDgGG
+client DISCONNECTED: session(4afh87nn2HOqG55Zy9lEI8rXdw8__MuF)
+client DISCONNECTED: session(E19eUcs8xW2ONYBvx8OMyt4NZj1ZDgGG)
+host a5d7bde65ee5 | client | fNYCjH6q37qib4EAsopIQYPwOXjVwwaD
+client DISCONNECTED: session(fNYCjH6q37qib4EAsopIQYPwOXjVwwaD)
+host a5d7bde65ee5 | client | KK4qveuYBeQUg_07fV0Sawa5uTSTPjmb
+client DISCONNECTED: session(KK4qveuYBeQUg_07fV0Sawa5uTSTPjmb)
+host a5d7bde65ee5 | client | Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ
+client DISCONNECTED: session(Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ)
+host a5d7bde65ee5 | client | Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ
+client DISCONNECTED: session(Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ)
+host a5d7bde65ee5 | client | Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ
+client DISCONNECTED: session(Xq5jFVoHaykpmFYT806UV5fYB-jowPsQ)
+host a5d7bde65ee5 | client | bEPPNvLZ61wSWYZ3HvUJjqfSypy0UMXK
+host a5d7bde65ee5 | client | ThYT7L39oBvHYZ1WH5r-e6lcFSfX02IA
+client DISCONNECTED: session(ThYT7L39oBvHYZ1WH5r-e6lcFSfX02IA)
+client DISCONNECTED: session(bEPPNvLZ61wSWYZ3HvUJjqfSypy0UMXK)
+host a5d7bde65ee5 | client | Ww-KIDOlYD2EdF76IR1t1MTkThGr_v21
+client DISCONNECTED: session(Ww-KIDOlYD2EdF76IR1t1MTkThGr_v21)
+host a5d7bde65ee5 | client | eknuaT25JURCCrEzT3DoKaWnPjU_YELd
+host a5d7bde65ee5 | client | fA7Q7tpNdpzrQoADscHd8W-FJ-aJPCN-
+client DISCONNECTED: session(fA7Q7tpNdpzrQoADscHd8W-FJ-aJPCN-)
+host a5d7bde65ee5 | client | wtOX74GXPb1oA9k0BaXN10pXxgpkLCgd
+client DISCONNECTED: session(wtOX74GXPb1oA9k0BaXN10pXxgpkLCgd)
+client DISCONNECTED: session(eknuaT25JURCCrEzT3DoKaWnPjU_YELd)
+host a5d7bde65ee5 | client | I5v-phG-_AH6LXnt80tH-B8ak7JxbYMw
+client DISCONNECTED: session(I5v-phG-_AH6LXnt80tH-B8ak7JxbYMw)
+host a5d7bde65ee5 | client | 8qNDKfhVw_oO9ozEO6XUhlcUrAV25bHS
+client DISCONNECTED: session(8qNDKfhVw_oO9ozEO6XUhlcUrAV25bHS)
+host a5d7bde65ee5 | client | gpjW1yG1b7HXhE612MeeDqCy5owUBhB5
+client DISCONNECTED: session(gpjW1yG1b7HXhE612MeeDqCy5owUBhB5)
+host a5d7bde65ee5 | client | pI_AZcjIpqIj4gtNX1sVUCyoSRl9nhIl
+host a5d7bde65ee5 | client | qndsB_PbGpqB2k_njVr3K0FV63jOFmeJ
+host a5d7bde65ee5 | client | qndsB_PbGpqB2k_njVr3K0FV63jOFmeJ
+host a5d7bde65ee5 | client | _wtB-19CAxWe8lFU_jqnjlO-9uTSTCVQ
+playCard | true | fdsfsdf played their card!
+playCard | true | 123 was last player to play cards, going to judge-selecting!
+shuffleCards | qndsB_PbGpqB2k_njVr3K0FV63jOFmeJ | true | shuffled 0 <=> 1 for 123
+judgeSelectCard | true | 123 won with card Menstruation. | pI_AZcjIpqIj4gtNX1sVUCyoSRl9nhIl
+endRound | true | Round 1 successfully finished | pI_AZcjIpqIj4gtNX1sVUCyoSRl9nhIl
+client DISCONNECTED: session(pI_AZcjIpqIj4gtNX1sVUCyoSRl9nhIl)
+client DISCONNECTED: session(qndsB_PbGpqB2k_njVr3K0FV63jOFmeJ)
+client DISCONNECTED: session(qndsB_PbGpqB2k_njVr3K0FV63jOFmeJ)
+client DISCONNECTED: session(_wtB-19CAxWe8lFU_jqnjlO-9uTSTCVQ)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 2 successfully finished
+Rounds Idle: 1
+host a5d7bde65ee5 | client | wuxi8slBpFfdAG2eJYbUieQnFTaMEhDc
+client DISCONNECTED: session(wuxi8slBpFfdAG2eJYbUieQnFTaMEhDc)
+host a5d7bde65ee5 | client | 1q9l8NgCLpgXX_6c9BWmZUBA2FWGtC8p
+client DISCONNECTED: session(1q9l8NgCLpgXX_6c9BWmZUBA2FWGtC8p)
+host a5d7bde65ee5 | client | P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI
+client DISCONNECTED: session(P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI)
+host a5d7bde65ee5 | client | P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI
+client DISCONNECTED: session(P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI)
+host a5d7bde65ee5 | client | P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+host a5d7bde65ee5 | client | O98yG1GmAALIXoGRYABg2FjarlG_mwdO
+playCard | true | Steven played their card!
+playCard | true | Kyle was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Kyle won with card Daddy issues. | P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI
+endRound | true | Round 1 successfully finished | P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI
+client DISCONNECTED: session(O98yG1GmAALIXoGRYABg2FjarlG_mwdO)
+host a5d7bde65ee5 | client | eaeIptJHdH037Fzb3tT4RiVLv28DWITD
+client DISCONNECTED: session(eaeIptJHdH037Fzb3tT4RiVLv28DWITD)
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+client DISCONNECTED: session(P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI)
+host a5d7bde65ee5 | client | P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 2 successfully finished
+Rounds Idle: 1
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+client DISCONNECTED: session(P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI)
+host a5d7bde65ee5 | client | P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+client DISCONNECTED: session(P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI)
+host a5d7bde65ee5 | client | P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+host a5d7bde65ee5 | client | P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+client DISCONNECTED: session(P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI)
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+client DISCONNECTED: session(P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI)
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+host a5d7bde65ee5 | client | P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+client DISCONNECTED: session(P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI)
+host a5d7bde65ee5 | client | P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+client DISCONNECTED: session(P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI)
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+host a5d7bde65ee5 | client | MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy
+client DISCONNECTED: session(MvoZnYWLMrIygGb-D9bjdK6BleO6b7yy)
+host a5d7bde65ee5 | client | P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI
+client DISCONNECTED: session(P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI)
+host a5d7bde65ee5 | client | P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI
+playCard | true | Bernie played their card!
+host a5d7bde65ee5 | client | 9cnbdAA93x3C5e4IICzDKVCcg014qbTG
+playCard | true | Frank played their card!
+Judge-selection time!
+client DISCONNECTED: session(9cnbdAA93x3C5e4IICzDKVCcg014qbTG)
+client DISCONNECTED: session(P6Epz-COGgJ1tMTpA_6si5NVv1EpLMJI)
+host a5d7bde65ee5 | client | iCVQB_OYbuIJn2cK-BQrfTV_kUF6zIFY
+client DISCONNECTED: session(iCVQB_OYbuIJn2cK-BQrfTV_kUF6zIFY)
+host a5d7bde65ee5 | client | 2jbm1iLRkPCCYBlbpzsomrA3oDKRirIO
+client DISCONNECTED: session(2jbm1iLRkPCCYBlbpzsomrA3oDKRirIO)
+host a5d7bde65ee5 | client | v0G8cPLEMBs17N8K3iMmGZ_NL0tXEjRe
+client DISCONNECTED: session(v0G8cPLEMBs17N8K3iMmGZ_NL0tXEjRe)
+host a5d7bde65ee5 | client | h9_p2L7LoLmQQk2Z16E-_VjOXgzP0XG3
+host a5d7bde65ee5 | client | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+host a5d7bde65ee5 | client | ab_6y01Lq-b2i9ALfpi3fFuyyc1FNeA8
+host a5d7bde65ee5 | client | 926xIvRICz0i6vrCLNoAOao1lDtiY4w0
+playCard | true | Jessigga played their card!
+playCard | true | Deligga played their card!
+playCard | true | PuertoRicanAsshat was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Jessigga won with card Obesity. | h9_p2L7LoLmQQk2Z16E-_VjOXgzP0XG3
+endRound | true | Round 1 successfully finished | h9_p2L7LoLmQQk2Z16E-_VjOXgzP0XG3
+playCard | true | DC played their card!
+playCard | true | Jessigga played their card!
+playCard | true | PuertoRicanAsshat was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | PuertoRicanAsshat won with card Tangled Slinkys. | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+endRound | true | Round 2 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | DC played their card!
+playCard | true | Deligga played their card!
+playCard | true | PuertoRicanAsshat was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | PuertoRicanAsshat won with card Nicolas Cage. | ab_6y01Lq-b2i9ALfpi3fFuyyc1FNeA8
+endRound | true | Round 3 successfully finished | 926xIvRICz0i6vrCLNoAOao1lDtiY4w0
+playCard | true | Deligga played their card!
+playCard | true | DC played their card!
+playCard | true | Jessigga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Deligga won with card Being a dick to children. | 926xIvRICz0i6vrCLNoAOao1lDtiY4w0
+endRound | true | Round 4 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | PuertoRicanAsshat played their card!
+playCard | true | Deligga played their card!
+playCard | true | Jessigga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Deligga won with card Riding off into the sunset. | h9_p2L7LoLmQQk2Z16E-_VjOXgzP0XG3
+endRound | true | Round 5 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | Jessigga played their card!
+playCard | true | DC played their card!
+playCard | true | PuertoRicanAsshat was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | DC won with card A bleached asshole. | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+endRound | true | Round 6 successfully finished | h9_p2L7LoLmQQk2Z16E-_VjOXgzP0XG3
+playCard | true | PuertoRicanAsshat played their card!
+playCard | true | DC played their card!
+playCard | true | Deligga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Deligga won with card A really cool hat. | ab_6y01Lq-b2i9ALfpi3fFuyyc1FNeA8
+endRound | true | Round 7 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | Jessigga played their card!
+playCard | true | DC played their card!
+playCard | true | Deligga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | DC won with card White privilege. | 926xIvRICz0i6vrCLNoAOao1lDtiY4w0
+endRound | true | Round 8 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | Jessigga played their card!
+playCard | true | Deligga played their card!
+playCard | true | PuertoRicanAsshat was last player to play cards, going to judge-selecting!
+client DISCONNECTED: session(h9_p2L7LoLmQQk2Z16E-_VjOXgzP0XG3)
+client DISCONNECTED: session(926xIvRICz0i6vrCLNoAOao1lDtiY4w0)
+host a5d7bde65ee5 | client | eHKxq5KJLfb2G0XKsxqlGl9zG-z6PSh8
+host a5d7bde65ee5 | client | XF2YuQU7qdiKhSu9fPN2EjNCiYfAb9EY
+judgeSelectCard | false | you are not the round judge! you cannot choose the winner! | XF2YuQU7qdiKhSu9fPN2EjNCiYfAb9EY
+judgeSelectCard | false | you are not the round judge! you cannot choose the winner! | XF2YuQU7qdiKhSu9fPN2EjNCiYfAb9EY
+judgeSelectCard | false | you are not the round judge! you cannot choose the winner! | XF2YuQU7qdiKhSu9fPN2EjNCiYfAb9EY
+judgeSelectCard | false | you are not the round judge! you cannot choose the winner! | XF2YuQU7qdiKhSu9fPN2EjNCiYfAb9EY
+judgeSelectCard | false | you are not the round judge! you cannot choose the winner! | XF2YuQU7qdiKhSu9fPN2EjNCiYfAb9EY
+judgeSelectCard | false | you are not the round judge! you cannot choose the winner! | XF2YuQU7qdiKhSu9fPN2EjNCiYfAb9EY
+judgeSelectCard | false | you are not the round judge! you cannot choose the winner! | XF2YuQU7qdiKhSu9fPN2EjNCiYfAb9EY
+judgeSelectCard | false | you are not the round judge! you cannot choose the winner! | XF2YuQU7qdiKhSu9fPN2EjNCiYfAb9EY
+shuffleCards | ab_6y01Lq-b2i9ALfpi3fFuyyc1FNeA8 | true | shuffled 1 <=> 2 for Jessigga
+shuffleCards | ab_6y01Lq-b2i9ALfpi3fFuyyc1FNeA8 | true | shuffled 0 <=> 2 for Jessigga
+judgeSelectCard | false | you are not the round judge! you cannot choose the winner! | XF2YuQU7qdiKhSu9fPN2EjNCiYfAb9EY
+shuffleCards | ab_6y01Lq-b2i9ALfpi3fFuyyc1FNeA8 | true | shuffled 1 <=> 2 for Jessigga
+judgeSelectCard | false | you are not the round judge! you cannot choose the winner! | XF2YuQU7qdiKhSu9fPN2EjNCiYfAb9EY
+shuffleCards | ab_6y01Lq-b2i9ALfpi3fFuyyc1FNeA8 | true | shuffled 1 <=> 2 for Jessigga
+judgeSelectCard | false | you are not the round judge! you cannot choose the winner! | XF2YuQU7qdiKhSu9fPN2EjNCiYfAb9EY
+judgeSelectCard | false | you are not the round judge! you cannot choose the winner! | XF2YuQU7qdiKhSu9fPN2EjNCiYfAb9EY
+judgeSelectCard | false | you are not the round judge! you cannot choose the winner! | XF2YuQU7qdiKhSu9fPN2EjNCiYfAb9EY
+client DISCONNECTED: session(XF2YuQU7qdiKhSu9fPN2EjNCiYfAb9EY)
+host a5d7bde65ee5 | client | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+client DISCONNECTED: session(0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU)
+host a5d7bde65ee5 | client | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+client DISCONNECTED: session(ab_6y01Lq-b2i9ALfpi3fFuyyc1FNeA8)
+host a5d7bde65ee5 | client | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+client DISCONNECTED: session(eHKxq5KJLfb2G0XKsxqlGl9zG-z6PSh8)
+client DISCONNECTED: session(iLwgotieT75eCrVASsOjWKSFvwNA6VBz)
+host a5d7bde65ee5 | client | wqwALYaQBd9wB_gKUuUpBcNbzZG3FN1Z
+host a5d7bde65ee5 | client | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+client DISCONNECTED: session(wqwALYaQBd9wB_gKUuUpBcNbzZG3FN1Z)
+host a5d7bde65ee5 | client | wqwALYaQBd9wB_gKUuUpBcNbzZG3FN1Z
+client DISCONNECTED: session(wqwALYaQBd9wB_gKUuUpBcNbzZG3FN1Z)
+client DISCONNECTED: session(kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o)
+host a5d7bde65ee5 | client | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+host a5d7bde65ee5 | client | 7GnBzigg9jFPJUrsaKnzZcl50Btk0Bwp
+playCard | true | Deligga played their card!
+playCard | true | LocalSupport played their card!
+playCard | true | YourLocalFuckface was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | LocalSupport won with card Pedophiles. | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 1 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+shuffleCards | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o | true | shuffled 3 <=> 6 for LocalSupport
+shuffleCards | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o | true | shuffled 7 <=> 8 for LocalSupport
+playCard | true | Darrigga played their card!
+shuffleCards | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o | true | shuffled 8 <=> 4 for LocalSupport
+playCard | true | YourLocalFuckface played their card!
+playCard | true | LocalSupport was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | YourLocalFuckface won with card My genitals. | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+endRound | true | Round 2 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | Deligga played their card!
+shuffleCards | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o | true | shuffled 9 <=> 8 for LocalSupport
+playCard | true | LocalSupport played their card!
+playCard | true | Darrigga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Darrigga won with card Pictures of boobs. | 7GnBzigg9jFPJUrsaKnzZcl50Btk0Bwp
+endRound | true | Round 3 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | Darrigga played their card!
+playCard | true | Deligga played their card!
+playCard | true | YourLocalFuckface was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | YourLocalFuckface won with card Flying sex snakes. | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+endRound | true | Round 4 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | Deligga played their card!
+playCard | true | YourLocalFuckface played their card!
+playCard | true | LocalSupport was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | LocalSupport won with card Gloryholes. | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 5 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | LocalSupport played their card!
+playCard | true | YourLocalFuckface played their card!
+playCard | true | Darrigga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | YourLocalFuckface won with card Soup that is too hot. | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+endRound | true | Round 6 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | LocalSupport played their card!
+playCard | true | Deligga played their card!
+playCard | true | Darrigga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | LocalSupport won with card Actually taking candy from a baby. | 7GnBzigg9jFPJUrsaKnzZcl50Btk0Bwp
+endRound | true | Round 7 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | Darrigga played their card!
+playCard | true | Deligga played their card!
+playCard | true | YourLocalFuckface was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Deligga won with card Fiery poops. | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+endRound | true | Round 8 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | YourLocalFuckface played their card!
+playCard | true | LocalSupport played their card!
+playCard | true | Deligga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | LocalSupport won with card My collection of high-tech sex toys. | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 9 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | LocalSupport played their card!
+playCard | true | Darrigga played their card!
+playCard | true | YourLocalFuckface was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | LocalSupport won with card Dick Cheney. | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+endRound | true | Round 10 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | Deligga played their card!
+playCard | true | Darrigga played their card!
+playCard | true | LocalSupport was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Deligga won with card Skeletor. | 7GnBzigg9jFPJUrsaKnzZcl50Btk0Bwp
+endRound | true | Round 11 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | Darrigga played their card!
+playCard | true | YourLocalFuckface played their card!
+playCard | true | Deligga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | YourLocalFuckface won with card A sassy black woman. | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+endRound | true | Round 12 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | Deligga played their card!
+playCard | true | YourLocalFuckface played their card!
+playCard | true | LocalSupport was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Deligga won with card A drive-by shooting. | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 13 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+shuffleCards | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o | true | shuffled 9 <=> 0 for LocalSupport
+playCard | true | Darrigga played their card!
+playCard | true | LocalSupport played their card!
+playCard | true | YourLocalFuckface was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | LocalSupport won with card A defective condom. | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+endRound | true | Round 14 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | Darrigga played their card!
+playCard | true | LocalSupport played their card!
+playCard | true | Deligga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Darrigga won with card Powerful thighs. | 7GnBzigg9jFPJUrsaKnzZcl50Btk0Bwp
+endRound | true | Round 15 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | Deligga played their card!
+playCard | true | YourLocalFuckface played their card!
+playCard | true | Darrigga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Deligga won with card My inner demons. | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+endRound | true | Round 16 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | Deligga played their card!
+playCard | true | YourLocalFuckface played their card!
+playCard | true | LocalSupport was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Deligga won with card Surprise sex! | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 17 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | YourLocalFuckface played their card!
+playCard | true | Darrigga played their card!
+playCard | true | LocalSupport was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Darrigga won with card Shapeshifters. | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+endRound | true | Round 18 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | Darrigga played their card!
+shuffleCards | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o | true | shuffled 9 <=> 3 for LocalSupport
+shuffleCards | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o | true | shuffled 7 <=> 4 for LocalSupport
+playCard | true | Deligga played their card!
+playCard | true | LocalSupport was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | LocalSupport won with card Glenn Beck catching his scrotum on a curtain hook. | 7GnBzigg9jFPJUrsaKnzZcl50Btk0Bwp
+endRound | true | Round 19 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+shuffleCards | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU | true | shuffled 8 <=> 9 for Darrigga
+playCard | true | Darrigga played their card!
+playCard | true | Deligga played their card!
+playCard | true | YourLocalFuckface was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | YourLocalFuckface won with card Self-loathing. | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+endRound | true | Round 20 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | LocalSupport played their card!
+playCard | true | YourLocalFuckface played their card!
+playCard | true | Deligga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Deligga won with card My sex life. | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 21 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | LocalSupport played their card!
+playCard | true | Darrigga played their card!
+playCard | true | YourLocalFuckface was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Darrigga won with card Porn Stars. | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+endRound | true | Round 22 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | LocalSupport played their card!
+playCard | true | Darrigga played their card!
+playCard | true | Deligga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | LocalSupport won with card The gays. | 7GnBzigg9jFPJUrsaKnzZcl50Btk0Bwp
+endRound | true | Round 23 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | Deligga played their card!
+playCard | true | Darrigga played their card!
+playCard | true | YourLocalFuckface was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | YourLocalFuckface won with card Hot Pockets&copy;. | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+endRound | true | Round 24 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+endRound | true | Round 25 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Darrigga played their card!
+playCard | true | YourLocalFuckface played their card!
+playCard | true | LocalSupport was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | LocalSupport won with card Pac-Man uncontrollably guzzling cum. | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+endRound | true | Round 26 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | LocalSupport played their card!
+playCard | true | Deligga played their card!
+playCard | true | Darrigga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Darrigga won with card Flying sex snakes. | 7GnBzigg9jFPJUrsaKnzZcl50Btk0Bwp
+endRound | true | Round 27 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | Deligga played their card!
+playCard | true | YourLocalFuckface played their card!
+playCard | true | Darrigga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Deligga won with card 72 virgins. | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+endRound | true | Round 28 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | YourLocalFuckface played their card!
+playCard | true | LocalSupport played their card!
+playCard | true | Deligga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | LocalSupport won with card Nipple blades. | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 29 successfully finished | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | YourLocalFuckface played their card!
+playCard | true | Darrigga played their card!
+playCard | true | LocalSupport was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Darrigga won with card Not giving a shit about the Third World. | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+endRound | true | Round 30 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | LocalSupport played their card!
+playCard | true | Deligga played their card!
+playCard | true | Darrigga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Darrigga won with card Civilian casualties. | 7GnBzigg9jFPJUrsaKnzZcl50Btk0Bwp
+endRound | true | Round 31 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Darrigga played their card!
+host a5d7bde65ee5 | client | R_aTK8bdflahMEkUuBbvpvu1uvS5R0Km
+client DISCONNECTED: session(iLwgotieT75eCrVASsOjWKSFvwNA6VBz)
+playCard | true | YourLocalFuckface played their card!
+host a5d7bde65ee5 | client | iLwgotieT75eCrVASsOjWKSFvwNA6VBz
+playCard | true | Deligga was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | YourLocalFuckface won with card Guys who don't call. | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+endRound | true | Round 32 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+client DISCONNECTED: session(iLwgotieT75eCrVASsOjWKSFvwNA6VBz)
+shuffleCards | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o | true | shuffled 9 <=> 0 for LocalSupport
+playCard | true | YourLocalFuckface played their card!
+playCard | true | LocalSupport played their card!
+playCard | true | LiL uZi NiGGA played their card!
+client DISCONNECTED: session(7GnBzigg9jFPJUrsaKnzZcl50Btk0Bwp)
+client DISCONNECTED: session(kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o)
+host a5d7bde65ee5 | client | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+Judge-selection time!
+host a5d7bde65ee5 | client | P4RPrJD6NfmuK4ry7Qxtbhfti5Xh5O-2
+judgeSelectCard | true | LiL uZi NiGGA won with card Land mines. | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+client DISCONNECTED: session(0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU)
+host a5d7bde65ee5 | client | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+client DISCONNECTED: session(kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o)
+host a5d7bde65ee5 | client | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+playCard | true | BowieAllMighty played their card!
+playCard | true | I am secretly asian hun played their card!
+playCard | true | Powerful Legs was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Powerful Legs won with card Dead babies. | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 1 successfully finished | R_aTK8bdflahMEkUuBbvpvu1uvS5R0Km
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | I am secretly asian hun played their card!
+playCard | true | Powerful Legs was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Totaly not 6ix9ine in prison won with card Muhammad (Praise Be Unto Him). | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+endRound | true | Round 2 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 3 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Powerful Legs played their card!
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | BowieAllMighty was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Totaly not 6ix9ine in prison won with card Men. | R_aTK8bdflahMEkUuBbvpvu1uvS5R0Km
+endRound | true | Round 4 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Powerful Legs played their card!
+playCard | true | I am secretly asian hun played their card!
+playCard | true | BowieAllMighty was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | I am secretly asian hun won with card Grandma. | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 5 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Powerful Legs played their card!
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | I am secretly asian hun was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | I am secretly asian hun won with card Edible underpants. | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+endRound | true | Round 6 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | BowieAllMighty played their card!
+shuffleCards | R_aTK8bdflahMEkUuBbvpvu1uvS5R0Km | true | shuffled 9 <=> 8 for I am secretly asian hun
+playCard | true | I am secretly asian hun was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Totaly not 6ix9ine in prison won with card Balls. | P4RPrJD6NfmuK4ry7Qxtbhfti5Xh5O-2
+endRound | true | Round 7 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | BowieAllMighty played their card!
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | Powerful Legs was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | BowieAllMighty won with card Golden showers. | R_aTK8bdflahMEkUuBbvpvu1uvS5R0Km
+endRound | true | Round 8 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | I am secretly asian hun played their card!
+playCard | true | Powerful Legs played their card!
+playCard | true | BowieAllMighty was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Powerful Legs won with card Multiple stab wounds. | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 9 successfully finished | R_aTK8bdflahMEkUuBbvpvu1uvS5R0Km
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | I am secretly asian hun played their card!
+playCard | true | Powerful Legs was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Totaly not 6ix9ine in prison won with card A middle-aged man on roller skates. | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+endRound | true | Round 10 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | I am secretly asian hun played their card!
+playCard | true | BowieAllMighty was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | BowieAllMighty won with card Republicans. | P4RPrJD6NfmuK4ry7Qxtbhfti5Xh5O-2
+endRound | true | Round 11 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+shuffleCards | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU | true | shuffled 5 <=> 6 for Totaly not 6ix9ine in prison
+playCard | true | Powerful Legs played their card!
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | BowieAllMighty was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | BowieAllMighty won with card My sex life. | R_aTK8bdflahMEkUuBbvpvu1uvS5R0Km
+endRound | true | Round 12 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Powerful Legs played their card!
+playCard | true | I am secretly asian hun played their card!
+playCard | true | BowieAllMighty was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | BowieAllMighty won with card Wiping her butt. | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 13 successfully finished | P4RPrJD6NfmuK4ry7Qxtbhfti5Xh5O-2
+playCard | true | I am secretly asian hun played their card!
+playCard | true | Powerful Legs played their card!
+playCard | true | Totaly not 6ix9ine in prison was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | I am secretly asian hun won with card The homosexual agenda. | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+endRound | true | Round 14 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | BowieAllMighty played their card!
+playCard | true | I am secretly asian hun played their card!
+playCard | true | Totaly not 6ix9ine in prison was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | I am secretly asian hun won with card Raping and pillaging. | P4RPrJD6NfmuK4ry7Qxtbhfti5Xh5O-2
+endRound | true | Round 15 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | Powerful Legs played their card!
+playCard | true | BowieAllMighty was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | BowieAllMighty won with card A can of whoop-ass. | R_aTK8bdflahMEkUuBbvpvu1uvS5R0Km
+endRound | true | Round 16 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | I am secretly asian hun played their card!
+playCard | true | Powerful Legs played their card!
+playCard | true | BowieAllMighty was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | BowieAllMighty won with card Not reciprocating oral sex. | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 17 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | I am secretly asian hun played their card!
+playCard | true | Powerful Legs was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | I am secretly asian hun won with card My genitals. | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+endRound | true | Round 18 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | BowieAllMighty played their card!
+playCard | true | I am secretly asian hun was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | I am secretly asian hun won with card Jibber-jabber. | P4RPrJD6NfmuK4ry7Qxtbhfti5Xh5O-2
+endRound | true | Round 19 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | BowieAllMighty played their card!
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | Powerful Legs was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Powerful Legs won with card Auschwitz. | R_aTK8bdflahMEkUuBbvpvu1uvS5R0Km
+endRound | true | Round 20 successfully finished | P4RPrJD6NfmuK4ry7Qxtbhfti5Xh5O-2
+playCard | true | I am secretly asian hun played their card!
+playCard | true | Powerful Legs played their card!
+playCard | true | BowieAllMighty was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | BowieAllMighty won with card Chainsaws for hands. | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 21 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+shuffleCards | R_aTK8bdflahMEkUuBbvpvu1uvS5R0Km | true | shuffled 7 <=> 8 for I am secretly asian hun
+playCard | true | I am secretly asian hun played their card!
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | Powerful Legs was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Powerful Legs won with card Arnold Schwarzenegger. | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+endRound | true | Round 22 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | BowieAllMighty played their card!
+playCard | true | I am secretly asian hun was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Totaly not 6ix9ine in prison won with card Domino's&trade; Oreo&trade; Dessert Pizza. | P4RPrJD6NfmuK4ry7Qxtbhfti5Xh5O-2
+endRound | true | Round 23 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | Powerful Legs played their card!
+playCard | true | BowieAllMighty was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Totaly not 6ix9ine in prison won with card Bill Nye the Science Guy. | R_aTK8bdflahMEkUuBbvpvu1uvS5R0Km
+endRound | true | Round 24 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Powerful Legs played their card!
+playCard | true | BowieAllMighty played their card!
+playCard | true | I am secretly asian hun was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | BowieAllMighty won with card Natural male enhancement. | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 25 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Powerful Legs played their card!
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | I am secretly asian hun was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Totaly not 6ix9ine in prison won with card A brain tumor. | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+endRound | true | Round 26 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | BowieAllMighty played their card!
+playCard | true | I am secretly asian hun played their card!
+playCard | true | Totaly not 6ix9ine in prison was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | BowieAllMighty won with card Racially-biased SAT questions. | P4RPrJD6NfmuK4ry7Qxtbhfti5Xh5O-2
+endRound | true | Round 27 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+shuffleCards | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU | true | shuffled 2 <=> 4 for Totaly not 6ix9ine in prison
+shuffleCards | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU | true | shuffled 6 <=> 7 for Totaly not 6ix9ine in prison
+playCard | true | Powerful Legs played their card!
+playCard | true | BowieAllMighty played their card!
+playCard | true | Totaly not 6ix9ine in prison was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Totaly not 6ix9ine in prison won with card Man meat. | R_aTK8bdflahMEkUuBbvpvu1uvS5R0Km
+endRound | true | Round 28 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Powerful Legs played their card!
+playCard | true | I am secretly asian hun played their card!
+playCard | true | BowieAllMighty was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | I am secretly asian hun won with card Anal beads. | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 29 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | I am secretly asian hun played their card!
+playCard | true | Powerful Legs played their card!
+playCard | true | Totaly not 6ix9ine in prison was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Totaly not 6ix9ine in prison won with card Getting so angry that you pop a boner. | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+endRound | true | Round 30 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | BowieAllMighty played their card!
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | I am secretly asian hun was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | I am secretly asian hun won with card The gays. | P4RPrJD6NfmuK4ry7Qxtbhfti5Xh5O-2
+endRound | true | Round 31 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Powerful Legs played their card!
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | BowieAllMighty was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Powerful Legs won with card A Bop It&trade;. | R_aTK8bdflahMEkUuBbvpvu1uvS5R0Km
+endRound | true | Round 32 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | BowieAllMighty played their card!
+playCard | true | I am secretly asian hun played their card!
+playCard | true | Powerful Legs was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Powerful Legs won with card A micropenis. | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 33 successfully finished | R_aTK8bdflahMEkUuBbvpvu1uvS5R0Km
+playCard | true | I am secretly asian hun played their card!
+playCard | true | Powerful Legs played their card!
+playCard | true | Totaly not 6ix9ine in prison was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Powerful Legs won with card Christopher Walken. | kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o
+endRound | true | Round 34 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | I am secretly asian hun played their card!
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | BowieAllMighty was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | BowieAllMighty won with card Queefing. | P4RPrJD6NfmuK4ry7Qxtbhfti5Xh5O-2
+endRound | true | Round 35 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | BowieAllMighty played their card!
+playCard | true | Totaly not 6ix9ine in prison played their card!
+playCard | true | Powerful Legs was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | BowieAllMighty won with card Global warming. | R_aTK8bdflahMEkUuBbvpvu1uvS5R0Km
+endRound | true | Round 36 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | BowieAllMighty played their card!
+playCard | true | I am secretly asian hun played their card!
+playCard | true | Powerful Legs was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Powerful Legs won with card Firing a rifle into the air while balls deep in a squealing hog. | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+endRound | true | Round 37 successfully finished | 0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU
+playCard | true | Totaly not 6ix9ine in prison played their card!
+client DISCONNECTED: session(R_aTK8bdflahMEkUuBbvpvu1uvS5R0Km)
+client DISCONNECTED: session(kx0GXwgRLCVvDGzPic7r5mXqPKeKtF9o)
+client DISCONNECTED: session(0ryVkE7BRO9a6oWIu6mxZZYIwELHWhhU)
+client DISCONNECTED: session(P4RPrJD6NfmuK4ry7Qxtbhfti5Xh5O-2)
+Judge-selection time!
+host a5d7bde65ee5 | client | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+host a5d7bde65ee5 | client | tV178_CZrbzhHjLHxOuRlg3X1Yj7Mvfy
+host a5d7bde65ee5 | client | 7Y6zJkUOtKuX5jaNHLvvRXyUR18SxPgx
+host a5d7bde65ee5 | client | B4IdYQ0eePw5CVmI5XuG9Hl9iM0P1xy2
+host a5d7bde65ee5 | client | p2-D0PdfZWX7_U6PsCWReNxPFpQhx5Qa
+client DISCONNECTED: session(7Y6zJkUOtKuX5jaNHLvvRXyUR18SxPgx)
+playCard | true | midas played their card!
+host a5d7bde65ee5 | client | 7Y6zJkUOtKuX5jaNHLvvRXyUR18SxPgx
+playCard | true | All i want is nothing more played their card!
+playCard | true | John played their card!
+playCard | true | smells of sssex was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | midas won with card Nipple blades. | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+endRound | true | Round 1 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | John played their card!
+playCard | true | All i want is nothing more played their card!
+playCard | true | smells of sssex played their card!
+playCard | true | vob was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | All i want is nothing more won with card Hope. | tV178_CZrbzhHjLHxOuRlg3X1Yj7Mvfy
+endRound | true | Round 2 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | vob played their card!
+playCard | true | midas played their card!
+playCard | true | smells of sssex played their card!
+playCard | true | All i want is nothing more was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | vob won with card The hardworking Mexican. | B4IdYQ0eePw5CVmI5XuG9Hl9iM0P1xy2
+endRound | true | Round 3 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | midas played their card!
+playCard | true | smells of sssex played their card!
+playCard | true | vob played their card!
+playCard | true | John was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | smells of sssex won with card A Super Soaker&trade; full of cat pee. | 7Y6zJkUOtKuX5jaNHLvvRXyUR18SxPgx
+endRound | true | Round 4 successfully finished | 7Y6zJkUOtKuX5jaNHLvvRXyUR18SxPgx
+playCard | true | All i want is nothing more played their card!
+playCard | true | John played their card!
+playCard | true | vob played their card!
+playCard | true | midas was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | All i want is nothing more won with card The Rev. Dr. Martin Luther King, Jr. | p2-D0PdfZWX7_U6PsCWReNxPFpQhx5Qa
+endRound | true | Round 5 successfully finished | tV178_CZrbzhHjLHxOuRlg3X1Yj7Mvfy
+playCard | true | midas played their card!
+playCard | true | John played their card!
+playCard | true | All i want is nothing more played their card!
+playCard | true | smells of sssex was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | All i want is nothing more won with card 8 oz. of sweet Mexican black-tar heroin. | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+endRound | true | Round 6 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | John played their card!
+playCard | true | smells of sssex played their card!
+playCard | true | vob played their card!
+playCard | true | All i want is nothing more was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | vob won with card Passing a kidney stone. | tV178_CZrbzhHjLHxOuRlg3X1Yj7Mvfy
+endRound | true | Round 7 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | vob played their card!
+playCard | true | midas played their card!
+playCard | true | smells of sssex played their card!
+playCard | true | All i want is nothing more was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | vob won with card The World of Warcraft. | B4IdYQ0eePw5CVmI5XuG9Hl9iM0P1xy2
+endRound | true | Round 8 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | vob played their card!
+playCard | true | midas played their card!
+shuffleCards | B4IdYQ0eePw5CVmI5XuG9Hl9iM0P1xy2 | true | shuffled 7 <=> 8 for John
+playCard | true | smells of sssex played their card!
+playCard | true | John was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | John won with card Customer service representatives. | 7Y6zJkUOtKuX5jaNHLvvRXyUR18SxPgx
+endRound | true | Round 9 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | vob played their card!
+playCard | true | midas played their card!
+playCard | true | John played their card!
+playCard | true | All i want is nothing more was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | vob won with card Heteronormativity. | p2-D0PdfZWX7_U6PsCWReNxPFpQhx5Qa
+endRound | true | Round 10 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | midas played their card!
+playCard | true | All i want is nothing more played their card!
+playCard | true | smells of sssex played their card!
+playCard | true | John was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | midas won with card Kanye West. | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+endRound | true | Round 11 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | John played their card!
+playCard | true | vob played their card!
+playCard | true | smells of sssex played their card!
+playCard | true | All i want is nothing more was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | All i want is nothing more won with card Parting the Red Sea. | tV178_CZrbzhHjLHxOuRlg3X1Yj7Mvfy
+endRound | true | Round 12 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | midas played their card!
+playCard | true | All i want is nothing more played their card!
+playCard | true | smells of sssex played their card!
+playCard | true | vob was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | smells of sssex won with card Puberty. | B4IdYQ0eePw5CVmI5XuG9Hl9iM0P1xy2
+endRound | true | Round 13 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | vob played their card!
+playCard | true | smells of sssex played their card!
+playCard | true | midas played their card!
+playCard | true | John was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | smells of sssex won with card Hormone injections. | 7Y6zJkUOtKuX5jaNHLvvRXyUR18SxPgx
+endRound | true | Round 14 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+endRound | true | Round 15 successfully finished | 7Y6zJkUOtKuX5jaNHLvvRXyUR18SxPgx
+playCard | true | John played their card!
+playCard | true | All i want is nothing more played their card!
+playCard | true | smells of sssex played their card!
+playCard | true | midas was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | smells of sssex won with card The &Uuml;bermensch. | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+endRound | true | Round 16 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | All i want is nothing more played their card!
+playCard | true | vob played their card!
+playCard | true | John played their card!
+playCard | true | smells of sssex was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | vob won with card Italians. | tV178_CZrbzhHjLHxOuRlg3X1Yj7Mvfy
+endRound | true | Round 17 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | vob played their card!
+playCard | true | smells of sssex played their card!
+playCard | true | midas played their card!
+playCard | true | All i want is nothing more was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | smells of sssex won with card Tentacle porn. | B4IdYQ0eePw5CVmI5XuG9Hl9iM0P1xy2
+endRound | true | Round 18 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | midas played their card!
+playCard | true | vob played their card!
+playCard | true | John played their card!
+playCard | true | smells of sssex was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | John won with card All-you-can-eat shrimp for $4.99. | 7Y6zJkUOtKuX5jaNHLvvRXyUR18SxPgx
+endRound | true | Round 19 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | vob played their card!
+playCard | true | midas played their card!
+playCard | true | All i want is nothing more played their card!
+playCard | true | John was last player to play cards, going to judge-selecting!
+shuffleCards | tV178_CZrbzhHjLHxOuRlg3X1Yj7Mvfy | true | shuffled 2 <=> 3 for midas
+shuffleCards | tV178_CZrbzhHjLHxOuRlg3X1Yj7Mvfy | true | shuffled 3 <=> 2 for midas
+shuffleCards | tV178_CZrbzhHjLHxOuRlg3X1Yj7Mvfy | true | shuffled 2 <=> 1 for midas
+shuffleCards | tV178_CZrbzhHjLHxOuRlg3X1Yj7Mvfy | true | shuffled 0 <=> 2 for midas
+judgeSelectCard | true | midas won with card A tiny horse. | p2-D0PdfZWX7_U6PsCWReNxPFpQhx5Qa
+endRound | true | Round 20 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | John played their card!
+playCard | true | midas played their card!
+playCard | true | All i want is nothing more played their card!
+playCard | true | smells of sssex was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | smells of sssex won with card Cybernetic enhancements. | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+endRound | true | Round 21 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | John played their card!
+playCard | true | All i want is nothing more played their card!
+playCard | true | smells of sssex played their card!
+playCard | true | vob was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | vob won with card A really cool hat. | tV178_CZrbzhHjLHxOuRlg3X1Yj7Mvfy
+endRound | true | Round 22 successfully finished | qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2
+playCard | true | midas played their card!
+client DISCONNECTED: session(tV178_CZrbzhHjLHxOuRlg3X1Yj7Mvfy)
+playCard | true | vob played their card!
+client DISCONNECTED: session(7Y6zJkUOtKuX5jaNHLvvRXyUR18SxPgx)
+client DISCONNECTED: session(qByHtmmCQyaKjDj-a7MNQCDhlUxwW--2)
+playCard | true | smells of sssex played their card!
+Judge-selection time!
+client DISCONNECTED: session(B4IdYQ0eePw5CVmI5XuG9Hl9iM0P1xy2)
+client DISCONNECTED: session(p2-D0PdfZWX7_U6PsCWReNxPFpQhx5Qa)
+host a5d7bde65ee5 | client | EkXBhtAR91Kn5LpXj1oJOeqhENHo1o_8
+client DISCONNECTED: session(EkXBhtAR91Kn5LpXj1oJOeqhENHo1o_8)
+host a5d7bde65ee5 | client | e7WMu6xYAAjQjdF9p7EadRY5RpzviOKK
+client DISCONNECTED: session(e7WMu6xYAAjQjdF9p7EadRY5RpzviOKK)
+host a5d7bde65ee5 | client | zDpF9aKVFmQGpxb-sKl69R6BeV7T-uoV
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | nzcAn9BVFHWeRm81El1fiXlDVGwKReMv
+playCard | true | mememan played their card!
+playCard | true | peter was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | peter won with card A micropenis. | zDpF9aKVFmQGpxb-sKl69R6BeV7T-uoV
+endRound | true | Round 1 successfully finished | zDpF9aKVFmQGpxb-sKl69R6BeV7T-uoV
+client DISCONNECTED: session(zDpF9aKVFmQGpxb-sKl69R6BeV7T-uoV)
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 2 successfully finished
+Rounds Idle: 1
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 3 successfully finished
+Rounds Idle: 2
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 4 successfully finished
+Rounds Idle: 3
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 5 successfully finished
+Rounds Idle: 4
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 6 successfully finished
+Rounds Idle: 5
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 7 successfully finished
+Rounds Idle: 6
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 8 successfully finished
+Rounds Idle: 7
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 9 successfully finished
+Rounds Idle: 8
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 10 successfully finished
+Rounds Idle: 9
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 11 successfully finished
+Rounds Idle: 10
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 12 successfully finished
+Rounds Idle: 11
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 13 successfully finished
+Rounds Idle: 12
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 14 successfully finished
+Rounds Idle: 13
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+playCard | true | peter played their card!
+Judge-selection time!
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+client DISCONNECTED: session(nzcAn9BVFHWeRm81El1fiXlDVGwKReMv)
+host a5d7bde65ee5 | client | nzcAn9BVFHWeRm81El1fiXlDVGwKReMv
+client DISCONNECTED: session(nzcAn9BVFHWeRm81El1fiXlDVGwKReMv)
+host a5d7bde65ee5 | client | nzcAn9BVFHWeRm81El1fiXlDVGwKReMv
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+client DISCONNECTED: session(nzcAn9BVFHWeRm81El1fiXlDVGwKReMv)
+host a5d7bde65ee5 | client | nzcAn9BVFHWeRm81El1fiXlDVGwKReMv
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+client DISCONNECTED: session(nzcAn9BVFHWeRm81El1fiXlDVGwKReMv)
+host a5d7bde65ee5 | client | nzcAn9BVFHWeRm81El1fiXlDVGwKReMv
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+client DISCONNECTED: session(nzcAn9BVFHWeRm81El1fiXlDVGwKReMv)
+host a5d7bde65ee5 | client | nzcAn9BVFHWeRm81El1fiXlDVGwKReMv
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+client DISCONNECTED: session(nzcAn9BVFHWeRm81El1fiXlDVGwKReMv)
+host a5d7bde65ee5 | client | nzcAn9BVFHWeRm81El1fiXlDVGwKReMv
+client DISCONNECTED: session(nzcAn9BVFHWeRm81El1fiXlDVGwKReMv)
+host a5d7bde65ee5 | client | nzcAn9BVFHWeRm81El1fiXlDVGwKReMv
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+host a5d7bde65ee5 | client | Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3
+client DISCONNECTED: session(Ye2DyABoGaoxZadOTI9qvEQzxcWX32E3)
+client DISCONNECTED: session(nzcAn9BVFHWeRm81El1fiXlDVGwKReMv)
+host a5d7bde65ee5 | client | AUuIJcEYrR4HtsYFj7EbGSJNVpRISiiV
+host a5d7bde65ee5 | client | nlS5OoDwRrUWxxDNBoiQpkOSGH17Bf4p
+host a5d7bde65ee5 | client | FRTH_CjBSlPaXRFAflOYHA60Wwa1n46X
+playCard | true | Peter played their card!
+playCard | true | Ernst was last player to play cards, going to judge-selecting!
+shuffleCards | AUuIJcEYrR4HtsYFj7EbGSJNVpRISiiV | true | shuffled 1 <=> 0 for yeet
+judgeSelectCard | true | Peter won with card Black people. | AUuIJcEYrR4HtsYFj7EbGSJNVpRISiiV
+endRound | true | Round 1 successfully finished | AUuIJcEYrR4HtsYFj7EbGSJNVpRISiiV
+playCard | true | yeet played their card!
+playCard | true | Ernst was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Ernst won with card The World of Warcraft. | nlS5OoDwRrUWxxDNBoiQpkOSGH17Bf4p
+endRound | true | Round 2 successfully finished | nlS5OoDwRrUWxxDNBoiQpkOSGH17Bf4p
+client DISCONNECTED: session(AUuIJcEYrR4HtsYFj7EbGSJNVpRISiiV)
+client DISCONNECTED: session(nlS5OoDwRrUWxxDNBoiQpkOSGH17Bf4p)
+client DISCONNECTED: session(FRTH_CjBSlPaXRFAflOYHA60Wwa1n46X)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 3 successfully finished
+Rounds Idle: 1
+host a5d7bde65ee5 | client | KoxpDoUFRwmOWGe4FxzEY2TtYCiE04ny
+client DISCONNECTED: session(KoxpDoUFRwmOWGe4FxzEY2TtYCiE04ny)
+host a5d7bde65ee5 | client | -s55xK0Qo4hgnq2FBMmg2-z1Wp2_nGoT
+host a5d7bde65ee5 | client | wR-JufPiUjtWvRls3be9T0SOOihDw45g
+host a5d7bde65ee5 | client | wR-JufPiUjtWvRls3be9T0SOOihDw45g
+client DISCONNECTED: session(wR-JufPiUjtWvRls3be9T0SOOihDw45g)
+host a5d7bde65ee5 | client | rasv4ukJqr24i8wZGxRnWe1bEMVIJUoV
+playCard | true | peter played their card!
+playCard | true | jan was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | jan won with card A sad handjob. | -s55xK0Qo4hgnq2FBMmg2-z1Wp2_nGoT
+endRound | true | Round 1 successfully finished | -s55xK0Qo4hgnq2FBMmg2-z1Wp2_nGoT
+playCard | true | kaas played their card!
+playCard | true | jan was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | kaas won with card Sarah Palin. | wR-JufPiUjtWvRls3be9T0SOOihDw45g
+endRound | true | Round 2 successfully finished | wR-JufPiUjtWvRls3be9T0SOOihDw45g
+client DISCONNECTED: session(rasv4ukJqr24i8wZGxRnWe1bEMVIJUoV)
+host a5d7bde65ee5 | client | rasv4ukJqr24i8wZGxRnWe1bEMVIJUoV
+client DISCONNECTED: session(wR-JufPiUjtWvRls3be9T0SOOihDw45g)
+host a5d7bde65ee5 | client | wR-JufPiUjtWvRls3be9T0SOOihDw45g
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 3 successfully finished
+Rounds Idle: 1
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 4 successfully finished
+Rounds Idle: 2
+client DISCONNECTED: session(-s55xK0Qo4hgnq2FBMmg2-z1Wp2_nGoT)
+client DISCONNECTED: session(wR-JufPiUjtWvRls3be9T0SOOihDw45g)
+client DISCONNECTED: session(rasv4ukJqr24i8wZGxRnWe1bEMVIJUoV)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 5 successfully finished
+Rounds Idle: 3
+host a5d7bde65ee5 | client | A3aPK1sr-Ykm1HQYuLjOg4LX0oAT18kJ
+client DISCONNECTED: session(A3aPK1sr-Ykm1HQYuLjOg4LX0oAT18kJ)
+host a5d7bde65ee5 | client | 9wCcX-boq7s9x9ngZakj8JNJp5Ha3OYB
+client DISCONNECTED: session(9wCcX-boq7s9x9ngZakj8JNJp5Ha3OYB)
+host a5d7bde65ee5 | client | DtBJUf3_c_4lrpMiv9UIraktty-tYx9g
+client DISCONNECTED: session(DtBJUf3_c_4lrpMiv9UIraktty-tYx9g)
+host a5d7bde65ee5 | client | qccro8nHxX3NJLNyGxZLmJwA6F70ltCx
+client DISCONNECTED: session(qccro8nHxX3NJLNyGxZLmJwA6F70ltCx)
+host a5d7bde65ee5 | client | QWmwiXqZQczrZDi-IrtB7qVAMCSdH72v
+client DISCONNECTED: session(QWmwiXqZQczrZDi-IrtB7qVAMCSdH72v)
+host a5d7bde65ee5 | client | QvWNYl_fkASRr-pTjly0iiP7Wsv7zl28
+client DISCONNECTED: session(QvWNYl_fkASRr-pTjly0iiP7Wsv7zl28)
+host a5d7bde65ee5 | client | TziS7FCd46iGPtI4I4jvIz-oclkssmRD
+client DISCONNECTED: session(TziS7FCd46iGPtI4I4jvIz-oclkssmRD)
+host a5d7bde65ee5 | client | HdLuSkVqsSv4hjv0qrHTTCiFFDX-XAv5
+client DISCONNECTED: session(HdLuSkVqsSv4hjv0qrHTTCiFFDX-XAv5)
+host a5d7bde65ee5 | client | SKcETHzimF67IUVrKrVEzSa8cmwJfMEp
+client DISCONNECTED: session(SKcETHzimF67IUVrKrVEzSa8cmwJfMEp)
+host a5d7bde65ee5 | client | XZuow6m8NkRORbI0BsKs8GhPwEXzLomi
+client DISCONNECTED: session(XZuow6m8NkRORbI0BsKs8GhPwEXzLomi)
+host a5d7bde65ee5 | client | XGmlKkku65_Bp97Bh9gvFCx1zcnwfZl7
+client DISCONNECTED: session(XGmlKkku65_Bp97Bh9gvFCx1zcnwfZl7)
+host a5d7bde65ee5 | client | XGmlKkku65_Bp97Bh9gvFCx1zcnwfZl7
+host a5d7bde65ee5 | client | NUefWyuIPoJzzpmrxjREofL0D40SvpC3
+host a5d7bde65ee5 | client | ydNkXNu5yIiW-cyWI4-Wl-dsHW2-WeJM
+client DISCONNECTED: session(ydNkXNu5yIiW-cyWI4-Wl-dsHW2-WeJM)
+host a5d7bde65ee5 | client | ydNkXNu5yIiW-cyWI4-Wl-dsHW2-WeJM
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 1 successfully finished
+Rounds Idle: 1
+client DISCONNECTED: session(NUefWyuIPoJzzpmrxjREofL0D40SvpC3)
+host a5d7bde65ee5 | client | x9DBEZ_VESdna0skDlY_vU87InXNsHC6
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 2 successfully finished
+Rounds Idle: 2
+client DISCONNECTED: session(x9DBEZ_VESdna0skDlY_vU87InXNsHC6)
+host a5d7bde65ee5 | client | apvJsDPQsD41dWGDHRY5b91dHuq8SZUy
+client DISCONNECTED: session(ydNkXNu5yIiW-cyWI4-Wl-dsHW2-WeJM)
+host a5d7bde65ee5 | client | ydNkXNu5yIiW-cyWI4-Wl-dsHW2-WeJM
+client DISCONNECTED: session(XGmlKkku65_Bp97Bh9gvFCx1zcnwfZl7)
+host a5d7bde65ee5 | client | XGmlKkku65_Bp97Bh9gvFCx1zcnwfZl7
+client DISCONNECTED: session(apvJsDPQsD41dWGDHRY5b91dHuq8SZUy)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 3 successfully finished
+Rounds Idle: 3
+host a5d7bde65ee5 | client | UhlTfywsW6eWG4sCgyt-JoGDGyomMsTC
+host a5d7bde65ee5 | client | UxP-BkYS47RfKmWyRne1m4hN4lBV-7Yo
+client DISCONNECTED: session(UhlTfywsW6eWG4sCgyt-JoGDGyomMsTC)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 4 successfully finished
+Rounds Idle: 4
+host a5d7bde65ee5 | client | edrvQ1ON5m5ltFhl1NvLCYp79a_yDQ3U
+client DISCONNECTED: session(XGmlKkku65_Bp97Bh9gvFCx1zcnwfZl7)
+host a5d7bde65ee5 | client | XGmlKkku65_Bp97Bh9gvFCx1zcnwfZl7
+client DISCONNECTED: session(UxP-BkYS47RfKmWyRne1m4hN4lBV-7Yo)
+host a5d7bde65ee5 | client | UxP-BkYS47RfKmWyRne1m4hN4lBV-7Yo
+client DISCONNECTED: session(edrvQ1ON5m5ltFhl1NvLCYp79a_yDQ3U)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 5 successfully finished
+Rounds Idle: 5
+shuffleCards | XGmlKkku65_Bp97Bh9gvFCx1zcnwfZl7 | true | shuffled 2 <=> 5 for Kevin
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 6 successfully finished
+Rounds Idle: 6
+host a5d7bde65ee5 | client | tbjI-x01EIlbq7nyKxYY-UP7n5b9pXsF
+client DISCONNECTED: session(tbjI-x01EIlbq7nyKxYY-UP7n5b9pXsF)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 7 successfully finished
+Rounds Idle: 7
+client DISCONNECTED: session(UxP-BkYS47RfKmWyRne1m4hN4lBV-7Yo)
+client DISCONNECTED: session(ydNkXNu5yIiW-cyWI4-Wl-dsHW2-WeJM)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 8 successfully finished
+Rounds Idle: 8
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 9 successfully finished
+Rounds Idle: 9
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 10 successfully finished
+Rounds Idle: 10
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 11 successfully finished
+Rounds Idle: 11
+client DISCONNECTED: session(XGmlKkku65_Bp97Bh9gvFCx1zcnwfZl7)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 12 successfully finished
+Rounds Idle: 12
+host a5d7bde65ee5 | client | XGmlKkku65_Bp97Bh9gvFCx1zcnwfZl7
+shuffleCards | XGmlKkku65_Bp97Bh9gvFCx1zcnwfZl7 | true | shuffled 7 <=> 5 for Kevin
+host a5d7bde65ee5 | client | JO6hHDpyeZJINO_Bsl8bUadwj0hybWiK
+shuffleCards | JO6hHDpyeZJINO_Bsl8bUadwj0hybWiK | true | shuffled 1 <=> 0 for Steven
+client DISCONNECTED: session(JO6hHDpyeZJINO_Bsl8bUadwj0hybWiK)
+host a5d7bde65ee5 | client | JO6hHDpyeZJINO_Bsl8bUadwj0hybWiK
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 13 successfully finished
+Rounds Idle: 13
+shuffleCards | XGmlKkku65_Bp97Bh9gvFCx1zcnwfZl7 | true | shuffled 1 <=> 0 for Kevin
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 14 successfully finished
+Rounds Idle: 14
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 15 successfully finished
+Rounds Idle: 15
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 16 successfully finished
+Rounds Idle: 16
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 17 successfully finished
+Rounds Idle: 17
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 18 successfully finished
+Rounds Idle: 18
+client DISCONNECTED: session(XGmlKkku65_Bp97Bh9gvFCx1zcnwfZl7)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 19 successfully finished
+Rounds Idle: 19
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 20 successfully finished
+Rounds Idle: 20
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 21 successfully finished
+Rounds Idle: 21
+client DISCONNECTED: session(JO6hHDpyeZJINO_Bsl8bUadwj0hybWiK)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 22 successfully finished
+Rounds Idle: 22
+host a5d7bde65ee5 | client | jos-wGmPShywRHZVNklJ4f_wA5yC19v0
+client DISCONNECTED: session(jos-wGmPShywRHZVNklJ4f_wA5yC19v0)
+host a5d7bde65ee5 | client | G01cKWXuySi4V3b-rS0cyXTlxv5Sk1Tp
+host a5d7bde65ee5 | client | 2pQ4GE8Va2XJlKzsjaUdPLx72vv_htJx
+host a5d7bde65ee5 | client | 2pQ4GE8Va2XJlKzsjaUdPLx72vv_htJx
+client DISCONNECTED: session(2pQ4GE8Va2XJlKzsjaUdPLx72vv_htJx)
+host a5d7bde65ee5 | client | 0YB851yq6O4jIs05tPLGR1fIkvCdAaS6
+playCard | true | lol played their card!
+client DISCONNECTED: session(2pQ4GE8Va2XJlKzsjaUdPLx72vv_htJx)
+client DISCONNECTED: session(0YB851yq6O4jIs05tPLGR1fIkvCdAaS6)
+playCard | true | peter was last player to play cards, going to judge-selecting!
+client DISCONNECTED: session(G01cKWXuySi4V3b-rS0cyXTlxv5Sk1Tp)
+host a5d7bde65ee5 | client | Hv4ZKQE7HcU68SyHspUI6uQQFO24ryA4
+client DISCONNECTED: session(Hv4ZKQE7HcU68SyHspUI6uQQFO24ryA4)
+host a5d7bde65ee5 | client | l8cbF8thJSeOWRma-UbyS3msvxfj2Bxt
+client DISCONNECTED: session(l8cbF8thJSeOWRma-UbyS3msvxfj2Bxt)
+host a5d7bde65ee5 | client | 9657f87lYr9ygR6b2979UhmOi3b9A7sU
+client DISCONNECTED: session(9657f87lYr9ygR6b2979UhmOi3b9A7sU)
+host a5d7bde65ee5 | client | bhbxHnL9-8ivAWXCrp5mNsRmepmkhpmc
+client DISCONNECTED: session(bhbxHnL9-8ivAWXCrp5mNsRmepmkhpmc)
+host a5d7bde65ee5 | client | a_OkwttJGsjgA39cn1EakdDuUE_m6Qz_
+client DISCONNECTED: session(a_OkwttJGsjgA39cn1EakdDuUE_m6Qz_)
+host a5d7bde65ee5 | client | vlkEu_WvYsGii_gEhtaRedCG8-Te7mdV
+client DISCONNECTED: session(vlkEu_WvYsGii_gEhtaRedCG8-Te7mdV)
+host a5d7bde65ee5 | client | bnChVaTXgtE_yuouc6DEsVgwFSkDHsHE
+client DISCONNECTED: session(bnChVaTXgtE_yuouc6DEsVgwFSkDHsHE)
+host a5d7bde65ee5 | client | bMq5rr6cMftkCvWOVKw8Z22bUd_BISJY
+client DISCONNECTED: session(bMq5rr6cMftkCvWOVKw8Z22bUd_BISJY)
+host a5d7bde65ee5 | client | MS-RFh1pfVP5j429inMmt_36Bpp7TJLZ
+client DISCONNECTED: session(MS-RFh1pfVP5j429inMmt_36Bpp7TJLZ)
+host a5d7bde65ee5 | client | MS-RFh1pfVP5j429inMmt_36Bpp7TJLZ
+client DISCONNECTED: session(MS-RFh1pfVP5j429inMmt_36Bpp7TJLZ)
+host a5d7bde65ee5 | client | MS-RFh1pfVP5j429inMmt_36Bpp7TJLZ
+client DISCONNECTED: session(MS-RFh1pfVP5j429inMmt_36Bpp7TJLZ)
+host a5d7bde65ee5 | client | MS-RFh1pfVP5j429inMmt_36Bpp7TJLZ
+client DISCONNECTED: session(MS-RFh1pfVP5j429inMmt_36Bpp7TJLZ)
+host a5d7bde65ee5 | client | MS-RFh1pfVP5j429inMmt_36Bpp7TJLZ
+client DISCONNECTED: session(MS-RFh1pfVP5j429inMmt_36Bpp7TJLZ)
+host a5d7bde65ee5 | client | mzU0yGSOcpO1HhsYNvs_5DPYEzrWjrB1
+client DISCONNECTED: session(mzU0yGSOcpO1HhsYNvs_5DPYEzrWjrB1)
+host a5d7bde65ee5 | client | i6VSQOuQOEx-XldIxxoH1ih5NJ2PUj7h
+client DISCONNECTED: session(i6VSQOuQOEx-XldIxxoH1ih5NJ2PUj7h)
+host a5d7bde65ee5 | client | 8hQjTiKmVFpZ3CsIlZ79OOXLoDRQr6a_
+client DISCONNECTED: session(8hQjTiKmVFpZ3CsIlZ79OOXLoDRQr6a_)
+host a5d7bde65ee5 | client | _moLXIHZ0OvzGHWZ_xxyAJIBPVMsyNtJ
+client DISCONNECTED: session(_moLXIHZ0OvzGHWZ_xxyAJIBPVMsyNtJ)
+host a5d7bde65ee5 | client | YogtddXojvKUaFM7P1-zNog5QfUzXjrJ
+client DISCONNECTED: session(YogtddXojvKUaFM7P1-zNog5QfUzXjrJ)
+host a5d7bde65ee5 | client | rIAWuNvYirarvQzM3U_3x4POQelDNRPn
+client DISCONNECTED: session(rIAWuNvYirarvQzM3U_3x4POQelDNRPn)
+host a5d7bde65ee5 | client | E8Ohv-F7_ZJk24ewG9Ro3_s6eHuiRUu9
+client DISCONNECTED: session(E8Ohv-F7_ZJk24ewG9Ro3_s6eHuiRUu9)
+host a5d7bde65ee5 | client | f-r9nSU04g5lKSP5nUIm0bg86Z133NHd
+host a5d7bde65ee5 | client | v_jrmQX-LZ2W4XzAQ1YkuVD0CceUJvXk
+host a5d7bde65ee5 | client | J3mxcXaSL3lkQJSEi05-nKMu5XRIpMka
+client DISCONNECTED: session(f-r9nSU04g5lKSP5nUIm0bg86Z133NHd)
+client DISCONNECTED: session(v_jrmQX-LZ2W4XzAQ1YkuVD0CceUJvXk)
+client DISCONNECTED: session(J3mxcXaSL3lkQJSEi05-nKMu5XRIpMka)
+host a5d7bde65ee5 | client | nG8fAEo3H1yP6d5ylZEjtMFodR4j_87J
+client DISCONNECTED: session(nG8fAEo3H1yP6d5ylZEjtMFodR4j_87J)
+host a5d7bde65ee5 | client | 8D7PVpIs2h8uHkLfGDJZb5sGeiAJBfsC
+host a5d7bde65ee5 | client | ioGcXD6jZ8m3fKoC1m5ZoCOid2l3QDxw
+client DISCONNECTED: session(8D7PVpIs2h8uHkLfGDJZb5sGeiAJBfsC)
+client DISCONNECTED: session(ioGcXD6jZ8m3fKoC1m5ZoCOid2l3QDxw)
+host a5d7bde65ee5 | client | swXmkMVNqt1p7fWo6W3NlasTf--2OqF-
+client DISCONNECTED: session(swXmkMVNqt1p7fWo6W3NlasTf--2OqF-)
+host a5d7bde65ee5 | client | BKz_IDq_SXl6KYcg5p13GZrqrTyegvQR
+client DISCONNECTED: session(BKz_IDq_SXl6KYcg5p13GZrqrTyegvQR)
+host a5d7bde65ee5 | client | DU0qolC1pNJyUuWRbop_l-2ZqOSUNkMl
+shuffleCards | DU0qolC1pNJyUuWRbop_l-2ZqOSUNkMl | true | shuffled 0 <=> 2 for Alec
+shuffleCards | DU0qolC1pNJyUuWRbop_l-2ZqOSUNkMl | true | shuffled 2 <=> 0 for Alec
+shuffleCards | DU0qolC1pNJyUuWRbop_l-2ZqOSUNkMl | true | shuffled 8 <=> 7 for Alec
+shuffleCards | DU0qolC1pNJyUuWRbop_l-2ZqOSUNkMl | true | shuffled 8 <=> 7 for Alec
+shuffleCards | DU0qolC1pNJyUuWRbop_l-2ZqOSUNkMl | true | shuffled 1 <=> 0 for Alec
+shuffleCards | DU0qolC1pNJyUuWRbop_l-2ZqOSUNkMl | true | shuffled 0 <=> 1 for Alec
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 23 successfully finished
+Rounds Idle: 23
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 24 successfully finished
+Rounds Idle: 24
+shuffleCards | DU0qolC1pNJyUuWRbop_l-2ZqOSUNkMl | true | shuffled 7 <=> 0 for Alec
+shuffleCards | DU0qolC1pNJyUuWRbop_l-2ZqOSUNkMl | true | shuffled 1 <=> 3 for Alec
+client DISCONNECTED: session(DU0qolC1pNJyUuWRbop_l-2ZqOSUNkMl)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 25 successfully finished
+Rounds Idle: 25
+host a5d7bde65ee5 | client | kI6LYbnMCj4WRBQbNGl38nQszCjLFEzJ
+client DISCONNECTED: session(kI6LYbnMCj4WRBQbNGl38nQszCjLFEzJ)
+host a5d7bde65ee5 | client | cyURqIUO4LPWgDUNkcD4x0nwAlnldYVJ
+client DISCONNECTED: session(cyURqIUO4LPWgDUNkcD4x0nwAlnldYVJ)
+host a5d7bde65ee5 | client | FgsmF8OjhyOaMnGoLusuXaPguLFbHEOM
+client DISCONNECTED: session(FgsmF8OjhyOaMnGoLusuXaPguLFbHEOM)
+host a5d7bde65ee5 | client | i7epsfbNGtfFvJmEZEe78ELUiqjpbq1p
+client DISCONNECTED: session(i7epsfbNGtfFvJmEZEe78ELUiqjpbq1p)
+host a5d7bde65ee5 | client | C86InkZ6WMYveYWzvzth4sBcXv8XXPCP
+client DISCONNECTED: session(C86InkZ6WMYveYWzvzth4sBcXv8XXPCP)
+host a5d7bde65ee5 | client | RFSImAI6iOwDGDPc8BaHDrFZt5g_VLc9
+client DISCONNECTED: session(RFSImAI6iOwDGDPc8BaHDrFZt5g_VLc9)
+host a5d7bde65ee5 | client | -0ZF6VlHwvCKAUwJMhtRuW75IlmbU_gw
+host a5d7bde65ee5 | client | ISgNVKKzxkjRSES-qVLtbHwgfHBwnoQ6
+client DISCONNECTED: session(-0ZF6VlHwvCKAUwJMhtRuW75IlmbU_gw)
+client DISCONNECTED: session(ISgNVKKzxkjRSES-qVLtbHwgfHBwnoQ6)
+host a5d7bde65ee5 | client | b-qK1ipUUuuR8dn0UrIyecF3qskEAFTO
+client DISCONNECTED: session(b-qK1ipUUuuR8dn0UrIyecF3qskEAFTO)
+host a5d7bde65ee5 | client | tqQ-Zm7uzd3nvkTmpQ7hxxr-8KXl3jLP
+client DISCONNECTED: session(tqQ-Zm7uzd3nvkTmpQ7hxxr-8KXl3jLP)
+host a5d7bde65ee5 | client | O1hX599ZoX7tGhymfd1TKvA9J1yq7SVS
+client DISCONNECTED: session(O1hX599ZoX7tGhymfd1TKvA9J1yq7SVS)
+host a5d7bde65ee5 | client | rn77Uc2qRhkk5OH_zXR4cVwIOqdFeuS6
+client DISCONNECTED: session(rn77Uc2qRhkk5OH_zXR4cVwIOqdFeuS6)
+host a5d7bde65ee5 | client | 4rGlHJ-YZOVnvD6Cygv8FuFWCB8SFYY_
+client DISCONNECTED: session(4rGlHJ-YZOVnvD6Cygv8FuFWCB8SFYY_)
+host a5d7bde65ee5 | client | e02BBpMyDYRQha0r_Sz7pK6M4VEyFrhh
+client DISCONNECTED: session(e02BBpMyDYRQha0r_Sz7pK6M4VEyFrhh)
+host a5d7bde65ee5 | client | k4VocExpKKhkLq8clIpEnEEx6AvXx7eR
+client DISCONNECTED: session(k4VocExpKKhkLq8clIpEnEEx6AvXx7eR)
+host a5d7bde65ee5 | client | QyOzV8BSr9uEdYPN3jarMiTYija9CePd
+client DISCONNECTED: session(QyOzV8BSr9uEdYPN3jarMiTYija9CePd)
+host a5d7bde65ee5 | client | g47Y9pSXYj5a3OYkj_9L7xFo3ajOiSa1
+client DISCONNECTED: session(g47Y9pSXYj5a3OYkj_9L7xFo3ajOiSa1)
+host a5d7bde65ee5 | client | 3Uv0G7EgrbYoYdzTPaaicpuDEhUvpiGC
+host a5d7bde65ee5 | client | 3L5C6pbmbitzCPrWGtha9D7geo084LmW
+client DISCONNECTED: session(3Uv0G7EgrbYoYdzTPaaicpuDEhUvpiGC)
+client DISCONNECTED: session(3L5C6pbmbitzCPrWGtha9D7geo084LmW)
+host a5d7bde65ee5 | client | Uc02gJo4k1CTB-CcvS1CukOJXbxGrHG-
+host a5d7bde65ee5 | client | uWIg5jpbOeTqagW83x9j2iEhxMNF9Zwg
+client DISCONNECTED: session(Uc02gJo4k1CTB-CcvS1CukOJXbxGrHG-)
+host a5d7bde65ee5 | client | U6ZJWieKJ5DW1QTGXL0AZ0RvhN23-CMB
+host a5d7bde65ee5 | client | rXlVYwYzLqJaIo-YP3r6NL1fE85R5soZ
+client DISCONNECTED: session(U6ZJWieKJ5DW1QTGXL0AZ0RvhN23-CMB)
+client DISCONNECTED: session(rXlVYwYzLqJaIo-YP3r6NL1fE85R5soZ)
+host a5d7bde65ee5 | client | dnzvCMQ7HTLXYtUKJmtsXy91-_yv7s94
+host a5d7bde65ee5 | client | wHSq14gTzFnTNyD_ZYzrXDl-ni1hP8sQ
+client DISCONNECTED: session(uWIg5jpbOeTqagW83x9j2iEhxMNF9Zwg)
+host a5d7bde65ee5 | client | pJkaUcmvV2yAlPjtZZa58Fzg3Z_xu6-d
+host a5d7bde65ee5 | client | sqAIJJZ5fyqMlhIGLqpOb1CPl-p9O8NK
+host a5d7bde65ee5 | client | QEWi9Da_WCcnKn1O7FMujXmKxcJDeo9z
+client DISCONNECTED: session(pJkaUcmvV2yAlPjtZZa58Fzg3Z_xu6-d)
+client DISCONNECTED: session(wHSq14gTzFnTNyD_ZYzrXDl-ni1hP8sQ)
+client DISCONNECTED: session(dnzvCMQ7HTLXYtUKJmtsXy91-_yv7s94)
+host a5d7bde65ee5 | client | LntDsyUhX2hM4Ygtn5aCw_0GXf5zMwwM
+host a5d7bde65ee5 | client | YHdx3c5Ay_-Cwe0TbBSdaDh5g-96RFDa
+client DISCONNECTED: session(QEWi9Da_WCcnKn1O7FMujXmKxcJDeo9z)
+host a5d7bde65ee5 | client | 2Fj27MYtSsCR5fUM_DuulZxcME9r1JSN
+client DISCONNECTED: session(YHdx3c5Ay_-Cwe0TbBSdaDh5g-96RFDa)
+host a5d7bde65ee5 | client | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+client DISCONNECTED: session(sqAIJJZ5fyqMlhIGLqpOb1CPl-p9O8NK)
+host a5d7bde65ee5 | client | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+client DISCONNECTED: session(3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD)
+host a5d7bde65ee5 | client | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+client DISCONNECTED: session(2Fj27MYtSsCR5fUM_DuulZxcME9r1JSN)
+client DISCONNECTED: session(3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD)
+host a5d7bde65ee5 | client | vf3kJwxG2rC2KJY3NOPAEM4vbKKp4hhW
+playCard | true | Elisa bug played their card!
+playCard | true | Yuyu played their card!
+Judge-selection time!
+client DISCONNECTED: session(3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD)
+host a5d7bde65ee5 | client | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+client DISCONNECTED: session(LntDsyUhX2hM4Ygtn5aCw_0GXf5zMwwM)
+host a5d7bde65ee5 | client | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+client DISCONNECTED: session(3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD)
+host a5d7bde65ee5 | client | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+client DISCONNECTED: session(vf3kJwxG2rC2KJY3NOPAEM4vbKKp4hhW)
+client DISCONNECTED: session(3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD)
+host a5d7bde65ee5 | client | YwQ4JP5Gx8ddPferjInl9wZWc9x18s_C
+host a5d7bde65ee5 | client | V9al77vkdc83og_gyjtEaMIoC24htizR
+host a5d7bde65ee5 | client | LntDsyUhX2hM4Ygtn5aCw_0GXf5zMwwM
+client DISCONNECTED: session(YwQ4JP5Gx8ddPferjInl9wZWc9x18s_C)
+host a5d7bde65ee5 | client | lUX9zWN5QMMybmWSuz-t0ZEdXJHzKISH
+client DISCONNECTED: session(V9al77vkdc83og_gyjtEaMIoC24htizR)
+playCard | true | Patate played their card!
+playCard | true | J'ai des cheveux soyeux was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | J'ai des cheveux soyeux won with card Uppercuts. | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+endRound | true | Round 1 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+playCard | true | Patate played their card!
+playCard | true | Elisa was last player to play cards, going to judge-selecting!
+shuffleCards | lUX9zWN5QMMybmWSuz-t0ZEdXJHzKISH | true | shuffled 1 <=> 0 for Patate
+judgeSelectCard | true | Patate won with card The clitoris. | LntDsyUhX2hM4Ygtn5aCw_0GXf5zMwwM
+endRound | true | Round 2 successfully finished | LntDsyUhX2hM4Ygtn5aCw_0GXf5zMwwM
+endRound | true | Round 3 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+playCard | true | Patate played their card!
+playCard | true | J'ai des cheveux soyeux was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | J'ai des cheveux soyeux won with card 8 oz. of sweet Mexican black-tar heroin. | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+endRound | true | Round 4 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+playCard | true | Patate played their card!
+playCard | true | Elisa was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Patate won with card Not reciprocating oral sex. | LntDsyUhX2hM4Ygtn5aCw_0GXf5zMwwM
+endRound | true | Round 5 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+playCard | true | Elisa played their card!
+playCard | true | J'ai des cheveux soyeux was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | J'ai des cheveux soyeux won with card Bill Nye the Science Guy. | lUX9zWN5QMMybmWSuz-t0ZEdXJHzKISH
+endRound | true | Round 6 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+endRound | true | Round 7 successfully finished | LntDsyUhX2hM4Ygtn5aCw_0GXf5zMwwM
+playCard | true | Patate played their card!
+playCard | true | Elisa was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Patate won with card Gandhi. | LntDsyUhX2hM4Ygtn5aCw_0GXf5zMwwM
+endRound | true | Round 8 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+playCard | true | Elisa played their card!
+playCard | true | J'ai des cheveux soyeux was last player to play cards, going to judge-selecting!
+shuffleCards | lUX9zWN5QMMybmWSuz-t0ZEdXJHzKISH | true | shuffled 0 <=> 1 for Patate
+judgeSelectCard | true | Elisa won with card Full frontal nudity. | lUX9zWN5QMMybmWSuz-t0ZEdXJHzKISH
+endRound | true | Round 9 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+playCard | true | Patate played their card!
+playCard | true | J'ai des cheveux soyeux was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | J'ai des cheveux soyeux won with card Masturbation. | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+endRound | true | Round 10 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+playCard | true | Patate played their card!
+playCard | true | Elisa was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Patate won with card Seppuku. | LntDsyUhX2hM4Ygtn5aCw_0GXf5zMwwM
+endRound | true | Round 11 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+playCard | true | J'ai des cheveux soyeux played their card!
+playCard | true | Elisa was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Elisa won with card The Force. | lUX9zWN5QMMybmWSuz-t0ZEdXJHzKISH
+endRound | true | Round 12 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+endRound | true | Round 13 successfully finished | LntDsyUhX2hM4Ygtn5aCw_0GXf5zMwwM
+playCard | true | Elisa played their card!
+playCard | true | Patate was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Patate won with card Black people. | LntDsyUhX2hM4Ygtn5aCw_0GXf5zMwwM
+endRound | true | Round 14 successfully finished | lUX9zWN5QMMybmWSuz-t0ZEdXJHzKISH
+playCard | true | Elisa played their card!
+playCard | true | J'ai des cheveux soyeux was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | J'ai des cheveux soyeux won with card My relationship status. | lUX9zWN5QMMybmWSuz-t0ZEdXJHzKISH
+endRound | true | Round 15 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+playCard | true | Patate played their card!
+playCard | true | J'ai des cheveux soyeux was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Patate won with card Emotions. | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+endRound | true | Round 16 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+playCard | true | Elisa played their card!
+playCard | true | Patate was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Elisa won with card Explosions. | LntDsyUhX2hM4Ygtn5aCw_0GXf5zMwwM
+endRound | true | Round 17 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+playCard | true | Elisa played their card!
+playCard | true | J'ai des cheveux soyeux was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Elisa won with card Domino's&trade; Oreo&trade; Dessert Pizza. | lUX9zWN5QMMybmWSuz-t0ZEdXJHzKISH
+endRound | true | Round 18 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+playCard | true | J'ai des cheveux soyeux played their card!
+playCard | true | Patate was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | J'ai des cheveux soyeux won with card Pooping back and forth. Forever. | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+endRound | true | Round 19 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+playCard | true | Elisa played their card!
+playCard | true | Patate was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Elisa won with card Getting naked and watching Nickelodeon. | LntDsyUhX2hM4Ygtn5aCw_0GXf5zMwwM
+endRound | true | Round 20 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+playCard | true | Elisa played their card!
+playCard | true | J'ai des cheveux soyeux was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | J'ai des cheveux soyeux won with card Land mines. | lUX9zWN5QMMybmWSuz-t0ZEdXJHzKISH
+endRound | true | Round 21 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+playCard | true | Patate played their card!
+playCard | true | J'ai des cheveux soyeux was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Patate won with card Waking up half-naked in a Denny's parking lot. | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+endRound | true | Round 22 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+playCard | true | Elisa played their card!
+playCard | true | Patate was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Patate won with card Crippling debt. | LntDsyUhX2hM4Ygtn5aCw_0GXf5zMwwM
+endRound | true | Round 23 successfully finished | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+client DISCONNECTED: session(lUX9zWN5QMMybmWSuz-t0ZEdXJHzKISH)
+host a5d7bde65ee5 | client | lUX9zWN5QMMybmWSuz-t0ZEdXJHzKISH
+playCard | true | Elisa played their card!
+playCard | true | J'ai des cheveux soyeux was last player to play cards, going to judge-selecting!
+client DISCONNECTED: session(lUX9zWN5QMMybmWSuz-t0ZEdXJHzKISH)
+client DISCONNECTED: session(LntDsyUhX2hM4Ygtn5aCw_0GXf5zMwwM)
+host a5d7bde65ee5 | client | LntDsyUhX2hM4Ygtn5aCw_0GXf5zMwwM
+client DISCONNECTED: session(LntDsyUhX2hM4Ygtn5aCw_0GXf5zMwwM)
+client DISCONNECTED: session(3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD)
+host a5d7bde65ee5 | client | 3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD
+client DISCONNECTED: session(3SzACc5wLLQ5JkHVWUirBfNP1UilB0dD)
+host a5d7bde65ee5 | client | -cy9J96PWFKCIaIICWRRU1W5D4Kygy7L
+client DISCONNECTED: session(-cy9J96PWFKCIaIICWRRU1W5D4Kygy7L)
+host a5d7bde65ee5 | client | mPjqWVxIW5qSkiPZapeUbkYx9O9QOQsx
+client DISCONNECTED: session(mPjqWVxIW5qSkiPZapeUbkYx9O9QOQsx)
+host a5d7bde65ee5 | client | jsy8UgbPL0bfJJBXFmFVlH59BTg4J4IG
+client DISCONNECTED: session(jsy8UgbPL0bfJJBXFmFVlH59BTg4J4IG)
+host a5d7bde65ee5 | client | _d-iP5ZPsdRlq9vsyE4F5kiH_TTuOZvk
+client DISCONNECTED: session(_d-iP5ZPsdRlq9vsyE4F5kiH_TTuOZvk)
+host a5d7bde65ee5 | client | cgOWpC2hdQM2w0CoNaCOLC2pOPCDXGbv
+host a5d7bde65ee5 | client | EWE4JAHB95VhK-2sC9nU7LVY0mALeRUp
+host a5d7bde65ee5 | client | 2ZEYHb9u_ECZreMOQCo_BaBhvon4GrTF
+host a5d7bde65ee5 | client | rwhIzBuRFeQkvmJzsm1iJBdRgVtREBqm
+host a5d7bde65ee5 | client | qONGKLx8tAkfHJnk1q5jhmvlj-h2RFt7
+client DISCONNECTED: session(EWE4JAHB95VhK-2sC9nU7LVY0mALeRUp)
+client DISCONNECTED: session(cgOWpC2hdQM2w0CoNaCOLC2pOPCDXGbv)
+host a5d7bde65ee5 | client | aJd2JXHFgVmGIKlYbXPJ3o0IRvP_tzDM
+client DISCONNECTED: session(aJd2JXHFgVmGIKlYbXPJ3o0IRvP_tzDM)
+host a5d7bde65ee5 | client | aJd2JXHFgVmGIKlYbXPJ3o0IRvP_tzDM
+client DISCONNECTED: session(2ZEYHb9u_ECZreMOQCo_BaBhvon4GrTF)
+client DISCONNECTED: session(qONGKLx8tAkfHJnk1q5jhmvlj-h2RFt7)
+playCard | true | b played their card!
+playCard | true | Sal was last player to play cards, going to judge-selecting!
+host a5d7bde65ee5 | client | qONGKLx8tAkfHJnk1q5jhmvlj-h2RFt7
+judgeSelectCard | true | b won with card An erection that lasts longer than four hours. | qONGKLx8tAkfHJnk1q5jhmvlj-h2RFt7
+endRound | true | Round 1 successfully finished | rwhIzBuRFeQkvmJzsm1iJBdRgVtREBqm
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 2 successfully finished
+Rounds Idle: 1
+playCard | true | b played their card!
+playCard | true | Yusuf was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | b won with card Aaron Burr. | aJd2JXHFgVmGIKlYbXPJ3o0IRvP_tzDM
+endRound | true | Round 3 successfully finished | aJd2JXHFgVmGIKlYbXPJ3o0IRvP_tzDM
+playCard | true | Sal played their card!
+playCard | true | b was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Sal won with card Tweeting. | qONGKLx8tAkfHJnk1q5jhmvlj-h2RFt7
+endRound | true | Round 4 successfully finished | qONGKLx8tAkfHJnk1q5jhmvlj-h2RFt7
+playCard | true | Yusuf played their card!
+playCard | true | Sal was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Sal won with card My genitals. | rwhIzBuRFeQkvmJzsm1iJBdRgVtREBqm
+endRound | true | Round 5 successfully finished | aJd2JXHFgVmGIKlYbXPJ3o0IRvP_tzDM
+client DISCONNECTED: session(qONGKLx8tAkfHJnk1q5jhmvlj-h2RFt7)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 6 successfully finished
+Rounds Idle: 1
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 7 successfully finished
+Rounds Idle: 2
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 8 successfully finished
+Rounds Idle: 3
+host a5d7bde65ee5 | client | qONGKLx8tAkfHJnk1q5jhmvlj-h2RFt7
+client DISCONNECTED: session(aJd2JXHFgVmGIKlYbXPJ3o0IRvP_tzDM)
+host a5d7bde65ee5 | client | aJd2JXHFgVmGIKlYbXPJ3o0IRvP_tzDM
+client DISCONNECTED: session(qONGKLx8tAkfHJnk1q5jhmvlj-h2RFt7)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 9 successfully finished
+Rounds Idle: 4
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 10 successfully finished
+Rounds Idle: 5
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 11 successfully finished
+Rounds Idle: 6
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 12 successfully finished
+Rounds Idle: 7
+client DISCONNECTED: session(aJd2JXHFgVmGIKlYbXPJ3o0IRvP_tzDM)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 13 successfully finished
+Rounds Idle: 8
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 14 successfully finished
+Rounds Idle: 9
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 15 successfully finished
+Rounds Idle: 10
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 16 successfully finished
+Rounds Idle: 11
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 17 successfully finished
+Rounds Idle: 12
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 18 successfully finished
+Rounds Idle: 13
+host a5d7bde65ee5 | client | aJd2JXHFgVmGIKlYbXPJ3o0IRvP_tzDM
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 19 successfully finished
+Rounds Idle: 14
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 20 successfully finished
+Rounds Idle: 15
+host a5d7bde65ee5 | client | qONGKLx8tAkfHJnk1q5jhmvlj-h2RFt7
+client DISCONNECTED: session(qONGKLx8tAkfHJnk1q5jhmvlj-h2RFt7)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 21 successfully finished
+Rounds Idle: 16
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 22 successfully finished
+Rounds Idle: 17
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 23 successfully finished
+Rounds Idle: 18
+client DISCONNECTED: session(aJd2JXHFgVmGIKlYbXPJ3o0IRvP_tzDM)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 24 successfully finished
+Rounds Idle: 19
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 25 successfully finished
+Rounds Idle: 20
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 26 successfully finished
+Rounds Idle: 21
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 27 successfully finished
+Rounds Idle: 22
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 28 successfully finished
+Rounds Idle: 23
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 29 successfully finished
+Rounds Idle: 24
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 30 successfully finished
+Rounds Idle: 25
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 31 successfully finished
+Rounds Idle: 26
+host a5d7bde65ee5 | client | aJd2JXHFgVmGIKlYbXPJ3o0IRvP_tzDM
+client DISCONNECTED: session(aJd2JXHFgVmGIKlYbXPJ3o0IRvP_tzDM)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 32 successfully finished
+Rounds Idle: 27
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 33 successfully finished
+Rounds Idle: 28
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 34 successfully finished
+Rounds Idle: 29
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 35 successfully finished
+Rounds Idle: 30
+host a5d7bde65ee5 | client | qONGKLx8tAkfHJnk1q5jhmvlj-h2RFt7
+client DISCONNECTED: session(qONGKLx8tAkfHJnk1q5jhmvlj-h2RFt7)
+host a5d7bde65ee5 | client | Hg_xaVzpYybql-XHaboDrk48xAc6R8b5
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 36 successfully finished
+Rounds Idle: 31
+client DISCONNECTED: session(Hg_xaVzpYybql-XHaboDrk48xAc6R8b5)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 37 successfully finished
+Rounds Idle: 32
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 38 successfully finished
+Rounds Idle: 33
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 39 successfully finished
+Rounds Idle: 34
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 40 successfully finished
+Rounds Idle: 35
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 41 successfully finished
+Rounds Idle: 36
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 42 successfully finished
+Rounds Idle: 37
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 43 successfully finished
+Rounds Idle: 38
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 44 successfully finished
+Rounds Idle: 39
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 45 successfully finished
+Rounds Idle: 40
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 46 successfully finished
+Rounds Idle: 41
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 47 successfully finished
+Rounds Idle: 42
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 48 successfully finished
+Rounds Idle: 43
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 49 successfully finished
+Rounds Idle: 44
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 50 successfully finished
+Rounds Idle: 45
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 51 successfully finished
+Rounds Idle: 46
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 52 successfully finished
+Rounds Idle: 47
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 53 successfully finished
+Rounds Idle: 48
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 54 successfully finished
+Rounds Idle: 49
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 55 successfully finished
+Rounds Idle: 50
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 56 successfully finished
+Rounds Idle: 51
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 57 successfully finished
+Rounds Idle: 52
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 58 successfully finished
+Rounds Idle: 53
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 59 successfully finished
+Rounds Idle: 54
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 60 successfully finished
+Rounds Idle: 55
+host a5d7bde65ee5 | client | Lk9Rl4E8_xdMbyVO_SC6fBPlddGJAt3t
+host a5d7bde65ee5 | client | aZTn3w-_19yMD883yqsHqZwzG5o3s8Rp
+host a5d7bde65ee5 | client | vnBHxZLSTxwXzIguVQ-lPwTtjuVW_2OK
+host a5d7bde65ee5 | client | Cnrvx-FsSaO0rZGVRhtevFKOLiZq9zgh
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 61 successfully finished
+Rounds Idle: 56
+client DISCONNECTED: session(Lk9Rl4E8_xdMbyVO_SC6fBPlddGJAt3t)
+client DISCONNECTED: session(Cnrvx-FsSaO0rZGVRhtevFKOLiZq9zgh)
+client DISCONNECTED: session(aZTn3w-_19yMD883yqsHqZwzG5o3s8Rp)
+client DISCONNECTED: session(vnBHxZLSTxwXzIguVQ-lPwTtjuVW_2OK)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 62 successfully finished
+Rounds Idle: 57
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 63 successfully finished
+Rounds Idle: 58
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 64 successfully finished
+Rounds Idle: 59
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 65 successfully finished
+Rounds Idle: 60
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 66 successfully finished
+Rounds Idle: 61
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 67 successfully finished
+Rounds Idle: 62
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 68 successfully finished
+Rounds Idle: 63
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 69 successfully finished
+Rounds Idle: 64
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 70 successfully finished
+Rounds Idle: 65
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 71 successfully finished
+Rounds Idle: 66
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 72 successfully finished
+Rounds Idle: 67
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 73 successfully finished
+Rounds Idle: 68
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 74 successfully finished
+Rounds Idle: 69
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 75 successfully finished
+Rounds Idle: 70
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 76 successfully finished
+Rounds Idle: 71
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 77 successfully finished
+Rounds Idle: 72
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 78 successfully finished
+Rounds Idle: 73
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 79 successfully finished
+Rounds Idle: 74
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 80 successfully finished
+Rounds Idle: 75
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 81 successfully finished
+Rounds Idle: 76
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 82 successfully finished
+Rounds Idle: 77
+client DISCONNECTED: session(rwhIzBuRFeQkvmJzsm1iJBdRgVtREBqm)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 83 successfully finished
+Rounds Idle: 78
+host a5d7bde65ee5 | client | 8PNbh9vP35Co_QIBciGWKhQZiFddGdl2
+client DISCONNECTED: session(8PNbh9vP35Co_QIBciGWKhQZiFddGdl2)
+host a5d7bde65ee5 | client | JhIyEPECwJMMaCnMiqb8vqu6iWYrwVg2
+host a5d7bde65ee5 | client | Yre34G-lopWphz-caVzP6RvlFUHArpZn
+client DISCONNECTED: session(Yre34G-lopWphz-caVzP6RvlFUHArpZn)
+client DISCONNECTED: session(JhIyEPECwJMMaCnMiqb8vqu6iWYrwVg2)
+host a5d7bde65ee5 | client | dfaxiMWn1IafCFDn4j1vbgNn8-THHCVX
+client DISCONNECTED: session(dfaxiMWn1IafCFDn4j1vbgNn8-THHCVX)
+host a5d7bde65ee5 | client | V3exi9oMHs-8s_airbDcUcXL4zHlmLnB
+client DISCONNECTED: session(V3exi9oMHs-8s_airbDcUcXL4zHlmLnB)
+host a5d7bde65ee5 | client | 7SVhr-SXoh_Shpnm-Fs6rBU3fB1pPr38
+host a5d7bde65ee5 | client | sjPwH8j1sfv-rleyVdQVgIxEpZstT3KN
+host a5d7bde65ee5 | client | uy1Jvywn8yhd1PoyJWhT_vgXmKUEdI0L
+client DISCONNECTED: session(7SVhr-SXoh_Shpnm-Fs6rBU3fB1pPr38)
+host a5d7bde65ee5 | client | Uqery_l21HQYQN6-VoxnOTkIUR00p-DM
+client DISCONNECTED: session(sjPwH8j1sfv-rleyVdQVgIxEpZstT3KN)
+client DISCONNECTED: session(uy1Jvywn8yhd1PoyJWhT_vgXmKUEdI0L)
+host a5d7bde65ee5 | client | n-4LJEREnKcPCZSs6uxbzDa88WEQZVng
+host a5d7bde65ee5 | client | K7Hbb150goFI2V0RVKe-lFjQMVaqPirS
+client DISCONNECTED: session(n-4LJEREnKcPCZSs6uxbzDa88WEQZVng)
+host a5d7bde65ee5 | client | YB__zORKQB6Obn9E_wlKuqKRkVOgOGZW
+host a5d7bde65ee5 | client | IDKc-3-EoAtDIRteEgGE8ZrUE7yborh7
+client DISCONNECTED: session(IDKc-3-EoAtDIRteEgGE8ZrUE7yborh7)
+host a5d7bde65ee5 | client | Xp7CUBZ18ITZQFB3aUBdBvR3bO29DvDX
+[nodemon] app crashed - waiting for file changes before starting...
+
+> cah_backend@1.0.0 server /usr/src/app
+> nodemon --exec babel-node index.js
+
+[nodemon] 1.18.9
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `babel-node index.js`
+REDIS_URL is,  redis://cache
+Listening on port 5000
+host a5d7bde65ee5 | client | ChEKChrKSMF7ZbSgd4cU3GRttSoYHH1g
+host a5d7bde65ee5 | client | kTcMMlr7-1G2j3pQPes4nxzMxdYtHtOD
+host a5d7bde65ee5 | client | IQslg43oDWqMmJJWcqNPTHx6HthVpboe
+client DISCONNECTED: session(IQslg43oDWqMmJJWcqNPTHx6HthVpboe)
+host a5d7bde65ee5 | client | rl6R8LjSCZk7M-abLsefKOtcjtXwfxdl
+client DISCONNECTED: session(ChEKChrKSMF7ZbSgd4cU3GRttSoYHH1g)
+host a5d7bde65ee5 | client | kybUSuBg8OvOdZETJf75xgi_NqfzbEF1
+client DISCONNECTED: session(kTcMMlr7-1G2j3pQPes4nxzMxdYtHtOD)
+host a5d7bde65ee5 | client | dScoAeGGCUkLQLVbdCTJvzoCJ1V-mzxS
+client DISCONNECTED: session(dScoAeGGCUkLQLVbdCTJvzoCJ1V-mzxS)
+host a5d7bde65ee5 | client | yoinw2bGXtMtyDfZXmhoWj_IB-Orpw5n
+host a5d7bde65ee5 | client | UjNgqzWao8E0TnHPbar7owEkyOjCbP6r
+client DISCONNECTED: session(yoinw2bGXtMtyDfZXmhoWj_IB-Orpw5n)
+client DISCONNECTED: session(UjNgqzWao8E0TnHPbar7owEkyOjCbP6r)
+host a5d7bde65ee5 | client | WYIas2ZLnHZrwj_0C7NnF-U5D_0uihJx
+client DISCONNECTED: session(rl6R8LjSCZk7M-abLsefKOtcjtXwfxdl)
+host a5d7bde65ee5 | client | PO6aDFBZDR_xmPD1W8RXblxbELpnZK_k
+client DISCONNECTED: session(WYIas2ZLnHZrwj_0C7NnF-U5D_0uihJx)
+host a5d7bde65ee5 | client | ngsfPhZ-0lgFYyH2-eo1zjvS8YRYiWDX
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(ngsfPhZ-0lgFYyH2-eo1zjvS8YRYiWDX)
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+host a5d7bde65ee5 | client | Eqp8yji23W06vOEYJwWVcP6aB5ctmSVN
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(kybUSuBg8OvOdZETJf75xgi_NqfzbEF1)
+host a5d7bde65ee5 | client | f1cTXxkcfr87vURtPxIuKPIpekL4WDhk
+host a5d7bde65ee5 | client | ngsfPhZ-0lgFYyH2-eo1zjvS8YRYiWDX
+[nodemon] app crashed - waiting for file changes before starting...
+
+> cah_backend@1.0.0 server /usr/src/app
+> nodemon --exec babel-node index.js
+
+[nodemon] 1.18.9
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `babel-node index.js`
+REDIS_URL is,  redis://cache
+Listening on port 5000
+host a5d7bde65ee5 | client | rukZGv-CoggqELQrLZdgFgdei0HkFJBt
+host a5d7bde65ee5 | client | 0zW3p13gjJrFr__YjXVnSHPA12j1V_M7
+client DISCONNECTED: session(0zW3p13gjJrFr__YjXVnSHPA12j1V_M7)
+host a5d7bde65ee5 | client | OVAeSzSaiftMjfBcyX_pzctY4vQ6oL6a
+client DISCONNECTED: session(rukZGv-CoggqELQrLZdgFgdei0HkFJBt)
+host a5d7bde65ee5 | client | fVvk9XmEdV08Gu1Xkre34uptii3oKIQc
+host a5d7bde65ee5 | client | uTQCt0FVfpSjInadGik5ohrVWGNqNkzn
+client DISCONNECTED: session(fVvk9XmEdV08Gu1Xkre34uptii3oKIQc)
+host a5d7bde65ee5 | client | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+client DISCONNECTED: session(uTQCt0FVfpSjInadGik5ohrVWGNqNkzn)
+client DISCONNECTED: session(OVAeSzSaiftMjfBcyX_pzctY4vQ6oL6a)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+host a5d7bde65ee5 | client | tB34cNF6IKnp2D_GoWBrs9hyJB7Kia1j
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+host a5d7bde65ee5 | client | ZD_gBLSB6GJPLdW10pd6Ip4pYFVR-ZQ2
+client DISCONNECTED: session(tB34cNF6IKnp2D_GoWBrs9hyJB7Kia1j)
+host a5d7bde65ee5 | client | g_U9HCoRZs_OGOUgtrG5avSlzM_QjkvP
+host a5d7bde65ee5 | client | 44BHqtedprjAhX1g6plpIRCYpYSmiZQS
+client DISCONNECTED: session(44BHqtedprjAhX1g6plpIRCYpYSmiZQS)
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 1 successfully finished
+Rounds Idle: 1
+host a5d7bde65ee5 | client | luW_z3IvMP5ajjWiQeYh9pVeJ_ZQRqKy
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(myfGm0sqXUi49TDvjJR9FLo192DANd0s)
+client DISCONNECTED: session(luW_z3IvMP5ajjWiQeYh9pVeJ_ZQRqKy)
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+host a5d7bde65ee5 | client | uvGrfC-bIC4pN0DGL0WHoTmX-46KpQA_
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 2 successfully finished
+Rounds Idle: 2
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+host a5d7bde65ee5 | client | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(myfGm0sqXUi49TDvjJR9FLo192DANd0s)
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+client DISCONNECTED: session(ZD_gBLSB6GJPLdW10pd6Ip4pYFVR-ZQ2)
+client DISCONNECTED: session(g_U9HCoRZs_OGOUgtrG5avSlzM_QjkvP)
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 3 successfully finished
+Rounds Idle: 3
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(uvGrfC-bIC4pN0DGL0WHoTmX-46KpQA_)
+host a5d7bde65ee5 | client | O5VPK8BZJ7KTveKpXuQS4m4uOGv5dttk
+client DISCONNECTED: session(O5VPK8BZJ7KTveKpXuQS4m4uOGv5dttk)
+host a5d7bde65ee5 | client | wv7DtdZeWz7MMa2SUKWXlgcAmGPFGiMG
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(wv7DtdZeWz7MMa2SUKWXlgcAmGPFGiMG)
+host a5d7bde65ee5 | client | NI21zZ1sTdEFofg_0q3FwMsN7myWp1-d
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(NI21zZ1sTdEFofg_0q3FwMsN7myWp1-d)
+host a5d7bde65ee5 | client | t-rPH77JiLImV78hoFbFd6EC3kaJgsA6
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+host a5d7bde65ee5 | client | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+client DISCONNECTED: session(myfGm0sqXUi49TDvjJR9FLo192DANd0s)
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+client DISCONNECTED: session(t-rPH77JiLImV78hoFbFd6EC3kaJgsA6)
+host a5d7bde65ee5 | client | 0VENZWAxK1z8XWiQzRhYUAXeypq_r4DC
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+host a5d7bde65ee5 | client | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+host a5d7bde65ee5 | client | jC5_JkQVH4FdQ3CCORwbirfynbHe_nck
+client DISCONNECTED: session(jC5_JkQVH4FdQ3CCORwbirfynbHe_nck)
+host a5d7bde65ee5 | client | jC5_JkQVH4FdQ3CCORwbirfynbHe_nck
+client DISCONNECTED: session(jC5_JkQVH4FdQ3CCORwbirfynbHe_nck)
+host a5d7bde65ee5 | client | jC5_JkQVH4FdQ3CCORwbirfynbHe_nck
+client DISCONNECTED: session(jC5_JkQVH4FdQ3CCORwbirfynbHe_nck)
+client DISCONNECTED: session(myfGm0sqXUi49TDvjJR9FLo192DANd0s)
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+client DISCONNECTED: session(0VENZWAxK1z8XWiQzRhYUAXeypq_r4DC)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+host a5d7bde65ee5 | client | COY8yhtHBi3VM22WIeHs5c2xwQzh7-oX
+client DISCONNECTED: session(COY8yhtHBi3VM22WIeHs5c2xwQzh7-oX)
+host a5d7bde65ee5 | client | nQsR54scFMQ0lQX8hhDYgSRk36JEBRyv
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+host a5d7bde65ee5 | client | GjRVi87AfbJC_rHrhEXCjVLI4yWoWY5s
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 1 successfully finished
+Rounds Idle: 1
+client DISCONNECTED: session(GjRVi87AfbJC_rHrhEXCjVLI4yWoWY5s)
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 2 successfully finished
+Rounds Idle: 2
+host a5d7bde65ee5 | client | ninBHWx_qzDQxH1SWdIGrjVjWrfr2HGx
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+Had to end round, since no player choose a card
+endRound prematurely | true | Round 3 successfully finished
+Rounds Idle: 3
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(ninBHWx_qzDQxH1SWdIGrjVjWrfr2HGx)
+host a5d7bde65ee5 | client | 7auFE4xqKgxhiqKPta-GBdsxeHEynhKy
+playCard | true | ioreotheoreo played their card!
+Judge-selection time!
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(7auFE4xqKgxhiqKPta-GBdsxeHEynhKy)
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | dMyCLx3uscqtAMtqTaaWr0CBuRif_4au
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+host a5d7bde65ee5 | client | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+host a5d7bde65ee5 | client | glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_
+client DISCONNECTED: session(glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_)
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+client DISCONNECTED: session(dMyCLx3uscqtAMtqTaaWr0CBuRif_4au)
+client DISCONNECTED: session(myfGm0sqXUi49TDvjJR9FLo192DANd0s)
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_
+host a5d7bde65ee5 | client | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+client DISCONNECTED: session(glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_)
+client DISCONNECTED: session(myfGm0sqXUi49TDvjJR9FLo192DANd0s)
+host a5d7bde65ee5 | client | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+host a5d7bde65ee5 | client | glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+host a5d7bde65ee5 | client | glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_
+client DISCONNECTED: session(myfGm0sqXUi49TDvjJR9FLo192DANd0s)
+host a5d7bde65ee5 | client | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+judgeSelectCard | true | ioreotheoreo won with card Passable transvestites. | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+endRound | true | Round 4 successfully finished | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+client DISCONNECTED: session(glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_)
+playCard | true | Rai played their card!
+playCard | true | daddy played their card!
+playCard | true | ioreotheoreo was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | daddy won with card A sad handjob. | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+endRound | true | Round 5 successfully finished | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+playCard | true | Totallynotvy played their card!
+playCard | true | Rai played their card!
+playCard | true | daddy was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | daddy won with card Jew-fros. | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+endRound | true | Round 6 successfully finished | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+playCard | true | Rai played their card!
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+playCard | true | ioreotheoreo played their card!
+playCard | true | Totallynotvy was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Rai won with card Anal beads. | nQsR54scFMQ0lQX8hhDYgSRk36JEBRyv
+endRound | true | Round 7 successfully finished | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+playCard | true | ioreotheoreo played their card!
+playCard | true | Totallynotvy played their card!
+playCard | true | daddy was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | daddy won with card Gloryholes. | glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_
+endRound | true | Round 8 successfully finished | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+playCard | true | Rai played their card!
+playCard | true | daddy played their card!
+Judge-selection time!
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+judgeSelectCard | true | Rai won with card Me time. | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+endRound | true | Round 9 successfully finished | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+playCard | true | Totallynotvy played their card!
+playCard | true | Rai played their card!
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+playCard | true | daddy was last player to play cards, going to judge-selecting!
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+judgeSelectCard | true | Totallynotvy won with card Sniffing glue. | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+endRound | true | Round 10 successfully finished | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+playCard | true | ioreotheoreo played their card!
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+playCard | true | Rai played their card!
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+playCard | true | Totallynotvy was last player to play cards, going to judge-selecting!
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+judgeSelectCard | true | ioreotheoreo won with card Queefing. | nQsR54scFMQ0lQX8hhDYgSRk36JEBRyv
+endRound | true | Round 11 successfully finished | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+shuffleCards | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV | true | shuffled 2 <=> 3 for ioreotheoreo
+playCard | true | ioreotheoreo played their card!
+playCard | true | Totallynotvy played their card!
+playCard | true | daddy was last player to play cards, going to judge-selecting!
+judgeSelectCard | true | Totallynotvy won with card Black people. | glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_
+endRound | true | Round 12 successfully finished | glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_
+playCard | true | Rai played their card!
+playCard | true | daddy played their card!
+playCard | true | ioreotheoreo was last player to play cards, going to judge-selecting!
+client DISCONNECTED: session(myfGm0sqXUi49TDvjJR9FLo192DANd0s)
+host a5d7bde65ee5 | client | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+client DISCONNECTED: session(myfGm0sqXUi49TDvjJR9FLo192DANd0s)
+host a5d7bde65ee5 | client | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+judgeSelectCard | true | Rai won with card Nipple blades. | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+endRound | true | Round 13 successfully finished | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+playCard | true | Rai played their card!
+client DISCONNECTED: session(myfGm0sqXUi49TDvjJR9FLo192DANd0s)
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+playCard | true | daddy played their card!
+Judge-selection time!
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+host a5d7bde65ee5 | client | kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn
+judgeSelectCard | true | Rai won with card Two midgets shitting into a bucket. | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+endRound | true | Round 14 successfully finished | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+shuffleCards | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV | true | shuffled 3 <=> 2 for ioreotheoreo
+playCard | true | ioreotheoreo played their card!
+playCard | true | Rai played their card!
+client DISCONNECTED: session(kgt50eoFqgVJ5tEkwJ99M4xBBAFLeIyn)
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+client DISCONNECTED: session(glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_)
+Judge-selection time!
+host a5d7bde65ee5 | client | glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_
+judgeSelectCard | true | Rai won with card Laying an egg. | nQsR54scFMQ0lQX8hhDYgSRk36JEBRyv
+endRound | true | Round 15 successfully finished | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+playCard | true | ioreotheoreo played their card!
+playCard | true | daddy played their card!
+Judge-selection time!
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+shuffleCards | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV | true | shuffled 0 <=> 1 for ioreotheoreo
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+host a5d7bde65ee5 | client | qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV
+judgeSelectCard | true | daddy won with card The Trail of Tears. | glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_
+endRound | true | Round 16 successfully finished | glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_
+client DISCONNECTED: session(qkurAwZ_nD5DCBFm03BQAu8VA2YNOWgV)
+playCard | true | Rai played their card!
+playCard | true | daddy played their card!
+Judge-selection time!
+host a5d7bde65ee5 | client | myfGm0sqXUi49TDvjJR9FLo192DANd0s
+client DISCONNECTED: session(glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_)
+host a5d7bde65ee5 | client | glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_
+client DISCONNECTED: session(myfGm0sqXUi49TDvjJR9FLo192DANd0s)
+client DISCONNECTED: session(glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_)
+host a5d7bde65ee5 | client | glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_
+client DISCONNECTED: session(glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_)
+host a5d7bde65ee5 | client | glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_
+client DISCONNECTED: session(glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_)
+host a5d7bde65ee5 | client | glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_
+client DISCONNECTED: session(glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_)
+host a5d7bde65ee5 | client | glq8_aWuUia7Qcm0odwb7yK3FE-CDDG_

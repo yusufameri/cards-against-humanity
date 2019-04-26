@@ -4,7 +4,7 @@
   "description": "Backend communication for cah",
   "main": "index.js",
   "scripts": {
-    "client": "cd client && yarn start",
+    "client": "cd client && npm start",
     "server": "nodemon --exec babel-node index.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "build": "cd client && npm i && npm run build",

@@ -22,7 +22,7 @@ class JoinPartyScreen extends React.Component {
 
   updatePartyCode(e) {
     this.setState({
-      partyCode: e.target.value
+      partyCode: e.target.value.toLowerCase()
     })
   }
 

@@ -22,7 +22,7 @@ function Or() {
 function CreateGame() {
   // TODO: call backend api to create a game and return the party code,
   // mocking the response for now...
-  let partyCodeFromServer = Math.random().toString(36).slice(2).substring(5);
+  let partyCodeFromServer = Math.random().toString(36).slice(2).substring(5).toLowerCase();
   console.log(`partyCodeFromServer ${partyCodeFromServer}`);
   
   return partyCodeFromServer;
@@ -40,7 +40,7 @@ function HomeScreen() {
         <Or />
         <Button text="Create Party" className="center" link={`/join/${CreateGame()}`}/>
         <Footer>
-          Like us on <a href="http://www.facebook.com/yusufameri"> Facebook!</a>
+          Like us on <a href="https://www.instagram.com/cardipartygame/"> Instagram!</a>
         </Footer>
       </Bottom>
     </Screen>

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "client": "cd client && yarn start",
-    "server": "nodemon --exec babel-node index.js",
+    "server": "babel-node index.js",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "build": "cd client && npm i && npm run build",
     "start": "docker-compose up"

@@ -12,23 +12,9 @@ app.use(express.static(path.join(__dirname, 'client', 'build')));
 // session
 var session = require('express-session') // for express
 var sharedsession = require("express-socket.io-session"); // for socket.io
-var RedisStore = require('connect-redis')(session); // for storing session data
-
-console.log("REDIS_URL is, ", process.env.REDIS_URL)
-
-// create a redis client for storing sessions
-var redis = require("redis"),
-  client = redis.createClient(process.env.REDIS_URL);
-
-// have socket.io use redis as an adaptor
-var redisAdaptor = require('socket.io-redis');
-io.adapter(redisAdaptor(process.env.REDIS_URL));
 
 // create a session
 var iosession = session({
-  store: new RedisStore({
-    client,
-  }),
   resave: true,
   saveUninitialized: true,
   secret: 'keyboard cat',

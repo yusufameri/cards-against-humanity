@@ -1,3 +1,9 @@
+# To Create a new image
+# docker build -t yusufameri/cah:<version_num>
+
+# To Push a new image
+# docker push yusufameri/cah:<version num here optional>
+####-------####-------####-------####-------####-------####-------####-------
 FROM node:8
 
 # Create app directory for express server

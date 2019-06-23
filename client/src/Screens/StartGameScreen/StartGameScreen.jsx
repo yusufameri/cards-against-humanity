@@ -69,7 +69,7 @@ class StartGameScreen extends React.Component {
     return (
       <Screen>
         <Top>
-        <Banner title="Share the current url / link with your friends to get started!" />
+        <Banner title="Share the current url / link with your friends to get started! You need at least 3 people to play this game!" />
           <Card cardType="Link" link={this.props.match.params.partyCode} />
         </Top>
         <Bottom>

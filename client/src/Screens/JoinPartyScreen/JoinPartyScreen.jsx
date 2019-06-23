@@ -32,7 +32,7 @@ class JoinPartyScreen extends React.Component {
     return (
       <Screen>
         <Top>
-          <Banner title = "Ask your friend for the party code or create a game if you are the first player!"/>
+          <Banner title = "Ask your friend for the party code or create a game if you are the first player in the party!"/>
           <Card cardType="Title" />
         </Top>
         <Bottom>

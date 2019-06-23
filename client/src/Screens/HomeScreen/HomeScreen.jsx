@@ -36,9 +36,9 @@ function HomeScreen() {
       </Top>
       <Bottom>
         <Title text="A party game for horrible people"/>
-        <Button text="Join Party" className="center" link="/join"/>
-        <Or />
         <Button text="Create Party" className="center" link={`/join/${CreateGame()}`}/>
+        <Or />
+        <Button text="Join Party" className="center" link="/join"/>
         <Footer>
           Like us on <a href="https://www.instagram.com/cardipartygame/"> Instagram!</a>
         </Footer>

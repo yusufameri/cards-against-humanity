@@ -8,6 +8,7 @@ import Card from "../../components/Card/Card"
 import Button from "../../components/Button/Button"
 import Footer from "../../components/Footer/Footer"
 import PlayerList from "../../components/PlayerList/PlayerList"
+import Banner from 'react-js-banner';
 import "./StartGameScreen.css"
 
 import { joinParty, getLobbyState, newLobbyState } from "../../api"
@@ -68,6 +69,7 @@ class StartGameScreen extends React.Component {
     return (
       <Screen>
         <Top>
+        <Banner title="Share the current url / link with your friends to get started!" />
           <Card cardType="Link" link={this.props.match.params.partyCode} />
         </Top>
         <Bottom>

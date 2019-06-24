@@ -1,22 +1,21 @@
-version: 2.0
+version: 2
 jobs:
- build:
-   # pre-built images: https://circleci.com/docs/2.0/circleci-images/
-   docker:
-     - image: circleci/node:10-browsers
-   steps:
-     - checkout
-     - run:
-         name: The First Step
-         command: |
-           echo 'Hello World!'
-           echo 'This is the delivery pipeline'
-     - run:
-         name: Code Has Arrived
-         command: |
-           ls -al
-           echo '^^^That should look familiar^^^'
-     - run:
-         name: Running in a Unique Container
-         command: |
-           node -v
+  build:
+    environment:
+      IMAGE_NAME: yusufameri/cah
+    docker:
+      - image: circleci/buildpack-deps:stretch
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Build Docker image
+          command: docker build -t $IMAGE_NAME:latest .
+workflows:
+  version: 2
+  build-master:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: cicd

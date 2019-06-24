@@ -62,14 +62,14 @@ workflows:
       - build:
           filters:
             branches:
-              only: cicd
+              only: master
       - publish-latest:
           context: Master Production Context
           requires:
             - build
           filters:
             branches:
-              only: cicd
+              only: master
   build-tags:
     jobs:
       - build:

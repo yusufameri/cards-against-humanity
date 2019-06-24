@@ -1,13 +1,13 @@
-version: 2
+version: 2.1
 executors:
-  docker:
+  docker-publisher:
     environment:
       IMAGE_NAME: yusufameri/cah
     docker:
       - image: circleci/buildpack-deps:stretch
 jobs:
   build:
-    executor: docker
+    executor: docker-publisher
     steps:
       - checkout
       - setup_remote_docker
@@ -22,7 +22,7 @@ jobs:
           paths:
             - ./image.tar
   publish-latest:
-    executor: docker
+    executor: docker-publisher
     steps:
       - attach_workspace:
           at: /tmp/workspace

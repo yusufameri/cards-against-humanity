@@ -7,6 +7,7 @@ import Bottom from "../../components/Bottom/Bottom"
 import Button from "../../components/Button/Button"
 import Card from "../../components/Card/Card"
 import Footer from "../../components/Footer/Footer"
+import Banner from 'react-js-banner';
 import "./JoinPartyScreen.css"
 
 
@@ -31,6 +32,7 @@ class JoinPartyScreen extends React.Component {
     return (
       <Screen>
         <Top>
+          <Banner title = "Ask your friend for the party code or create a game if you are the first player in the party!"/>
           <Card cardType="Title" />
         </Top>
         <Bottom>

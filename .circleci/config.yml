@@ -67,19 +67,19 @@ workflows:
           filters:
             branches:
               only: cicd
-    build-tags:
-      jobs:
-        - build:
-            filters:
-              tags:
-                only: /^v.*/
-              branches:
-                ignore: /.*/
-        - publish-tag:
-            requires:
-              - build
-            filters:
-              tags:
-                only: /^v.*/
-              branches:
-                ignore: /.*/
+  build-tags:
+    jobs:
+      - build:
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/
+      - publish-tag:
+          requires:
+            - build
+          filters:
+            tags:
+              only: /^v.*/
+            branches:
+              ignore: /.*/

@@ -3,6 +3,7 @@ Follow us on Instagram | https://www.instagram.com/cardipartygame/
 Play the Game Now! | http://www.cardiparty.co/ 
 
 ___ 
+Build: [![CircleCI](https://circleci.com/gh/yusufameri/cards-against-humanity/tree/master.svg?style=svg)](https://circleci.com/gh/yusufameri/cards-against-humanity/tree/master)
 # Welcome to Cards Against Humanity on Mobile!
 This project represents a mobile version of the popular party card game we all know and love, "**Cards Against Humanity!**"
 

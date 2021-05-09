@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "path-to-regexp": "^3.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.7.0",
